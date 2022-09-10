@@ -1,6 +1,19 @@
 ;(function ($) {
 	'use strict';
-	let windowWidth = $(window).width();
+
+	let initSidebar = function () {
+		let btnCall = $('#call-sidebar'),
+			overlay = $('#cpanel-overlay'),
+			templateCpanel = $('#template-cpanel');
+
+		btnCall.add(overlay).click(function () {
+			if (!templateCpanel.is('.sidebar-show')) {
+				templateCpanel.addClass('sidebar-show').attr({'style': 'overflow: hidden; height: 100vh; position: fixed'});
+			} else {
+				templateCpanel.removeClass('sidebar-show').attr({'style': ''});
+			}
+		});
+	}
 
 	let initFromModule1 = function () {
 		let elmWrapper = $('#createRow');
@@ -80,6 +93,7 @@
 	}
 
 	$(function () {
+		initSidebar();
 		initFromModule1();
 		initFormFloating();
 		$(document).on('click', '.copy-value', function () {

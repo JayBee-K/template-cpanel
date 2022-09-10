@@ -996,6 +996,7 @@ h6, .h6 {
 	position: relative;
 	background-color: #f4f4f4;
 	min-height: 100vh;
+	width: 100%;
 }
 
 .template-cpanel .cpanel-sidebar {
@@ -1109,7 +1110,7 @@ h6, .h6 {
 }
 
 .template-cpanel .cpanel-sidebar .sidebar-body .sidebar-body_menu > li > ul > li:hover > a,
-.template-cpanel .cpanel-sidebar .sidebar-body .sidebar-body_menu > li > ul > li.active > a{
+.template-cpanel .cpanel-sidebar .sidebar-body .sidebar-body_menu > li > ul > li.active > a {
 	background-color: rgba(0, 0, 0, 0.1);
 	color: var(--white);
 }
@@ -1123,6 +1124,10 @@ h6, .h6 {
 
 .template-cpanel .cpanel-main {
 	padding-left: 180px;
+}
+
+.template-cpanel .cpanel-header {
+	display: none;
 }
 
 .template-cpanel .cpanel-body {
@@ -1171,4 +1176,108 @@ h6, .h6 {
 .cpanel-breadcrumb .breadcrumb-item > a:hover,
 .cpanel-breadcrumb .breadcrumb-item > a:hover > i {
 	color: var(--primary-color);
+}
+
+@media screen and (max-width: 991px) {
+	.template-cpanel .cpanel-overlay {
+		background: rgba(0, 0, 0, 0.3);
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 12;
+		display: none;
+	}
+
+	.template-cpanel .cpanel-header {
+		display: flex;
+		background-color: var(--template-color);
+		box-shadow: 0 1px 4px 0 rgb(0 0 0 / 5%);
+		position: relative;
+		z-index: 2;
+		padding: 15px 15px 15px 55px;
+	}
+
+	.template-cpanel .cpanel-header .cpanel-header_hamburger {
+		top: calc(50% + .5px);
+		left: 15px;
+		transform: translateY(-50%);
+		width: 30px;
+		height: 30px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		transition: var(--transition-default);
+	}
+
+	.template-cpanel .cpanel-header .cpanel-header_hamburger:before,
+	.template-cpanel .cpanel-header .cpanel-header_hamburger:after,
+	.template-cpanel .cpanel-header .cpanel-header_hamburger > span {
+		display: block;
+		width: 20px;
+		height: 1px;
+		margin: 2.5px auto;
+		background-color: var(--white);
+		-webkit-transition: all 0.6s ease;
+		transition: all 0.6s ease;
+		-webkit-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		transform: rotate(0deg);
+		opacity: 1;
+	}
+
+	.template-cpanel .cpanel-header .cpanel-header_hamburger:before, .template-cpanel .cpanel-header .cpanel-header_hamburger:after {
+		content: "";
+	}
+
+	.template-cpanel .cpanel-sidebar {
+		left: -115%;
+		transition: var(--transition-default);
+		opacity: 0;
+		visibility: hidden;
+		pointer-events: none;
+	}
+
+	.template-cpanel.sidebar-show .cpanel-sidebar {
+		left: 0;
+		opacity: 1;
+		visibility: visible;
+		pointer-events: auto;
+	}
+
+	.template-cpanel.sidebar-show .cpanel-overlay {
+		display: block;
+	}
+
+	.template-cpanel.sidebar-show .cpanel-header .cpanel-header_hamburger > span {
+		-webkit-transform: rotate(-45deg);
+		-ms-transform: rotate(-45deg);
+		transform: rotate(-45deg);
+		opacity: 0;
+	}
+
+	.template-cpanel.sidebar-show .cpanel-header .cpanel-header_hamburger:before {
+		-webkit-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+		transform: rotate(45deg);
+		margin-top: 1px;
+	}
+
+	.template-cpanel.sidebar-show .cpanel-header .cpanel-header_hamburger:after {
+		-webkit-transform: rotate(-45deg);
+		-ms-transform: rotate(-45deg);
+		transform: rotate(-45deg);
+		margin-top: -9px;
+	}
+
+	.template-cpanel.sidebar-show .cpanel-header .cpanel-header_hamburger {
+		left: 195px
+	}
+
+	.template-cpanel .cpanel-main {
+		padding-left: 0;
+	}
 }
