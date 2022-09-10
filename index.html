@@ -1,159 +1,164 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
-    <title>Template Cpanel</title>
-    <meta name="description" content="Template Cpanel">
-    <meta name="author" content="">
+	<title>Template Cpanel</title>
+	<meta name="description" content="Template Cpanel">
+	<meta name="author" content="">
 
-    <meta property="og:title" content="Template Cpanel">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="">
-    <meta property="og:description" content="Template Cpanel">
-    <meta property="og:image" content="">
+	<meta property="og:title" content="Template Cpanel">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="">
+	<meta property="og:description" content="Template Cpanel">
+	<meta property="og:image" content="">
 
-    <link rel="icon" href="/assets/images/favicon.png">
-    <link rel="apple-touch-icon" href="/assets/images/favicon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
-          rel="stylesheet">
-    <link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/plugins/select2/css/select2.min.css">
-    <link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+	<link rel="icon" href="/assets/images/favicon.png">
+	<link rel="apple-touch-icon" href="/assets/images/favicon.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
+		  rel="stylesheet">
+	<link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./assets/plugins/select2/css/select2.min.css">
+	<link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="./assets/css/style.css">
 
-    <style>
-        :root {
-            --template-color: #3c444d;
-            --template-hover: #2c3138;
+	<style>
+		:root {
+			--template-color: #3c444d;
+			--template-hover: #2c3138;
 
-            --primary-color: #20a53a;
-            --primary-hover: #10952a;
-        }
-    </style>
+			--primary-color: #20a53a;
+			--primary-hover: #10952a;
+		}
+	</style>
 </head>
 <body>
 <div class="template-cpanel">
-    <div class="cpanel-sidebar">
-        <div class="sidebar-header">
-            <a href="/">
-                <img src="./assets/images/logo.svg" height="16" width="90" class="img-fluid" alt="">
-            </a>
-        </div>
-        <div class="sidebar-body">
-            <ul class="sidebar-body_menu" id="sidebar-menu">
-                <li class="active">
-                    <a href="./index.html">
-                        <span class="icon"><i class="fal fa-home-alt"></i></span>
-                        <span class="text">Trang chủ</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="./forms.html">
-                        <span class="icon"><i class="fal fa-list-alt"></i></span>
-                        <span class="text">Forms</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="./buttons.html">
-                        <span class="icon"><i class="fal fa-dot-circle"></i></span>
-                        <span class="text">Buttons</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="./tables.html">
-                        <span class="icon"><i class="fal fa-table"></i></span>
-                        <span class="text">Tables</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="./tabs.html">
-                        <span class="icon"><i class="fal fa-th-large"></i></span>
-                        <span class="text">Tabs</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="./cards.html">
-                        <span class="icon"><i class="fal fa-credit-card-front"></i></span>
-                        <span class="text">Cards</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="./modals.html">
-                        <span class="icon"><i class="fal fa-dice-d6"></i></span>
-                        <span class="text">Modals</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="./labels.html">
-                        <span class="icon"><i class="fal fa-badge-check"></i></span>
-                        <span class="text">Labels</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="./alerts.html">
-                        <span class="icon"><i class="fal fa-exclamation-circle"></i></span>
-                        <span class="text">Thông báo</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#collapse-1" data-toggle="collapse">
-                        <span class="icon"><i class="fal fa-bars"></i></span>
-                        <span class="text">Collapse</span>
-                        <span class="arrow">
-                            <i class="fal fa-angle-down"></i>
-                        </span>
-                    </a>
-                    <ul id="collapse-1" class="collapse" data-parent="#sidebar-menu">
-                        <li>
-                            <a href="">
-                                <span class="text">
-                                    Không có giao diện
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <span class="text">
-                                    Không có giao diện
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <span class="text">
-                                    Không có giao diện
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="https://fontawesome.com/v5/search" target="_blank">
-                        <span class="icon"><i class="fal fa-smile-beam"></i></span>
-                        <span class="text">Fonts Icon</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div class="cpanel-main">
-        <div class="cpanel-body"></div>
-        <div class="cpanel-footer">
-            <div class="cpanel-wrap">
-                <div class="text-center"></div>
-            </div>
-        </div>
-    </div>
+	<div class="cpanel-sidebar">
+		<div class="sidebar-header">
+			<a href="/">
+				<img src="./assets/images/logo.svg" height="16" width="90" class="img-fluid" alt="">
+			</a>
+		</div>
+		<div class="sidebar-body">
+			<ul class="sidebar-body_menu" id="sidebar-menu">
+				<li class="active">
+					<a href="./index.html">
+						<span class="icon"><i class="fal fa-home-alt"></i></span>
+						<span class="text">Trang chủ</span>
+					</a>
+				</li>
+				<li>
+					<a href="./forms.html">
+						<span class="icon"><i class="fal fa-list-alt"></i></span>
+						<span class="text">Forms</span>
+					</a>
+				</li>
+				<li>
+					<a href="./buttons.html">
+						<span class="icon"><i class="fal fa-dot-circle"></i></span>
+						<span class="text">Buttons</span>
+					</a>
+				</li>
+				<li>
+					<a href="./tables.html">
+						<span class="icon"><i class="fal fa-table"></i></span>
+						<span class="text">Tables</span>
+					</a>
+				</li>
+				<li>
+					<a href="./tabs.html">
+						<span class="icon"><i class="fal fa-th-large"></i></span>
+						<span class="text">Tabs</span>
+					</a>
+				</li>
+				<li>
+					<a href="./cards.html">
+						<span class="icon"><i class="fal fa-credit-card-front"></i></span>
+						<span class="text">Cards</span>
+					</a>
+				</li>
+				<li>
+					<a href="./modals.html">
+						<span class="icon"><i class="fal fa-dice-d6"></i></span>
+						<span class="text">Modals</span>
+					</a>
+				</li>
+				<li>
+					<a href="./labels.html">
+						<span class="icon"><i class="fal fa-badge-check"></i></span>
+						<span class="text">Labels</span>
+					</a>
+				</li>
+				<li>
+					<a href="./alerts.html">
+						<span class="icon"><i class="fal fa-exclamation-circle"></i></span>
+						<span class="text">Thông báo</span>
+					</a>
+				</li>
+				<li>
+					<a href="#collapse-1" data-toggle="collapse">
+						<span class="icon"><i class="fal fa-bars"></i></span>
+						<span class="text">Collapse</span>
+						<span class="arrow">
+							<i class="fal fa-angle-down"></i>
+						</span>
+					</a>
+					<ul id="collapse-1" class="collapse" data-parent="#sidebar-menu">
+						<li>
+							<a href="">
+								<span class="text">
+									Không có giao diện
+								</span>
+							</a>
+						</li>
+						<li class="active">
+							<a href="">
+								<span class="text">
+									Không có giao diện
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<span class="text">
+									Không có giao diện
+								</span>
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="https://fontawesome.com/v5/search" target="_blank">
+						<span class="icon"><i class="fal fa-smile-beam"></i></span>
+						<span class="text">Fonts Icon</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="cpanel-main">
+		<div class="cpanel-body"></div>
+		<div class="cpanel-footer">
+			<div class="cpanel-wrap">
+				<div class="text-center">
+					Template Cpanel v1 - Design by Nencer <span class="px-2">-</span>
+					<a href="./">Tài liệu</a>
+					<span class="px-2">-</span>
+					<a href="tel:0333851915">Liên hệ</a>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 
 <script type=" text/javascript" src="./assets/plugins/jquery.min.js"></script>
 <script type="text/javascript"
-        src="./assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+		src="./assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script type="text/javascript" src="./assets/plugins/select2/js/select2.min.js"></script>
 <script type="text/javascript" src="./assets/js/app.js"></script>
 </body>
