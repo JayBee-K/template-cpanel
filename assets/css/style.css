@@ -28,7 +28,6 @@ body {
     font-size: 14px;
     font-weight: 400;
     font-style: normal;
-    line-height: 1.2;
 }
 
 a, a:hover, a:focus {
@@ -1188,6 +1187,7 @@ h6, .h6 {
     box-shadow: var(--shadow-primary);
     margin-bottom: 15px;
     padding: 15px;
+    border-radius: 0.3rem;
 }
 
 .template-cpanel .cpanel-main {
@@ -1246,7 +1246,7 @@ h6, .h6 {
     color: var(--primary-color);
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1024px) {
     .template-cpanel .cpanel-overlay {
         background: rgba(0, 0, 0, 0.3);
         position: fixed;
@@ -1415,11 +1415,51 @@ h6, .h6 {
     border-bottom: 1px solid var(--gray-100);
 }
 
+.cpanel-card .card-header .card-tab_m1 {
+    margin: -10px 0 -10px -10px;
+}
+
+.cpanel-card .card-header .card-tab_m1 .nav-tabs {
+    margin-bottom: 0;
+    border-bottom: 0;
+}
+
+.cpanel-card .card-header .card-tab_m1 .nav-tabs .nav-link {
+    border: 0;
+    border-bottom: 2px solid transparent;
+    background-color: transparent;
+    border-radius: 0;
+    color: var(--gray-700);
+    padding: 12px 20px 10px;
+    font-size: 16px;
+}
+
+.cpanel-card .card-header .card-tab_m1 .nav-tabs .nav-link:hover {
+    background-color: var(--gray-100);
+}
+
+.cpanel-card .card-header .card-tab_m1 .nav-tabs .nav-link.active {
+    border-bottom-color: var(--primary-color);
+}
+
+.cpanel-card .card-header .tabs-m1 .nav-tabs {
+    padding-bottom: 0;
+}
+
+.cpanel-card .card-header .tabs-m1 {
+    margin-top: -2px;
+    margin-bottom: -2px;
+}
+
+.cpanel-card .card-header .tabs-m1 .nav-tabs .nav-item .nav-link {
+    padding: 5px 20px;
+}
+
 .cpanel-card .card-header .card-title {
     margin-bottom: 0;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 700;
-    color: var(--gray-900);
+    color: var(--gray-700);
 }
 
 .cpanel-card .card-header .card-button {
@@ -1450,10 +1490,29 @@ h6, .h6 {
 
 .cpanel-card .card-body {
     padding: 10px;
+    max-width: 100%;
+    overflow: auto;
+}
+
+.cpanel-card .card-body::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+    background-color: var(--gray-200);
+    border-radius: 20px;
+}
+
+.cpanel-card .card-body::-webkit-scrollbar-thumb {
+    background-color: var(--gray-300);
+    border-radius: 20px;
 }
 
 .cpanel-list .cpanel-list_item {
     font-size: 13px;
+    line-height: 1.2;
+}
+
+.cpanel-list .cpanel-list_item > * {
+    margin-bottom: 5px;
 }
 
 .cpanel-list .cpanel-list_item p:last-child {
@@ -1464,4 +1523,55 @@ h6, .h6 {
     margin-top: 10px;
     padding-top: 10px;
     border-top: 1px solid var(--gray-100);
+}
+
+.card-primary .card-header {
+    background-color: var(--primary);
+}
+
+.card-success .card-header {
+    background-color: var(--success);
+}
+
+.card-danger .card-header {
+    background-color: var(--danger);
+}
+
+.card-warning .card-header {
+    background-color: var(--warning);
+}
+
+.card-info .card-header {
+    background-color: var(--info);
+}
+
+.card-secondary .card-header {
+    background-color: var(--secondary);
+}
+
+.card-primary .card-header .card-title,
+.card-success .card-header .card-title,
+.card-danger .card-header .card-title,
+.card-warning .card-header .card-title,
+.card-info .card-header .card-title,
+.card-secondary .card-header .card-title {
+    color: #fff;
+}
+
+.card-primary .card-header .card-button .card-button_icon,
+.card-success .card-header .card-button .card-button_icon,
+.card-danger .card-header .card-button .card-button_icon,
+.card-warning .card-header .card-button .card-button_icon,
+.card-info .card-header .card-button .card-button_icon,
+.card-primary .card-header .card-button .card-button_icon {
+    color: var(--gray-200);
+}
+
+.card-primary .card-header .card-button .card-button_icon:hover,
+.card-success .card-header .card-button .card-button_icon:hover,
+.card-danger .card-header .card-button .card-button_icon:hover,
+.card-warning .card-header .card-button .card-button_icon:hover,
+.card-info .card-header .card-button .card-button_icon:hover,
+.card-secondary .card-header .card-button .card-button_icon:hover {
+    color: var(--white);
 }
