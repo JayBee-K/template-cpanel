@@ -1,38 +1,38 @@
 ;(function ($) {
-	'use strict';
+    'use strict';
 
-	let initSidebar = function () {
-		let btnCall = $('#call-sidebar'),
-			overlay = $('#cpanel-overlay'),
-			templateCpanel = $('#template-cpanel');
+    let initSidebar = function () {
+        let btnCall = $('#call-sidebar'),
+            overlay = $('#cpanel-overlay'),
+            templateCpanel = $('#template-cpanel');
 
-		btnCall.add(overlay).click(function () {
-			if (!templateCpanel.is('.sidebar-show')) {
-				templateCpanel.addClass('sidebar-show').attr({'style': 'overflow: hidden; height: 100vh; position: fixed'});
-			} else {
-				templateCpanel.removeClass('sidebar-show').attr({'style': ''});
-			}
-		});
-	}
+        btnCall.add(overlay).click(function () {
+            if (!templateCpanel.is('.sidebar-show')) {
+                templateCpanel.addClass('sidebar-show').attr({'style': 'overflow: hidden; height: 100vh; position: fixed'});
+            } else {
+                templateCpanel.removeClass('sidebar-show').attr({'style': ''});
+            }
+        });
+    }
 
-	let initFromModule1 = function () {
-		let elmWrapper = $('#createRow');
-		$('#createRow').on('click', '.addRow', function () {
-			let theCaoSelect = $(this).closest('.row-item').find('#theCao'),
-				theCaoIndexSelected = theCaoSelect.find('option:selected').attr('data-index'),
-				theCaoRender = $(this).closest('.row-item').find('#theCao').clone();
+    let initFromModule1 = function () {
+        let elmWrapper = $('#createRow');
+        $('#createRow').on('click', '.addRow', function () {
+            let theCaoSelect = $(this).closest('.row-item').find('#theCao'),
+                theCaoIndexSelected = theCaoSelect.find('option:selected').attr('data-index'),
+                theCaoRender = $(this).closest('.row-item').find('#theCao').clone();
 
-			theCaoRender.find('option').attr('selected', false);
-			theCaoRender.find('option[data-index=' + theCaoIndexSelected + ']').attr('selected', true);
+            theCaoRender.find('option').attr('selected', false);
+            theCaoRender.find('option[data-index=' + theCaoIndexSelected + ']').attr('selected', true);
 
-			let menhGiaSelect = $(this).closest('.row-item').find('#menhGia'),
-				menhGiaIndexSelected = menhGiaSelect.find('option:selected').attr('data-index'),
-				menhGiaRender = $(this).closest('.row-item').find('#menhGia').clone();
+            let menhGiaSelect = $(this).closest('.row-item').find('#menhGia'),
+                menhGiaIndexSelected = menhGiaSelect.find('option:selected').attr('data-index'),
+                menhGiaRender = $(this).closest('.row-item').find('#menhGia').clone();
 
-			menhGiaRender.find('option').attr('selected', false);
-			menhGiaRender.find('option[data-index=' + menhGiaIndexSelected + ']').attr('selected', true);
+            menhGiaRender.find('option').attr('selected', false);
+            menhGiaRender.find('option[data-index=' + menhGiaIndexSelected + ']').attr('selected', true);
 
-			let rowRender = `<div class="row-item row row5">
+            let rowRender = `<div class="row-item row row5">
                             <div class="col-lg-3 col-sm-12 col-12">
 							    ${theCaoRender[0].innerHTML}
 							 </div>
@@ -61,47 +61,58 @@
 								</button>
 							</div>
 						</div>`;
-			elmWrapper.append(rowRender);
-		}).on('click', '.deleteRow', function () {
-			$(this).closest('.row-item').remove();
-		});
-	}
+            elmWrapper.append(rowRender);
+        }).on('click', '.deleteRow', function () {
+            $(this).closest('.row-item').remove();
+        });
+    }
 
-	let initFormFloating = function () {
-		if ($('.form-floating').length) {
-			$('.form-floating .form-control').blur(function () {
-				if ($(this).val() != "") {
-					$(this).addClass("valid");
-				} else {
-					$(this).removeClass("valid");
-				}
-			});
-		}
-	}
+    let initFormFloating = function () {
+        if ($('.form-floating').length) {
+            $('.form-floating .form-control').blur(function () {
+                if ($(this).val() != "") {
+                    $(this).addClass("valid");
+                } else {
+                    $(this).removeClass("valid");
+                }
+            });
+        }
+    }
 
-	let initClipboardCopy = function (value) {
-		let createTextarea = document.createElement('textarea');
-		createTextarea.style.cssText = 'position: absolute; left: -99999px';
-		createTextarea.setAttribute("id", "textareaCopy");
-		document.body.appendChild(createTextarea);
-		let textareaElm = document.getElementById('textareaCopy');
-		textareaElm.value = value;
-		textareaElm.select();
-		textareaElm.setSelectionRange(0, 99999);
-		document.execCommand("copy");
-		textareaElm.remove();
-	}
+    let initClipboardCopy = function (value) {
+        let createTextarea = document.createElement('textarea');
+        createTextarea.style.cssText = 'position: absolute; left: -99999px';
+        createTextarea.setAttribute("id", "textareaCopy");
+        document.body.appendChild(createTextarea);
+        let textareaElm = document.getElementById('textareaCopy');
+        textareaElm.value = value;
+        textareaElm.select();
+        textareaElm.setSelectionRange(0, 99999);
+        document.execCommand("copy");
+        textareaElm.remove();
+    }
 
-	$(function () {
-		initSidebar();
-		initFromModule1();
-		initFormFloating();
-		$(document).on('click', '.copy-value', function () {
-			if ($(this).attr('data-value') != undefined) {
-				initClipboardCopy($(this).attr('data-value'));
-			} else {
-				initClipboardCopy($(this).parent().find('input').val());
-			}
-		});
-	});
+    let initCheckAll = function () {
+        $('.check-all').click(function () {
+            if ($(".check-only").is("checked")) {
+                $('.check-only').attr('checked', false);
+            } else {
+                $('.check-only').attr('checked', true);
+            }
+        });
+    }
+
+    $(function () {
+        initSidebar();
+        initFromModule1();
+        initFormFloating();
+        initCheckAll();
+        $(document).on('click', '.copy-value', function () {
+            if ($(this).attr('data-value') != undefined) {
+                initClipboardCopy($(this).attr('data-value'));
+            } else {
+                initClipboardCopy($(this).parent().find('input').val());
+            }
+        });
+    });
 })(jQuery);

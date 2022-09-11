@@ -118,6 +118,7 @@
                     <ul id="collapse-1" class="collapse" data-parent="#sidebar-menu">
                         <li>
                             <a href="">
+                                <span class="icon"><i class="fal fa-angle-right"></i></span>
                                 <span class="text">
                                     Không có giao diện
                                 </span>
@@ -125,6 +126,7 @@
                         </li>
                         <li class="active">
                             <a href="">
+                                <span class="icon"><i class="fal fa-angle-right"></i></span>
                                 <span class="text">
                                     Không có giao diện
                                 </span>
@@ -132,6 +134,7 @@
                         </li>
                         <li>
                             <a href="">
+                                <span class="icon"><i class="fal fa-angle-right"></i></span>
                                 <span class="text">
                                     Không có giao diện
                                 </span>
@@ -145,12 +148,6 @@
                         <span class="text">Fonts Icon</span>
                     </a>
                 </li>
-                <li>
-                    <a href="" target="_blank">
-                        <span class="icon"><i class="fal fa-sign-out"></i></span>
-                        <span class="text">Đăng xuất</span>
-                    </a>
-                </li>
             </ul>
         </div>
     </div>
@@ -162,18 +159,34 @@
             <a class="cpanel-header_logo" href="/">
                 <img src="./assets/images/logo.svg" height="16" width="90" class="img-fluid" alt="">
             </a>
+            <div class="cpanel-header_user">
+                <button type="button" class="header-user_button">
+                    <img src="https://coreui.io/demos/bootstrap/4.2/default/assets/img/avatars/8.jpg" alt="">
+                    Admin
+                </button>
+                <div class="header-user_dropdown">
+                    <div class="dropdown-item">
+                        <a href="">
+                            <i class="fal fa-user-alt"></i>
+                            Thông tin tài khoản
+                        </a>
+                    </div>
+                    <div class="dropdown-item">
+                        <a href="">
+                            <i class="fal fa-lock-alt"></i>
+                            Đổi mật khẩu
+                        </a>
+                    </div>
+                    <div class="dropdown-item">
+                        <a href="">
+                            <i class="fal fa-sign-out"></i>
+                            Đăng xuất
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="cpanel-body">
-            <div class="cpanel-wrap p-0">
-                <ol class="cpanel-breadcrumb breadcrumb">
-                    <li class="breadcrumb-item">
-                        <a href="#"><i class="fal fa-home-alt"></i>Trang chủ</a>
-                    </li>
-                    <li class="breadcrumb-item">
-                        <a href="#">Filter</a>
-                    </li>
-                </ol>
-            </div>
             <div class="cpanel-wrap">
                 <div class="mb-2">
                     <div class="form-m1">
@@ -242,6 +255,9 @@
                     <table class="table table-bordered table-striped table-hover table-module mb-0">
                         <thead>
                         <tr>
+                            <th class="text-center">
+                                <input type="checkbox" class="mt-1 check-all" value="">
+                            </th>
                             <th class="text-center">Nhóm</th>
                             <th class="text-center">10,000đ</th>
                             <th class="text-center">20,000đ</th>
@@ -256,6 +272,9 @@
                         </thead>
                         <tbody class="text-center">
                         <tr>
+                            <td>
+                                <input type="checkbox" class="mt-1 check-only" value="">
+                            </td>
                             <td><b>Tổng đại lý</b></td>
                             <td>14%</td>
                             <td>14%</td>
@@ -268,6 +287,9 @@
                             <td>15%</td>
                         </tr>
                         <tr>
+                            <td>
+                                <input type="checkbox" class="mt-1 check-only" value="">
+                            </td>
                             <td><b>Đại lý</b></td>
                             <td>15%</td>
                             <td>15%</td>
@@ -280,6 +302,9 @@
                             <td>16%</td>
                         </tr>
                         <tr>
+                            <td>
+                                <input type="checkbox" class="mt-1 check-only" value="">
+                            </td>
                             <td><b>Thành viên</b></td>
                             <td>17%</td>
                             <td>17%</td>
@@ -293,6 +318,52 @@
                         </tr>
                         </tbody>
                     </table>
+                </div>
+                <div class="row align-items-center justify-content-between mt-3">
+                    <div class="col-sm-6 mb-2 mb-sm-0">
+                        <div class="form-m1">
+                            <div class="form">
+                                <div class="row row5 rowmb3 justify-content-center justify-content-sm-start">
+                                    <div class="col-6 col-sm-6 col-lg-4">
+                                        <select name="" class="form-control">
+                                            <option value="" selected="selected">Hành động</option>
+                                            <option value="">Xoá đã chọn</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-4 col">
+                                        <button class="btn btn-primary btn-small" type="submit">
+                                            <i class="fas fa-check-circle mr-1"></i>Thực hiện
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="section-pagination">
+                            <ul class="pagination mb-0 justify-content-center justify-content-sm-end">
+                                <li class="page-item">
+                                    <a class="page-link" href="#">
+                                        <i class="fas fa-angle-left"></i>
+                                    </a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">1</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">2</a>
+                                </li>
+                                <li class="page-item active">
+                                    <a class="page-link" href="#">3</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">
+                                        <i class="fas fa-angle-right"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
