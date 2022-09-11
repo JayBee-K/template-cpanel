@@ -71,7 +71,7 @@
                         <span class="text">Tables</span>
                     </a>
                 </li>
-                <li>
+                <li class="active">
                     <a href="./filter.html">
                         <span class="icon"><i class="fal fa-filter"></i></span>
                         <span class="text">Filter</span>
@@ -83,7 +83,7 @@
                         <span class="text">Tabs</span>
                     </a>
                 </li>
-                <li class="active">
+                <li>
                     <a href="./cards.html">
                         <span class="icon"><i class="fal fa-credit-card-front"></i></span>
                         <span class="text">Cards</span>
@@ -170,108 +170,129 @@
                         <a href="#"><i class="fal fa-home-alt"></i>Trang chủ</a>
                     </li>
                     <li class="breadcrumb-item">
-                        <a href="#">Thông báo</a>
+                        <a href="#">Filter</a>
                     </li>
                 </ol>
             </div>
-            <div class="row row-cols-xl-4 row-cols-lg-3 row-cols-1 row-cols-sm-2 row75">
-                <div class="col">
-                    <div class="cpanel-card card">
-                        <div class="card-header">
-                            <div class="card-title">
-                                Thành viên
-                            </div>
-                            <div class="ml-auto d-flex align-items-center">
-                                <span class="badge badge-module_sm badge-success ml-1">
-                                    Hôm nay&nbsp;
-                                    <span class="badge badge-light">0</span>
-                                </span>
-                                <span class="badge badge-module_sm badge-primary ml-1">
-                                    Tổng&nbsp;
-                                    <span class="badge badge-light">25</span>
-                                </span>
-                                <div class="card-button ml-1">
-                                    <button type="button" class="card-button_icon" data-toggle="collapse"
-                                            aria-expanded="true"
-                                            data-target="#card-demo-tv">
-                                        <i class="fal fa-angle-down"></i>
+            <div class="cpanel-wrap">
+                <div class="mb-2">
+                    <div class="form-m1">
+                        <form action="">
+                            <div class="row row5 rowmb3">
+                                <div class="col-lg col-md-3 col-6">
+                                    <input class="form-control" value="" name="" placeholder="Đơn hàng">
+                                </div>
+                                <div class="col-lg col-md-3 col-6">
+                                    <input class="form-control" value="" name="" placeholder="Tài khoản nhận">
+                                </div>
+                                <div class="col-lg col-md-3 col-6">
+                                    <select name="" class="form-control">
+                                        <option value="" selected="selected">Mã dịch vụ</option>
+                                        <option value="">Nạp Viettel trả sau</option>
+                                        <option value="">Nạp Viettel trả trước</option>
+                                        <option value="">Nạp Vinaphone trả trước</option>
+                                        <option value="">Nạp Vinaphone trả sau</option>
+                                        <option value="">Nạp Mobifone trả sau</option>
+                                        <option value="">Nạp Mobifone trả trước</option>
+                                        <option value="">Nạp Vietnamobile trả trước</option>
+                                        <option value="">Avatar 3</option>
+                                        <option value="">Avatar Musik</option>
+                                        <option value="">Ninja</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg col-md-3 col-6">
+                                    <select name="status" class="form-control">
+                                        <option value="" selected="selected">Trạng thái</option>
+                                        <option value="">Thành công</option>
+                                        <option value="">Chờ xử lý</option>
+                                        <option value="">Hủy bỏ</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg col-md-3 col-6">
+                                    <div class="position-relative z-index-2">
+                                        <input class="form-control" value="2022-09-10" name="" type="date">
+                                        <div class="icon-ios"><!-- Giữ lại cái này cho em nha --></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg col-md-3 col-6">
+                                    <div class="position-relative z-index-2">
+                                        <input class="form-control" name="" type="date">
+                                        <div class="icon-ios"><!-- Giữ lại cái này cho em nha --></div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md flex-lg-grow-0 d-flex align-items-center px-0">
+                                    <button class="btn btn-primary btn-small m-1 my-md-0" type="submit">
+                                        <span class="fal fa-search"></span>
+                                        Lọc
                                     </button>
+                                    <button class="btn btn-success btn-small m-1 my-md-0"
+                                            type="submit">
+                                        <i class="fas fa-file-excel"></i>
+                                    </button>
+                                    <a class="btn btn-danger btn-small m-1 my-md-0">
+                                        <i class="fa fa-trash"></i>
+                                        Bỏ lọc
+                                    </a>
                                 </div>
                             </div>
-                        </div>
-                        <div class="collapse show" id="card-demo-tv">
-                            <div class="card-body">
-                                <ul class="list-unstyled mb-0 cpanel-list">
-                                    <li class="cpanel-list_item">
-                                        <p>
-                                            <a href="" class="text-uppercase font-weight-bold">Nạp thẻ 365</a> (VN) | 2FA: Mkc2
-                                        </p>
-                                        <p class="text-13px">
-                                            <i class="fas fa-envelope text-danger"></i>
-                                            imchicktkdz@gmail.com
-                                        </p>
-                                        <p class="text-13px">
-                                            <i class="fas fa-phone-alt text-success"></i>
-                                            0922 442 005
-                                        </p>
-                                    </li>
-                                    <li class="cpanel-list_item">
-                                        <p>
-                                            <a href="" class="text-uppercase font-weight-bold">Nạp thẻ 365</a> (VN) | 2FA: Mkc2
-                                        </p>
-                                        <p class="text-13px">
-                                            <i class="fas fa-envelope text-danger"></i>
-                                            imchicktkdz@gmail.com
-                                        </p>
-                                        <p class="text-13px">
-                                            <i class="fas fa-phone-alt text-success"></i>
-                                            0922 442 005
-                                        </p>
-                                    </li>
-                                    <li class="cpanel-list_item">
-                                        <p>
-                                            <a href="" class="text-uppercase font-weight-bold">Nạp thẻ 365</a> (VN) | 2FA: Mkc2
-                                        </p>
-                                        <p class="text-13px">
-                                            <i class="fas fa-envelope text-danger"></i>
-                                            imchicktkdz@gmail.com
-                                        </p>
-                                        <p class="text-13px">
-                                            <i class="fas fa-phone-alt text-success"></i>
-                                            0922 442 005
-                                        </p>
-                                    </li>
-                                    <li class="cpanel-list_item">
-                                        <p>
-                                            <a href="" class="text-uppercase font-weight-bold">Nạp thẻ 365</a> (VN) | 2FA: Mkc2
-                                        </p>
-                                        <p class="text-13px">
-                                            <i class="fas fa-envelope text-danger"></i>
-                                            imchicktkdz@gmail.com
-                                        </p>
-                                        <p class="text-13px">
-                                            <i class="fas fa-phone-alt text-success"></i>
-                                            0922 442 005
-                                        </p>
-                                    </li>
-                                    <li class="cpanel-list_item">
-                                        <p>
-                                            <a href="" class="text-uppercase font-weight-bold">Nạp thẻ 365</a>
-                                            (VN) | 2FA: Mkc2
-                                        </p>
-                                        <p class="text-13px">
-                                            <i class="fas fa-envelope text-danger"></i>
-                                            imchicktkdz@gmail.com
-                                        </p>
-                                        <p class="text-13px">
-                                            <i class="fas fa-phone-alt text-success"></i>
-                                            0922 442 005
-                                        </p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+                        </form>
                     </div>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-bordered table-striped table-hover table-module mb-0">
+                        <thead>
+                        <tr>
+                            <th class="text-center">Nhóm</th>
+                            <th class="text-center">10,000đ</th>
+                            <th class="text-center">20,000đ</th>
+                            <th class="text-center">30,000đ</th>
+                            <th class="text-center">50,000đ</th>
+                            <th class="text-center">100,000đ</th>
+                            <th class="text-center">200,000đ</th>
+                            <th class="text-center">300,000đ</th>
+                            <th class="text-center">500,000đ</th>
+                            <th class="text-center">1,000,000đ</th>
+                        </tr>
+                        </thead>
+                        <tbody class="text-center">
+                        <tr>
+                            <td><b>Tổng đại lý</b></td>
+                            <td>14%</td>
+                            <td>14%</td>
+                            <td>14%</td>
+                            <td>12%</td>
+                            <td>12%</td>
+                            <td>13%</td>
+                            <td>13%</td>
+                            <td>15%</td>
+                            <td>15%</td>
+                        </tr>
+                        <tr>
+                            <td><b>Đại lý</b></td>
+                            <td>15%</td>
+                            <td>15%</td>
+                            <td>15%</td>
+                            <td>13%</td>
+                            <td>13%</td>
+                            <td>14%</td>
+                            <td>14%</td>
+                            <td>16%</td>
+                            <td>16%</td>
+                        </tr>
+                        <tr>
+                            <td><b>Thành viên</b></td>
+                            <td>17%</td>
+                            <td>17%</td>
+                            <td>17%</td>
+                            <td>15%</td>
+                            <td>15%</td>
+                            <td>16%</td>
+                            <td>16%</td>
+                            <td>18%</td>
+                            <td>18%</td>
+                        </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>

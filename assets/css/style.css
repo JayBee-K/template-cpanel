@@ -9,8 +9,8 @@
     --gray-200: #e5e7eb;
     --gray-100: #f3f4f6;
 
-    --shadow-primary: 0 2px 8px 0 rgb(0 0 0 / 10%);
-    --shadow-hover: 0 2px 8px 0 rgb(0 0 0 / 20%);
+    --shadow-primary: 0 1px 2px 0 rgb(0 0 0 / 10%);
+    --shadow-hover: 0 1px 2px 0 rgb(0 0 0 / 20%);
 
     --transition-default: .3s all ease-in-out;
     --font-theme: "Roboto", Arial, Helvetica, sans-serif;
@@ -28,6 +28,7 @@ body {
     font-size: 14px;
     font-weight: 400;
     font-style: normal;
+    line-height: 1.2;
 }
 
 a, a:hover, a:focus {
@@ -146,6 +147,16 @@ h6, .h6 {
 
 .row5 > [class*=col] {
     padding: 5px;
+}
+
+.row75 {
+    margin-top: -7.5px;
+    margin-left: -7.5px;
+    margin-right: -7.5px;
+}
+
+.row75 > [class*=col] {
+    padding: 7.5px;
 }
 
 .row10 {
@@ -746,6 +757,12 @@ h6, .h6 {
     padding-top: 4px;
 }
 
+.badge-module_sm {
+    padding: 0.35em 0.5em;
+    border-radius: 3px;
+    font-size: 11px;
+}
+
 /***** End Custom Label *****/
 
 /***** Custom Tables *****/
@@ -1095,7 +1112,7 @@ h6, .h6 {
 .template-cpanel .cpanel-sidebar .sidebar-body .sidebar-body_menu > li > a {
     font-size: 15px;
     color: var(--gray-100);
-    line-height: 42px;
+    line-height: 38px;
     display: flex;
     align-items: center;
     padding-left: 20px;
@@ -1154,7 +1171,7 @@ h6, .h6 {
 .template-cpanel .cpanel-sidebar .sidebar-body .sidebar-body_menu > li > ul > li > a {
     font-size: 13px;
     color: var(--gray-300);
-    line-height: 38px;
+    line-height: 32px;
     display: flex;
     align-items: center;
     padding-left: 45px;
@@ -1168,7 +1185,7 @@ h6, .h6 {
 
 .template-cpanel .cpanel-wrap {
     background-color: white;
-    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 10%);
+    box-shadow: var(--shadow-primary);
     margin-bottom: 15px;
     padding: 15px;
 }
@@ -1244,7 +1261,7 @@ h6, .h6 {
     .template-cpanel .cpanel-header {
         display: flex;
         background-color: var(--template-color);
-        box-shadow: 0 1px 4px 0 rgb(0 0 0 / 5%);
+        box-shadow: var(--shadow-hover);
         position: relative;
         z-index: 2;
         padding: 15px 15px 15px 55px;
@@ -1331,4 +1348,120 @@ h6, .h6 {
     .template-cpanel .cpanel-main {
         padding-left: 0;
     }
+}
+
+.cpanel-statistical {
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: var(--shadow-primary);
+    background-color: var(--white);
+    height: 100%;
+}
+
+.cpanel-statistical .cpanel-statistical_icon {
+    width: 60px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-size: 24px;
+}
+
+.cpanel-statistical .cpanel-statistical_content {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+    padding: 10px 15px;
+}
+
+.cpanel-statistical .cpanel-statistical_content .cpanel-statistical_content-text {
+    font-size: 13px;
+    color: var(--gray-600);
+    margin-bottom: 5px;
+}
+
+.cpanel-statistical .cpanel-statistical_content .cpanel-statistical_content-value {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--gray-900);
+}
+
+@media screen and (max-width: 1024px) {
+    .cpanel-statistical .cpanel-statistical_icon {
+        font-size: 20px;
+    }
+
+    .cpanel-statistical .cpanel-statistical_content .cpanel-statistical_content-value {
+        font-size: 15px;
+    }
+}
+
+.cpanel-card {
+    border: 0;
+    border-radius: 3px;
+    background-color: var(--white);
+    box-shadow: var(--shadow-primary);
+}
+
+.cpanel-card .card-header {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid var(--gray-100);
+}
+
+.cpanel-card .card-header .card-title {
+    margin-bottom: 0;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--gray-900);
+}
+
+.cpanel-card .card-header .card-button {
+    margin-right: -5px;
+}
+
+.cpanel-card .card-header .card-button .card-button_icon {
+    border: 0;
+    padding: 0;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: var(--gray-400);
+    transition: var(--transition-default);
+    font-size: 15px;
+}
+
+.cpanel-card .card-header .card-button .card-button_icon:hover {
+    color: var(--gray-800);
+}
+
+.cpanel-card .card-header .card-button .card-button_icon[aria-expanded=false] {
+    transform: rotate(180deg);
+}
+
+.cpanel-card .card-body {
+    padding: 10px;
+}
+
+.cpanel-list .cpanel-list_item {
+    font-size: 13px;
+}
+
+.cpanel-list .cpanel-list_item p:last-child {
+    margin-bottom: 0;
+}
+
+.cpanel-list .cpanel-list_item + .cpanel-list_item {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid var(--gray-100);
 }
