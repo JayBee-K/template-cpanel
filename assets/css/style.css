@@ -1142,7 +1142,7 @@ h6, .h6 {
 	display: flex;
 	align-items: center;
 	padding-left: 20px;
-	border-left: 2px solid transparent;
+	/*border-left: 2px solid transparent;*/
 }
 
 .template-cpanel .cpanel-sidebar .sidebar-body .sidebar-body_menu > li > a > .icon {
@@ -1151,12 +1151,29 @@ h6, .h6 {
 	font-size: var(--size-theme);
 }
 
-.template-cpanel .cpanel-sidebar .sidebar-body .sidebar-body_menu > li.active > a,
 .template-cpanel .cpanel-sidebar .sidebar-body .sidebar-body_menu > li:hover > a,
 .template-cpanel .cpanel-sidebar .sidebar-body .sidebar-body_menu > li > a[aria-expanded=true] {
-	border-left-color: var(--primary-color);
-	color: var(--white);
-	background-color: var(--template-hover);
+	/*border-left-color: var(--primary-color);*/
+	box-shadow: inset 4px 0 0 0 var(--primary-color);
+	color: var(--primary-color);
+	/*background-color: var(--template-hover);*/
+}
+
+.template-cpanel .cpanel-sidebar .sidebar-body .sidebar-body_menu > li.active > a {
+	background-color: var(--primary-color);
+	color: #fff;
+}
+
+.template-cpanel .cpanel-sidebar .sidebar-body .sidebar-body_menu > li.active:hover > a {
+	background-color: var(--primary-color);
+	color: #fff;
+	box-shadow: inset 4px 0 0 0 var(--white);
+}
+
+.template-cpanel .cpanel-sidebar .sidebar-body .sidebar-body_menu > li.active > a .icon,
+.template-cpanel .cpanel-sidebar .sidebar-body .sidebar-body_menu > li:hover > a .icon,
+.template-cpanel .cpanel-sidebar .sidebar-body .sidebar-body_menu > li > a[aria-expanded=true] .icon {
+	opacity: 1;
 }
 
 .template-cpanel .cpanel-sidebar .sidebar-body .sidebar-body_menu > li > a[data-toggle=collapse] {
@@ -1198,7 +1215,7 @@ h6, .h6 {
 	line-height: 32px;
 	display: flex;
 	align-items: center;
-	padding-left: 25px;
+	padding-left: 23px;
 }
 
 .template-cpanel .cpanel-sidebar .sidebar-body .sidebar-body_menu > li > ul > li > a > .icon {
@@ -1207,10 +1224,30 @@ h6, .h6 {
 	font-size: 15px;
 }
 
-.template-cpanel .cpanel-sidebar .sidebar-body .sidebar-body_menu > li > ul > li:hover > a,
+/*.template-cpanel .cpanel-sidebar .sidebar-body .sidebar-body_menu > li > ul > li:hover > a,*/
+/*.template-cpanel .cpanel-sidebar .sidebar-body .sidebar-body_menu > li > ul > li.active > a {*/
+/*	background-color: rgba(0, 0, 0, 0.1);*/
+/*	color: var(--white);*/
+/*}*/
+
+.template-cpanel .cpanel-sidebar .sidebar-body .sidebar-body_menu > li > ul > li:hover > a {
+	/*border-left-color: var(--primary-color);*/
+	box-shadow: inset 4px 0 0 0 var(--primary-color);
+	color: var(--primary-color);
+	/*background-color: rgba(0, 0, 0, 0.1)*/
+}
+
 .template-cpanel .cpanel-sidebar .sidebar-body .sidebar-body_menu > li > ul > li.active > a {
-	background-color: rgba(0, 0, 0, 0.1);
 	color: var(--white);
+}
+
+.template-cpanel .cpanel-sidebar .sidebar-body .sidebar-body_menu > li > ul > li.active:hover > a {
+	box-shadow: inset 4px 0 0 0 var(--white);
+}
+
+.template-cpanel .cpanel-sidebar .sidebar-body .sidebar-body_menu > li > ul > li.active > a .icon,
+.template-cpanel .cpanel-sidebar .sidebar-body .sidebar-body_menu > li > ul > li:hover > a .icon {
+	opacity: 1;
 }
 
 .template-cpanel .cpanel-wrap {
@@ -1605,7 +1642,7 @@ h6, .h6 {
 }
 
 .cpanel-statistical_m1 .card-body {
-	padding: 10px 10px 0;
+	padding: 5px 10px 0;
 }
 
 .cpanel-statistical_m1 .card-body .card-title {
@@ -1619,6 +1656,12 @@ h6, .h6 {
 	font-size: 24px;
 	font-weight: 400;
 	color: var(--gray-700);
+}
+
+@media screen and (max-width: 991px) {
+	.cpanel-statistical_m1 .card-body .card-text {
+		font-size: 17.5px;
+	}
 }
 
 .cpanel-card {
