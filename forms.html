@@ -77,14 +77,31 @@
             <a class="cpanel-header_logo" href="/">
                 <img src="./assets/images/logo.svg" height="16" width="90" class="img-fluid" alt="">
             </a>
-            <ol class="cpanel-breadcrumb breadcrumb">
-                <li class="breadcrumb-item">
-                    <a href="#"><i class="fal fa-home-alt"></i>Trang chủ</a>
-                </li>
-                <li class="breadcrumb-item">
-                    <a href="#">Form</a>
-                </li>
-            </ol>
+            <div class="cpanel-header_navigation">
+                <ul class="list-unstyled mb-0">
+                    <li>
+                        <a href="">Trang chủ</a>
+                    </li>
+                    <li>
+                        <a href="">Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="">Liên kết nhanh</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="cpanel-header_search">
+                <div class="form-m1">
+                    <form action="">
+                        <div class="position-relative form-icon form-icon_right">
+                            <input type="text" class="form-control" placeholder="Từ khoá tìm kiếm...">
+                            <button type="submit" class="form-button">
+                                <i class="fal fa-search"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
             <div class="cpanel-header_user">
                 <button type="button" class="header-user_button">
                     <img src="https://coreui.io/demos/bootstrap/4.2/default/assets/img/avatars/8.jpg" alt="">
@@ -114,114 +131,149 @@
         </div>
         <div class="cpanel-body">
             <div class="row">
+                <div class="col-12">
+                    <div class="cpanel-heading">
+                        <div class="cpanel-heading_wrap">
+                            <div class="heading-title">
+                                Dashboard
+                            </div>
+                            <div class="heading-button">
+                                <a href="" class="btn btn-light btn-link font-weight-bold">Add new</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
                 <div class="col-md-8 col-lg-6">
                     <div class="cpanel-wrap">
                         <div class="form-m1">
                             <form action="">
-                                <div class="row row10 rowmb5">
+                                <div class="row row5">
                                     <div class="col-lg-4">
-                                        <div class="row row5">
+                                        <div class="row no-gutters align-items-center">
                                             <label for=""
-                                                   class="col-form-label font-weight-bold col-lg-12 col-4 px-0">
+                                                   class="col-form-label font-weight-bold px-0 py-0 pb-lg-1 col-lg-12 col-5">
                                                 Tên đăng nhập:
                                             </label>
-                                            <input type="text" class="form-control col-lg-12 col-8"
-                                                   placeholder="Tên đăng nhập">
+                                            <div class="px-0 col-lg-12 col-7">
+                                                <input type="text" class="form-control"
+                                                       placeholder="Tên đăng nhập">
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="col-lg-4">
-                                        <div class="row row5">
+                                        <div class="row no-gutters align-items-center">
                                             <label for=""
-                                                   class="col-form-label font-weight-bold col-lg-12 col-4 px-0">
+                                                   class="col-form-label font-weight-bold px-0 py-0 pb-lg-1 col-lg-12 col-5">
                                                 Họ & tên:
                                             </label>
-                                            <input type="text" class="form-control col-lg-12 col-8"
-                                                   placeholder="Họ & tên">
+                                            <div class="px-0 col-lg-12 col-7">
+                                                <input type="text" class="form-control"
+                                                       placeholder="Họ & tên">
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="col-lg-4">
-                                        <div class="row row5">
+                                        <div class="row no-gutters align-items-center">
                                             <label for=""
-                                                   class="col-form-label font-weight-bold col-lg-12 col-4 px-0">
+                                                   class="col-form-label font-weight-bold px-0 py-0 pb-lg-1 col-lg-12 col-5">
                                                 Email:
                                             </label>
-                                            <input type="text" class="form-control col-lg-12 col-8"
-                                                   placeholder="Email">
+                                            <div class="px-0 col-lg-12 col-7">
+                                                <input type="text" class="form-control"
+                                                       placeholder="Email">
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="col-lg-4">
-                                        <div class="row row5">
+                                        <div class="row no-gutters align-items-center">
                                             <label for=""
-                                                   class="col-form-label font-weight-bold col-lg-12 col-4 px-0">
+                                                   class="col-form-label font-weight-bold px-0 py-0 pb-lg-1 col-lg-12 col-5">
                                                 Số điện thoại:
                                             </label>
-                                            <input type="text" class="form-control col-lg-12 col-8"
-                                                   placeholder="Số điện thoại">
+                                            <div class="px-0 col-lg-12 col-7">
+                                                <input type="text" class="form-control"
+                                                       placeholder="Số điện thoại">
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="col-lg-4">
-                                        <div class="row row5">
+                                        <div class="row no-gutters align-items-center">
                                             <label for=""
-                                                   class="col-form-label font-weight-bold col-lg-12 col-4 px-0">
+                                                   class="col-form-label font-weight-bold px-0 py-0 pb-lg-1 col-lg-12 col-5">
                                                 Giới tính:
                                             </label>
-                                            <select name="" class="form-control col-lg-12 col-8" id="">
-                                                <option value="">--- Chọn giới tính ---</option>
-                                                <option value="">Nam</option>
-                                                <option value="">Nữ</option>
-                                            </select>
+                                            <div class="px-0 col-lg-12 col-7">
+                                                <select name="" class="form-control" id="">
+                                                    <option value="">--- Chọn giới tính ---</option>
+                                                    <option value="">Nam</option>
+                                                    <option value="">Nữ</option>
+                                                </select>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="col-lg-4">
-                                        <div class="row row5">
+                                        <div class="row no-gutters align-items-center">
                                             <label for=""
-                                                   class="col-form-label font-weight-bold col-lg-12 col-4 px-0">
+                                                   class="col-form-label font-weight-bold px-0 py-0 pb-lg-1 col-lg-12 col-5">
                                                 Nhóm:
                                             </label>
-                                            <select name="" class="form-control col-lg-12 col-8" id="">
-                                                <option value="">Guest</option>
-                                                <option value="">Đại lí</option>
-                                                <option value="">Thành viên</option>
-                                            </select>
+                                            <div class="px-0 col-lg-12 col-7">
+                                                <select name="" class="form-control" id="">
+                                                    <option value="">Guest</option>
+                                                    <option value="">Đại lí</option>
+                                                    <option value="">Thành viên</option>
+                                                </select>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="col-lg-4">
-                                        <div class="row row5">
+                                        <div class="row no-gutters align-items-center">
                                             <label for=""
-                                                   class="col-form-label font-weight-bold col-lg-12 col-4 px-0">
+                                                   class="col-form-label font-weight-bold px-0 py-0 pb-lg-1 col-lg-12 col-5">
                                                 Mật khẩu:
                                             </label>
-                                            <input type="password" class="form-control col-lg-12 col-8">
+                                            <div class="px-0 col-lg-12 col-7">
+                                                <input type="password" class="form-control">
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="col-lg-4">
-                                        <div class="row row5">
+                                        <div class="row no-gutters align-items-center">
                                             <label for=""
-                                                   class="col-form-label font-weight-bold col-lg-12 col-4 px-0">
+                                                   class="col-form-label font-weight-bold px-0 py-0 pb-lg-1 col-lg-12 col-5">
                                                 Nhập lại mật khẩu:
                                             </label>
-                                            <input type="password" class="form-control col-lg-12 col-8">
+                                            <div class="px-0 col-lg-12 col-7">
+                                                <input type="password" class="form-control">
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="col-lg-4">
-                                        <div class="row row5">
+                                        <div class="row no-gutters align-items-center">
                                             <label for=""
-                                                   class="col-form-label font-weight-bold col-lg-12 col-4 px-0">
+                                                   class="col-form-label font-weight-bold px-0 py-0 pb-lg-1 col-lg-12 col-5">
                                                 Vai trò:
                                             </label>
-                                            <select name="" class="form-control col-lg-12 col-8" id="">
-                                                <option value="">Backend</option>
-                                                <option value="">Super Admin</option>
-                                                <option value="">User</option>
-                                                <option value="">Seller</option>
-                                            </select>
+                                            <div class="px-0 col-lg-12 col-7">
+                                                <select name="" class="form-control" id="">
+                                                    <option value="">Backend</option>
+                                                    <option value="">Super Admin</option>
+                                                    <option value="">User</option>
+                                                    <option value="">Seller</option>
+                                                </select>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-6 px-0">
+                                    <div class="col-lg-6">
                                         <div class="custom-control custom-switch switch-module switch-module_text">
                                             <input type="checkbox" class="custom-control-input" id="customSwitch1">
-                                            <label class="custom-control-label" for="customSwitch1">Toggle this switch
-                                                element</label>
+                                            <label class="custom-control-label" for="customSwitch1">
+                                                <span class="ml-1">Toggle this switch
+                                                    element
+                                                </span>
+                                            </label>
                                         </div>
                                     </div>
                                 </div>

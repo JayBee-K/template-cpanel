@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <title>Template Cpanel</title>
+    <meta name="description" content="Template Cpanel">
+    <meta name="author" content="">
+
+    <meta property="og:title" content="Template Cpanel">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:description" content="Template Cpanel">
+    <meta property="og:image" content="">
+
+    <link rel="icon" href="/assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="/assets/images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/plugins/select2/css/select2.min.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <style>
+        :root {
+            --template-color: #3c444d;
+            --template-hover: #2c3138;
+
+            --primary-color: #20a53a;
+            --primary-hover: #10952a;
+            --primary-rgb: 32, 165, 58;
+        }
+    </style>
+</head>
+<body>
+<div class="template-cpanel" id="template-cpanel">
+    <div class="cpanel-overlay" id="cpanel-overlay"></div>
+    <div class="cpanel-sidebar">
+        <div class="sidebar-header">
+            <a href="/">
+                <img src="./assets/images/logo.svg" height="16" width="90" class="img-fluid" alt="">
+            </a>
+        </div>
+        <div class="sidebar-body">
+            <ul class="sidebar-body_menu" id="sidebar-menu">
+                <li>
+                    <a href="./index.html">
+                        <span class="icon"><i class="fal fa-home-alt"></i></span>
+                        <span class="text">Trang chủ</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./danh-sach-nap.html">
+                        <span class="icon"><i class="fal fa-credit-card"></i></span>
+                        <span class="text">Danh sách nạp</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="#collapse-user" data-toggle="collapse" aria-expanded="true">
+                        <span class="icon"><i class="fal fa-user-alt"></i></span>
+                        <span class="text">Users</span>
+                        <span class="arrow">
+                            <i class="fal fa-angle-down"></i>
+                        </span>
+                    </a>
+                    <ul id="collapse-user" class="collapse show" data-parent="#sidebar-menu">
+                        <li>
+                            <a href="./danh-sach-user.html">
+                                <span class="icon"><i class="fal fa-angle-right"></i></span>
+                                <span class="text">
+                                    Danh sách users
+                                </span>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="./them-user.html">
+                                <span class="icon"><i class="fal fa-angle-right"></i></span>
+                                <span class="text">
+                                    Thêm user
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#collapse-tintuc" data-toggle="collapse">
+                        <span class="icon"><i class="fal fa-newspaper"></i></span>
+                        <span class="text">Tin tức</span>
+                        <span class="arrow">
+                            <i class="fal fa-angle-down"></i>
+                        </span>
+                    </a>
+                    <ul id="collapse-tintuc" class="collapse" data-parent="#sidebar-menu">
+                        <li>
+                            <a href="./danh-sach-tin-tuc.html">
+                                <span class="icon"><i class="fal fa-angle-right"></i></span>
+                                <span class="text">
+                                    Danh sách tin tuc
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./them-tin-tuc.html">
+                                <span class="icon"><i class="fal fa-angle-right"></i></span>
+                                <span class="text">
+                                    Thêm tin tức
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="cpanel-main">
+        <div class="cpanel-header">
+            <div class="cpanel-header_hamburger" id="call-sidebar">
+                <span></span>
+            </div>
+            <a class="cpanel-header_logo" href="/">
+                <img src="./assets/images/logo.svg" height="16" width="90" class="img-fluid" alt="">
+            </a>
+            <div class="cpanel-header_navigation">
+                <ul class="list-unstyled mb-0">
+                    <li>
+                        <a href="">Trang chủ</a>
+                    </li>
+                    <li>
+                        <a href="">Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="">Liên kết nhanh</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="cpanel-header_search">
+                <div class="form-m1">
+                    <form action="">
+                        <div class="position-relative form-icon form-icon_right">
+                            <input type="text" class="form-control" placeholder="Từ khoá tìm kiếm...">
+                            <button type="submit" class="form-button">
+                                <i class="fal fa-search"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="cpanel-header_user">
+                <button type="button" class="header-user_button">
+                    <img src="https://coreui.io/demos/bootstrap/4.2/default/assets/img/avatars/8.jpg" alt="">
+                    Admin
+                </button>
+                <div class="header-user_dropdown">
+                    <div class="dropdown-item">
+                        <a href="">
+                            <i class="fal fa-user-alt"></i>
+                            Thông tin tài khoản
+                        </a>
+                    </div>
+                    <div class="dropdown-item">
+                        <a href="">
+                            <i class="fal fa-lock-alt"></i>
+                            Đổi mật khẩu
+                        </a>
+                    </div>
+                    <div class="dropdown-item">
+                        <a href="">
+                            <i class="fal fa-sign-out"></i>
+                            Đăng xuất
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cpanel-body">
+            <div class="row">
+                <div class="col-12">
+                    <div class="cpanel-heading">
+                        <div class="cpanel-heading_wrap">
+                            <div class="heading-title">
+                                Thêm users
+                            </div>
+                        </div>
+                        <div class="cpanel-heading_links">
+                            <a href="">
+                                <i class="fas fa-home-alt"></i>
+                                Tất cả
+                            </a>
+                            <a href="">
+                                <i class="fas fa-user-alt"></i>
+                                Quản trị viên
+                            </a>
+                            <a href="">
+                                <i class="fas fa-plus"></i>
+                                Thêm mới
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cpanel-wrap">
+                <div class="form-m1">
+                    <form action="">
+                        <div class="row row5 row-mb_nospacing">
+                            <div class="col-lg-6">
+                                <div class="position-relative">
+                                    <label for=""
+                                           class="col-form-label font-weight-bold">
+                                        Tên đăng nhập:
+                                    </label>
+                                    <input type="text" class="form-control"
+                                           placeholder="Tên đăng nhập">
+                                </div>
+                                <div class="position-relative">
+                                    <label for=""
+                                           class="col-form-label font-weight-bold">
+                                        Họ & tên:
+                                    </label>
+                                    <input type="text" class="form-control"
+                                           placeholder="Họ & tên">
+                                </div>
+                                <div class="position-relative">
+                                    <label for=""
+                                           class="col-form-label font-weight-bold">
+                                        Email:
+                                    </label>
+                                    <input type="text" class="form-control"
+                                           placeholder="Email">
+                                </div>
+                                <div class="position-relative">
+                                    <label for=""
+                                           class="col-form-label font-weight-bold">
+                                        Số điện thoại:
+                                    </label>
+                                    <input type="text" class="form-control"
+                                           placeholder="Số điện thoại">
+                                </div>
+                                <div class="position-relative">
+                                    <label for=""
+                                           class="col-form-label font-weight-bold">
+                                        Giới tính:
+                                    </label>
+                                    <select name="" class="form-control" id="">
+                                        <option value="">--- Chọn giới tính ---</option>
+                                        <option value="">Nam</option>
+                                        <option value="">Nữ</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="position-relative">
+                                    <div class="row no-gutters align-items-center">
+                                        <label for=""
+                                               class="col-form-label font-weight-bold">
+                                            Nhóm:
+                                        </label>
+                                        <select name="" class="form-control" id="">
+                                            <option value="">Guest</option>
+                                            <option value="">Đại lí</option>
+                                            <option value="">Thành viên</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="position-relative">
+                                    <label for=""
+                                           class="col-form-label font-weight-bold">
+                                        Vai trò:
+                                    </label>
+                                    <select name="" class="form-control initSelect2" multiple id="">
+                                        <option value="">Backend</option>
+                                        <option value="">Super Admin</option>
+                                        <option value="">User</option>
+                                        <option value="">Seller</option>
+                                    </select>
+                                </div>
+                                <div class="position-relative">
+                                    <label for=""
+                                           class="col-form-label font-weight-bold">
+                                        Mật khẩu:
+                                    </label>
+                                    <input type="password" class="form-control">
+                                </div>
+                                <div class="position-relative">
+                                    <label for=""
+                                           class="col-form-label font-weight-bold">
+                                        Nhập lại mật khẩu:
+                                    </label>
+                                    <input type="password" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <button type="submit"
+                                    class="btn btn-primary btn-default">
+                                Tạo mới
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="cpanel-footer">
+            <div class="cpanel-wrap">
+                <div class="text-center">
+                    Template Cpanel v1 - Design by Nencer <span class="px-2">-</span>
+                    <a href="./">Tài liệu</a>
+                    <span class="px-2">-</span>
+                    <a href="tel:0333851915">Liên hệ</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type=" text/javascript" src="./assets/plugins/jquery.min.js"></script>
+<script type="text/javascript"
+        src="./assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/select2/js/select2.min.js"></script>
+<script type="text/javascript" src="./assets/js/app.js"></script>
+</body>
+</html>

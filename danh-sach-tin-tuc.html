@@ -32,7 +32,7 @@
             --template-hover: #2c3138;
 
             --primary-color: #20a53a;
-            --primary-hover: #045414;
+            --primary-hover: #10952a;
             --primary-rgb: 32, 165, 58;
         }
     </style>
@@ -55,16 +55,64 @@
                     </a>
                 </li>
                 <li>
-                    <a href="./forms.html">
-                        <span class="icon"><i class="fal fa-list-alt"></i></span>
-                        <span class="text">Forms</span>
+                    <a href="./danh-sach-nap.html">
+                        <span class="icon"><i class="fal fa-credit-card"></i></span>
+                        <span class="text">Danh sách nạp</span>
                     </a>
                 </li>
-                <li class="active">
-                    <a href="./filter.html">
-                        <span class="icon"><i class="fal fa-filter"></i></span>
-                        <span class="text">Filter</span>
+                <li>
+                    <a href="#collapse-user" data-toggle="collapse">
+                        <span class="icon"><i class="fal fa-user-alt"></i></span>
+                        <span class="text">Users</span>
+                        <span class="arrow">
+                            <i class="fal fa-angle-down"></i>
+                        </span>
                     </a>
+                    <ul id="collapse-user" class="collapse" data-parent="#sidebar-menu">
+                        <li>
+                            <a href="./danh-sach-user.html">
+                                <span class="icon"><i class="fal fa-angle-right"></i></span>
+                                <span class="text">
+                                    Danh sách users
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./them-user.html">
+                                <span class="icon"><i class="fal fa-angle-right"></i></span>
+                                <span class="text">
+                                    Thêm user
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href="#collapse-tintuc" data-toggle="collapse" aria-expanded="true">
+                        <span class="icon"><i class="fal fa-newspaper"></i></span>
+                        <span class="text">Tin tức</span>
+                        <span class="arrow">
+                            <i class="fal fa-angle-down"></i>
+                        </span>
+                    </a>
+                    <ul id="collapse-tintuc" class="collapse show" data-parent="#sidebar-menu">
+                        <li class="active">
+                            <a href="./danh-sach-tin-tuc.html">
+                                <span class="icon"><i class="fal fa-angle-right"></i></span>
+                                <span class="text">
+                                    Danh sách tin tuc
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./them-tin-tuc.html">
+                                <span class="icon"><i class="fal fa-angle-right"></i></span>
+                                <span class="text">
+                                    Thêm tin tức
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
                 </li>
             </ul>
         </div>
@@ -135,30 +183,12 @@
                     <div class="cpanel-heading">
                         <div class="cpanel-heading_wrap">
                             <div class="heading-title">
-                                Dashboard
+                                Danh sách tin tức
                             </div>
-                        </div>
-                        <div class="cpanel-heading_links">
-                            <a href="">
-                                <i class="fas fa-home-alt"></i>
-                                TRANG CHÍNH
-                            </a>
-                            <a href="">
-                                <i class="fas fa-plus"></i>
-                                MẠNG
-                            </a>
-                            <a href="">
-                                <i class="fas fa-paper-plane"></i>
-                                CÚ PHÁP
-                            </a>
-                            <a href="">
-                                <i class="fas fa-check-circle"></i>
-                                NCC
-                            </a>
-                            <a href="">
-                                <i class="fas fa-cog"></i>
-                                CẤU HÌNH
-                            </a>
+                            <div class="heading-button">
+                                <a href="./them-tin-tuc.html" class="btn btn-light btn-link font-weight-bold">Add new
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -169,32 +199,16 @@
                         <form action="">
                             <div class="row row5 rowmb3">
                                 <div class="col-lg col-md-3 col-6">
-                                    <input class="form-control" value="" name="" placeholder="Đơn hàng">
+                                    <input class="form-control" value="" name="" placeholder="Tên tin tức">
                                 </div>
                                 <div class="col-lg col-md-3 col-6">
-                                    <input class="form-control" value="" name="" placeholder="Tài khoản nhận">
+                                    <input class="form-control" value="" name="" placeholder="Tác giả">
                                 </div>
                                 <div class="col-lg col-md-3 col-6">
                                     <select name="" class="form-control">
-                                        <option value="" selected="selected">Mã dịch vụ</option>
-                                        <option value="">Nạp Viettel trả sau</option>
-                                        <option value="">Nạp Viettel trả trước</option>
-                                        <option value="">Nạp Vinaphone trả trước</option>
-                                        <option value="">Nạp Vinaphone trả sau</option>
-                                        <option value="">Nạp Mobifone trả sau</option>
-                                        <option value="">Nạp Mobifone trả trước</option>
-                                        <option value="">Nạp Vietnamobile trả trước</option>
-                                        <option value="">Avatar 3</option>
-                                        <option value="">Avatar Musik</option>
-                                        <option value="">Ninja</option>
-                                    </select>
-                                </div>
-                                <div class="col-lg col-md-3 col-6">
-                                    <select name="status" class="form-control">
-                                        <option value="" selected="selected">Trạng thái</option>
-                                        <option value="">Thành công</option>
-                                        <option value="">Chờ xử lý</option>
-                                        <option value="">Hủy bỏ</option>
+                                        <option value="" selected="selected">Ngôn ngữ</option>
+                                        <option value="">Tiếng Việt</option>
+                                        <option value="">Tiếng Anh</option>
                                     </select>
                                 </div>
                                 <div class="col-lg col-md-3 col-6">
@@ -203,16 +217,10 @@
                                         <div class="icon-ios"><!-- Giữ lại cái này cho em nha --></div>
                                     </div>
                                 </div>
-                                <div class="col-lg col-md-3 col-6">
-                                    <div class="position-relative z-index-2">
-                                        <input class="form-control" name="" type="date">
-                                        <div class="icon-ios"><!-- Giữ lại cái này cho em nha --></div>
-                                    </div>
-                                </div>
                                 <div class="col-12 col-md flex-lg-grow-0 d-flex align-items-center px-0">
                                     <button class="btn btn-primary btn-small m-1 my-md-0" type="submit">
                                         <span class="fal fa-search"></span>
-                                        Lọc
+                                        Tìm kiếm
                                     </button>
                                     <button class="btn btn-success btn-small m-1 my-md-0"
                                             type="submit">
@@ -234,15 +242,13 @@
                             <th class="text-center">
                                 <input type="checkbox" class="mt-1 check-all" value="">
                             </th>
-                            <th class="text-center">Mã đơn</th>
-                            <th class="text-center">Khách hàng</th>
-                            <th class="text-center">Sản phẩm</th>
-                            <th class="text-center">Thành tiền</th>
-                            <th class="text-center">Giao dịch</th>
+                            <th>Tên tin tức</th>
+                            <th>Tác giả</th>
+                            <th>Ngôn ngữ</th>
+                            <th class="text-center">Lượt xem</th>
                             <th class="text-center">Trạng thái</th>
-                            <th class="text-center">Ngày tạo</th>
-                            <th class="text-center">Switch</th>
-                            <th class="text-center">Hành động</th>
+                            <th class="text-center">Ngày đăng</th>
+                            <th class="text-center">Thao tác</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -250,40 +256,187 @@
                             <td class="text-center">
                                 <input type="checkbox" class="mt-1 check-only" value="">
                             </td>
-                            <td><b>S604DE67AC1F1B</b></td>
                             <td>
-                                ID:2 --- Khách ---
-                                <a href="">Xem</a>
-                                <br>
-                                no_reply@nencer.net <br>
-                                0900000000
+                                <a href="">Anh Em Tham Gia Group Liên Quân Mobile Nhé !!</a>
+                            </td>
+                            <td>
+                                God Admin
+                            </td>
+                            <td>
+                                Tiếng Việt
                             </td>
                             <td class="text-center">
-                                <a href="">
-                                    1 Viettel 100.000đ
-                                </a>
+                                199
                             </td>
                             <td class="text-center">
-                                97,000 VND
-                            </td>
-                            <td class="text-center">
-                                <span class="badge badge-module badge-secondary">Nháp</span>
-                            </td>
-                            <td class="text-center">
-                                <span class="badge badge-module badge-success">Hoàn thành</span>
+                                <span class="badge badge-module badge-success">Đang bật</span>
                             </td>
                             <td class="text-center">
                                 2021-03-14 17:33:32
                             </td>
                             <td class="text-center">
-                                <div class="custom-control custom-switch switch-module">
-                                    <input type="checkbox" class="custom-control-input" id="customSwitch1">
-                                    <label class="custom-control-label" for="customSwitch1"></label>
-                                </div>
+                                <button type="button" class="my-1 my-lg-0 btn btn-sm_table btn-info">
+                                    <i class="fas fa-edit"></i> Chỉnh sửa
+                                </button>
+                                <button type="button" class="my-1 my-lg-0 btn btn-sm_table btn-danger">
+                                    <i class="fas fa-trash-alt"></i>
+                                    Xoá
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-center">
+                                <input type="checkbox" class="mt-1 check-only" value="">
+                            </td>
+                            <td>
+                                <a href="">Anh Em Tham Gia Group Liên Quân Mobile Nhé !!</a>
+                            </td>
+                            <td>
+                                God Admin
+                            </td>
+                            <td>
+                                Tiếng Việt
+                            </td>
+                            <td class="text-center">
+                                199
+                            </td>
+                            <td class="text-center">
+                                <span class="badge badge-module badge-secondary">Đang tắt</span>
+                            </td>
+                            <td class="text-center">
+                                2021-03-14 17:33:32
                             </td>
                             <td class="text-center">
                                 <button type="button" class="my-1 my-lg-0 btn btn-sm_table btn-info">
-                                    <i class="fas fa-edit"></i> Thay đổi
+                                    <i class="fas fa-edit"></i> Chỉnh sửa
+                                </button>
+                                <button type="button" class="my-1 my-lg-0 btn btn-sm_table btn-danger">
+                                    <i class="fas fa-trash-alt"></i>
+                                    Xoá
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-center">
+                                <input type="checkbox" class="mt-1 check-only" value="">
+                            </td>
+                            <td>
+                                <a href="">Anh Em Tham Gia Group Liên Quân Mobile Nhé !!</a>
+                            </td>
+                            <td>
+                                God Admin
+                            </td>
+                            <td>
+                                Tiếng Việt
+                            </td>
+                            <td class="text-center">
+                                199
+                            </td>
+                            <td class="text-center">
+                                <span class="badge badge-module badge-success">Đang bật</span>
+                            </td>
+                            <td class="text-center">
+                                2021-03-14 17:33:32
+                            </td>
+                            <td class="text-center">
+                                <button type="button" class="my-1 my-lg-0 btn btn-sm_table btn-info">
+                                    <i class="fas fa-edit"></i> Chỉnh sửa
+                                </button>
+                                <button type="button" class="my-1 my-lg-0 btn btn-sm_table btn-danger">
+                                    <i class="fas fa-trash-alt"></i>
+                                    Xoá
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-center">
+                                <input type="checkbox" class="mt-1 check-only" value="">
+                            </td>
+                            <td>
+                                <a href="">Anh Em Tham Gia Group Liên Quân Mobile Nhé !!</a>
+                            </td>
+                            <td>
+                                God Admin
+                            </td>
+                            <td>
+                                Tiếng Việt
+                            </td>
+                            <td class="text-center">
+                                199
+                            </td>
+                            <td class="text-center">
+                                <span class="badge badge-module badge-secondary">Đang tắt</span>
+                            </td>
+                            <td class="text-center">
+                                2021-03-14 17:33:32
+                            </td>
+                            <td class="text-center">
+                                <button type="button" class="my-1 my-lg-0 btn btn-sm_table btn-info">
+                                    <i class="fas fa-edit"></i> Chỉnh sửa
+                                </button>
+                                <button type="button" class="my-1 my-lg-0 btn btn-sm_table btn-danger">
+                                    <i class="fas fa-trash-alt"></i>
+                                    Xoá
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-center">
+                                <input type="checkbox" class="mt-1 check-only" value="">
+                            </td>
+                            <td>
+                                <a href="">Anh Em Tham Gia Group Liên Quân Mobile Nhé !!</a>
+                            </td>
+                            <td>
+                                God Admin
+                            </td>
+                            <td>
+                                Tiếng Việt
+                            </td>
+                            <td class="text-center">
+                                199
+                            </td>
+                            <td class="text-center">
+                                <span class="badge badge-module badge-success">Đang bật</span>
+                            </td>
+                            <td class="text-center">
+                                2021-03-14 17:33:32
+                            </td>
+                            <td class="text-center">
+                                <button type="button" class="my-1 my-lg-0 btn btn-sm_table btn-info">
+                                    <i class="fas fa-edit"></i> Chỉnh sửa
+                                </button>
+                                <button type="button" class="my-1 my-lg-0 btn btn-sm_table btn-danger">
+                                    <i class="fas fa-trash-alt"></i>
+                                    Xoá
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-center">
+                                <input type="checkbox" class="mt-1 check-only" value="">
+                            </td>
+                            <td>
+                                <a href="">Anh Em Tham Gia Group Liên Quân Mobile Nhé !!</a>
+                            </td>
+                            <td>
+                                God Admin
+                            </td>
+                            <td>
+                                Tiếng Việt
+                            </td>
+                            <td class="text-center">
+                                199
+                            </td>
+                            <td class="text-center">
+                                <span class="badge badge-module badge-secondary">Đang tắt</span>
+                            </td>
+                            <td class="text-center">
+                                2021-03-14 17:33:32
+                            </td>
+                            <td class="text-center">
+                                <button type="button" class="my-1 my-lg-0 btn btn-sm_table btn-info">
+                                    <i class="fas fa-edit"></i> Chỉnh sửa
                                 </button>
                                 <button type="button" class="my-1 my-lg-0 btn btn-sm_table btn-danger">
                                     <i class="fas fa-trash-alt"></i>
@@ -299,7 +452,7 @@
                         <div class="form-m1">
                             <div class="form">
                                 <div class="row row5 rowmb3 justify-content-center justify-content-sm-start">
-                                    <div class="col-5 col-sm-6 col-md-5 col-lg-4 col-xl-2">
+                                    <div class="col-5 col-sm-6 col-md-5 col-lg-4 col-xl-3">
                                         <select name="" class="form-control">
                                             <option value="" selected="selected">Hành động</option>
                                             <option value="">Xoá đã chọn</option>

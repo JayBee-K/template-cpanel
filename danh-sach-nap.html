@@ -32,7 +32,7 @@
             --template-hover: #2c3138;
 
             --primary-color: #20a53a;
-            --primary-hover: #045414;
+            --primary-hover: #10952a;
             --primary-rgb: 32, 165, 58;
         }
     </style>
@@ -54,17 +54,65 @@
                         <span class="text">Trang chủ</span>
                     </a>
                 </li>
-                <li>
-                    <a href="./forms.html">
-                        <span class="icon"><i class="fal fa-list-alt"></i></span>
-                        <span class="text">Forms</span>
+                <li class="active">
+                    <a href="./danh-sach-nap.html">
+                        <span class="icon"><i class="fal fa-credit-card"></i></span>
+                        <span class="text">Danh sách nạp</span>
                     </a>
                 </li>
-                <li class="active">
-                    <a href="./filter.html">
-                        <span class="icon"><i class="fal fa-filter"></i></span>
-                        <span class="text">Filter</span>
+                <li>
+                    <a href="#collapse-user" data-toggle="collapse">
+                        <span class="icon"><i class="fal fa-user-alt"></i></span>
+                        <span class="text">Users</span>
+                        <span class="arrow">
+                            <i class="fal fa-angle-down"></i>
+                        </span>
                     </a>
+                    <ul id="collapse-user" class="collapse" data-parent="#sidebar-menu">
+                        <li>
+                            <a href="./danh-sach-user.html">
+                                <span class="icon"><i class="fal fa-angle-right"></i></span>
+                                <span class="text">
+                                    Danh sách users
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./them-user.html">
+                                <span class="icon"><i class="fal fa-angle-right"></i></span>
+                                <span class="text">
+                                    Thêm user
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#collapse-tintuc" data-toggle="collapse">
+                        <span class="icon"><i class="fal fa-newspaper"></i></span>
+                        <span class="text">Tin tức</span>
+                        <span class="arrow">
+                            <i class="fal fa-angle-down"></i>
+                        </span>
+                    </a>
+                    <ul id="collapse-tintuc" class="collapse" data-parent="#sidebar-menu">
+                        <li>
+                            <a href="./danh-sach-tin-tuc.html">
+                                <span class="icon"><i class="fal fa-angle-right"></i></span>
+                                <span class="text">
+                                    Danh sách tin tuc
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./them-tin-tuc.html">
+                                <span class="icon"><i class="fal fa-angle-right"></i></span>
+                                <span class="text">
+                                    Thêm tin tức
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
                 </li>
             </ul>
         </div>
@@ -135,30 +183,8 @@
                     <div class="cpanel-heading">
                         <div class="cpanel-heading_wrap">
                             <div class="heading-title">
-                                Dashboard
+                                Danh sách nạp
                             </div>
-                        </div>
-                        <div class="cpanel-heading_links">
-                            <a href="">
-                                <i class="fas fa-home-alt"></i>
-                                TRANG CHÍNH
-                            </a>
-                            <a href="">
-                                <i class="fas fa-plus"></i>
-                                MẠNG
-                            </a>
-                            <a href="">
-                                <i class="fas fa-paper-plane"></i>
-                                CÚ PHÁP
-                            </a>
-                            <a href="">
-                                <i class="fas fa-check-circle"></i>
-                                NCC
-                            </a>
-                            <a href="">
-                                <i class="fas fa-cog"></i>
-                                CẤU HÌNH
-                            </a>
                         </div>
                     </div>
                 </div>
@@ -168,12 +194,6 @@
                     <div class="form-m1">
                         <form action="">
                             <div class="row row5 rowmb3">
-                                <div class="col-lg col-md-3 col-6">
-                                    <input class="form-control" value="" name="" placeholder="Đơn hàng">
-                                </div>
-                                <div class="col-lg col-md-3 col-6">
-                                    <input class="form-control" value="" name="" placeholder="Tài khoản nhận">
-                                </div>
                                 <div class="col-lg col-md-3 col-6">
                                     <select name="" class="form-control">
                                         <option value="" selected="selected">Mã dịch vụ</option>
@@ -190,12 +210,29 @@
                                     </select>
                                 </div>
                                 <div class="col-lg col-md-3 col-6">
-                                    <select name="status" class="form-control">
-                                        <option value="" selected="selected">Trạng thái</option>
-                                        <option value="">Thành công</option>
-                                        <option value="">Chờ xử lý</option>
-                                        <option value="">Hủy bỏ</option>
+                                    <select name="" class="form-control">
+                                        <option value="" selected="selected">Nhà cung cấp</option>
+                                        <option value="">Kipay</option>
+                                        <option value="">Trumcuoc</option>
+                                        <option value="">Data</option>
                                     </select>
+                                </div>
+                                <div class="col-lg col-md-3 col-6">
+                                    <select name="" class="form-control">
+                                        <option value="" selected="selected">Trạng thái</option>
+                                        <option value="">Hoàn thành</option>
+                                        <option value="">Thất bại</option>
+                                        <option value="">Đang chờ</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg col-md-3 col-6">
+                                    <input class="form-control" value="" name="" placeholder="Đơn hàng">
+                                </div>
+                                <div class="col-lg col-md-3 col-6">
+                                    <input class="form-control" value="" name="" placeholder="Tài khoản">
+                                </div>
+                                <div class="col-lg col-md-3 col-6">
+                                    <input class="form-control" value="" name="" placeholder="Mã khách hàng">
                                 </div>
                                 <div class="col-lg col-md-3 col-6">
                                     <div class="position-relative z-index-2">
@@ -212,7 +249,7 @@
                                 <div class="col-12 col-md flex-lg-grow-0 d-flex align-items-center px-0">
                                     <button class="btn btn-primary btn-small m-1 my-md-0" type="submit">
                                         <span class="fal fa-search"></span>
-                                        Lọc
+                                        Tìm kiếm
                                     </button>
                                     <button class="btn btn-success btn-small m-1 my-md-0"
                                             type="submit">
@@ -234,15 +271,18 @@
                             <th class="text-center">
                                 <input type="checkbox" class="mt-1 check-all" value="">
                             </th>
-                            <th class="text-center">Mã đơn</th>
-                            <th class="text-center">Khách hàng</th>
-                            <th class="text-center">Sản phẩm</th>
-                            <th class="text-center">Thành tiền</th>
-                            <th class="text-center">Giao dịch</th>
+                            <th>Mã đơn</th>
+                            <th class="text-center">Xử lý</th>
+                            <th>Thông tin nạp</th>
+                            <th>Sản phẩm</th>
+                            <th>Mệnh giá nạp</th>
+                            <th class="text-center">Số lượng</th>
                             <th class="text-center">Trạng thái</th>
+                            <th>NCC</th>
+                            <th>Chiết khấu</th>
+                            <th>Số tiền</th>
+                            <th>Khách hàng</th>
                             <th class="text-center">Ngày tạo</th>
-                            <th class="text-center">Switch</th>
-                            <th class="text-center">Hành động</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -250,45 +290,150 @@
                             <td class="text-center">
                                 <input type="checkbox" class="mt-1 check-only" value="">
                             </td>
-                            <td><b>S604DE67AC1F1B</b></td>
-                            <td>
-                                ID:2 --- Khách ---
-                                <a href="">Xem</a>
-                                <br>
-                                no_reply@nencer.net <br>
-                                0900000000
-                            </td>
+                            <td>S604DE67AC1F1B</td>
                             <td class="text-center">
-                                <a href="">
-                                    1 Viettel 100.000đ
-                                </a>
+                                <span class="badge badge-module badge-info">Xử lý</span>
                             </td>
-                            <td class="text-center">
-                                97,000 VND
-                            </td>
-                            <td class="text-center">
-                                <span class="badge badge-module badge-secondary">Nháp</span>
-                            </td>
+                            <td><b>0943490040</b></td>
+                            <td>Vinaphone trả trước</td>
+                            <td>20,000đ</td>
+                            <td>1</td>
                             <td class="text-center">
                                 <span class="badge badge-module badge-success">Hoàn thành</span>
+                            </td>
+                            <td>Kipay</td>
+                            <td>4.5%</td>
+                            <td>19,100đ</td>
+                            <td>
+                                <a href="">Nguyễn Hoành Anh</a>
                             </td>
                             <td class="text-center">
                                 2021-03-14 17:33:32
                             </td>
+                        </tr>
+                        <tr>
                             <td class="text-center">
-                                <div class="custom-control custom-switch switch-module">
-                                    <input type="checkbox" class="custom-control-input" id="customSwitch1">
-                                    <label class="custom-control-label" for="customSwitch1"></label>
-                                </div>
+                                <input type="checkbox" class="mt-1 check-only" value="">
+                            </td>
+                            <td>S604DE67AC1F1B</td>
+                            <td class="text-center">
+                                <span class="badge badge-module badge-info">Xử lý</span>
+                            </td>
+                            <td><b>0943490040</b></td>
+                            <td>Vinaphone trả trước</td>
+                            <td>20,000đ</td>
+                            <td>1</td>
+                            <td class="text-center">
+                                <span class="badge badge-module badge-danger">Thất bại</span>
+                            </td>
+                            <td>Kipay</td>
+                            <td>4.5%</td>
+                            <td>19,100đ</td>
+                            <td>
+                                <a href="">Gạch Card</a>
                             </td>
                             <td class="text-center">
-                                <button type="button" class="my-1 my-lg-0 btn btn-sm_table btn-info">
-                                    <i class="fas fa-edit"></i> Thay đổi
-                                </button>
-                                <button type="button" class="my-1 my-lg-0 btn btn-sm_table btn-danger">
-                                    <i class="fas fa-trash-alt"></i>
-                                    Xoá
-                                </button>
+                                2021-03-14 17:33:32
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-center">
+                                <input type="checkbox" class="mt-1 check-only" value="">
+                            </td>
+                            <td>S604DE67AC1F1B</td>
+                            <td class="text-center">
+                                <span class="badge badge-module badge-info">Xử lý</span>
+                            </td>
+                            <td><b>0943490040</b></td>
+                            <td>Vinaphone trả trước</td>
+                            <td>20,000đ</td>
+                            <td>1</td>
+                            <td class="text-center">
+                                <span class="badge badge-module badge-success">Hoàn thành</span>
+                            </td>
+                            <td>Kipay</td>
+                            <td>4.5%</td>
+                            <td>19,100đ</td>
+                            <td>
+                                <a href="">Nguyễn Hoành Anh</a>
+                            </td>
+                            <td class="text-center">
+                                2021-03-14 17:33:32
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-center">
+                                <input type="checkbox" class="mt-1 check-only" value="">
+                            </td>
+                            <td>S604DE67AC1F1B</td>
+                            <td class="text-center">
+                                <span class="badge badge-module badge-info">Xử lý</span>
+                            </td>
+                            <td><b>0943490040</b></td>
+                            <td>Vinaphone trả trước</td>
+                            <td>20,000đ</td>
+                            <td>1</td>
+                            <td class="text-center">
+                                <span class="badge badge-module badge-danger">Thất bại</span>
+                            </td>
+                            <td>Kipay</td>
+                            <td>4.5%</td>
+                            <td>19,100đ</td>
+                            <td>
+                                <a href="">Gạch Card</a>
+                            </td>
+                            <td class="text-center">
+                                2021-03-14 17:33:32
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-center">
+                                <input type="checkbox" class="mt-1 check-only" value="">
+                            </td>
+                            <td>S604DE67AC1F1B</td>
+                            <td class="text-center">
+                                <span class="badge badge-module badge-info">Xử lý</span>
+                            </td>
+                            <td><b>0943490040</b></td>
+                            <td>Vinaphone trả trước</td>
+                            <td>20,000đ</td>
+                            <td>1</td>
+                            <td class="text-center">
+                                <span class="badge badge-module badge-success">Hoàn thành</span>
+                            </td>
+                            <td>Kipay</td>
+                            <td>4.5%</td>
+                            <td>19,100đ</td>
+                            <td>
+                                <a href="">Nguyễn Hoành Anh</a>
+                            </td>
+                            <td class="text-center">
+                                2021-03-14 17:33:32
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-center">
+                                <input type="checkbox" class="mt-1 check-only" value="">
+                            </td>
+                            <td>S604DE67AC1F1B</td>
+                            <td class="text-center">
+                                <span class="badge badge-module badge-info">Xử lý</span>
+                            </td>
+                            <td><b>0943490040</b></td>
+                            <td>Vinaphone trả trước</td>
+                            <td>20,000đ</td>
+                            <td>1</td>
+                            <td class="text-center">
+                                <span class="badge badge-module badge-danger">Thất bại</span>
+                            </td>
+                            <td>Kipay</td>
+                            <td>4.5%</td>
+                            <td>19,100đ</td>
+                            <td>
+                                <a href="">Gạch Card</a>
+                            </td>
+                            <td class="text-center">
+                                2021-03-14 17:33:32
                             </td>
                         </tr>
                         </tbody>
@@ -299,7 +444,7 @@
                         <div class="form-m1">
                             <div class="form">
                                 <div class="row row5 rowmb3 justify-content-center justify-content-sm-start">
-                                    <div class="col-5 col-sm-6 col-md-5 col-lg-4 col-xl-2">
+                                    <div class="col-5 col-sm-6 col-md-5 col-lg-4 col-xl-3">
                                         <select name="" class="form-control">
                                             <option value="" selected="selected">Hành động</option>
                                             <option value="">Xoá đã chọn</option>

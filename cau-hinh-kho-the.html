@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <title>Template Cpanel</title>
+    <meta name="description" content="Template Cpanel">
+    <meta name="author" content="">
+
+    <meta property="og:title" content="Template Cpanel">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:description" content="Template Cpanel">
+    <meta property="og:image" content="">
+
+    <link rel="icon" href="/assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="/assets/images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/plugins/select2/css/select2.min.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <style>
+        :root {
+            --template-color: #3c444d;
+            --template-hover: #2c3138;
+
+            --primary-color: #20a53a;
+            --primary-hover: #10952a;
+            --primary-rgb: 32, 165, 58;
+        }
+    </style>
+</head>
+<body>
+<div class="template-cpanel" id="template-cpanel">
+    <div class="cpanel-overlay" id="cpanel-overlay"></div>
+    <div class="cpanel-sidebar">
+        <div class="sidebar-header">
+            <a href="/">
+                <img src="./assets/images/logo.svg" height="16" width="90" class="img-fluid" alt="">
+            </a>
+        </div>
+        <div class="sidebar-body">
+            <ul class="sidebar-body_menu" id="sidebar-menu">
+                <li>
+                    <a href="./index.html">
+                        <span class="icon"><i class="fal fa-home-alt"></i></span>
+                        <span class="text">Trang chủ</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="#collapse-config" data-toggle="collapse" aria-expanded="true">
+                        <span class="icon"><i class="fal fa-cog"></i></span>
+                        <span class="text">Cấu hình</span>
+                        <span class="arrow">
+                            <i class="fal fa-angle-down"></i>
+                        </span>
+                    </a>
+                    <ul id="collapse-config" class="collapse show" data-parent="#sidebar-menu">
+                        <li>
+                            <a href="./cau-hinh-chung.html">
+                                <span class="icon"><i class="fal fa-angle-right"></i></span>
+                                <span class="text">
+                                    Cấu hình chung
+                                </span>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="./cau-hinh-kho-the.html">
+                                <span class="icon"><i class="fal fa-angle-right"></i></span>
+                                <span class="text">
+                                    Cấu hình kho thẻ
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./danh-sach-nap.html">
+                        <span class="icon"><i class="fal fa-credit-card"></i></span>
+                        <span class="text">Danh sách nạp</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#collapse-user" data-toggle="collapse">
+                        <span class="icon"><i class="fal fa-user-alt"></i></span>
+                        <span class="text">Users</span>
+                        <span class="arrow">
+                            <i class="fal fa-angle-down"></i>
+                        </span>
+                    </a>
+                    <ul id="collapse-user" class="collapse" data-parent="#sidebar-menu">
+                        <li>
+                            <a href="./danh-sach-user.html">
+                                <span class="icon"><i class="fal fa-angle-right"></i></span>
+                                <span class="text">
+                                    Danh sách users
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./them-user.html">
+                                <span class="icon"><i class="fal fa-angle-right"></i></span>
+                                <span class="text">
+                                    Thêm user
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#collapse-tintuc" data-toggle="collapse">
+                        <span class="icon"><i class="fal fa-newspaper"></i></span>
+                        <span class="text">Tin tức</span>
+                        <span class="arrow">
+                            <i class="fal fa-angle-down"></i>
+                        </span>
+                    </a>
+                    <ul id="collapse-tintuc" class="collapse" data-parent="#sidebar-menu">
+                        <li>
+                            <a href="./danh-sach-tin-tuc.html">
+                                <span class="icon"><i class="fal fa-angle-right"></i></span>
+                                <span class="text">
+                                    Danh sách tin tuc
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./them-tin-tuc.html">
+                                <span class="icon"><i class="fal fa-angle-right"></i></span>
+                                <span class="text">
+                                    Thêm tin tức
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="cpanel-main">
+        <div class="cpanel-header">
+            <div class="cpanel-header_hamburger" id="call-sidebar">
+                <span></span>
+            </div>
+            <a class="cpanel-header_logo" href="/">
+                <img src="./assets/images/logo.svg" height="16" width="90" class="img-fluid" alt="">
+            </a>
+            <div class="cpanel-header_navigation">
+                <ul class="list-unstyled mb-0">
+                    <li>
+                        <a href="">Trang chủ</a>
+                    </li>
+                    <li>
+                        <a href="">Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="">Liên kết nhanh</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="cpanel-header_search">
+                <div class="form-m1">
+                    <form action="">
+                        <div class="position-relative form-icon form-icon_right">
+                            <input type="text" class="form-control" placeholder="Từ khoá tìm kiếm...">
+                            <button type="submit" class="form-button">
+                                <i class="fal fa-search"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="cpanel-header_user">
+                <button type="button" class="header-user_button">
+                    <img src="https://coreui.io/demos/bootstrap/4.2/default/assets/img/avatars/8.jpg" alt="">
+                    Admin
+                </button>
+                <div class="header-user_dropdown">
+                    <div class="dropdown-item">
+                        <a href="">
+                            <i class="fal fa-user-alt"></i>
+                            Thông tin tài khoản
+                        </a>
+                    </div>
+                    <div class="dropdown-item">
+                        <a href="">
+                            <i class="fal fa-lock-alt"></i>
+                            Đổi mật khẩu
+                        </a>
+                    </div>
+                    <div class="dropdown-item">
+                        <a href="">
+                            <i class="fal fa-sign-out"></i>
+                            Đăng xuất
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cpanel-body">
+            <div class="row">
+                <div class="col-12">
+                    <div class="cpanel-heading">
+                        <div class="cpanel-heading_wrap">
+                            <div class="heading-title">
+                                Cấu hình kho thẻ
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row5">
+                <div class="col-12 col-sm-7 col-lg-6">
+                    <div class="cpanel-card card">
+                        <div class="card-header border-bottom-0">
+                            <div class="card-title">
+                                Kho đã cài đặt
+                            </div>
+                            <div class="ml-auto d-flex align-items-center">
+                                <a href="" class="btn btn-success btn-sm_table">
+                                    <i class="fas fa-plus"></i>
+                                    Kho liên kết
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="table-responsive">
+                                <table class="table table-module mb-0">
+                                    <thead>
+                                    <tr>
+                                        <th class="card-table_pl">ID</th>
+                                        <th>Name</th>
+                                        <th>Provider</th>
+                                        <th>Balance</th>
+                                        <th class="text-center">Status</th>
+                                        <th class="text-center">Active</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td class="card-table_pl">27</td>
+                                        <td>Kho thẻ Stock</td>
+                                        <td>Stock</td>
+                                        <td>2,732,000đ</td>
+                                        <td class="text-center">
+                                            <div class="custom-control custom-switch switch-module">
+                                                <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                                                <label class="custom-control-label" for="customSwitch1"></label>
+                                            </div>
+                                        </td>
+                                        <td class="text-center">
+                                            <button type="button" class="my-1 my-lg-0 btn btn-sm_table btn-warning">
+                                                <i class="fas fa-edit"></i>
+                                            </button>
+                                            <button type="button" class="my-1 my-lg-0 btn btn-sm_table btn-info">
+                                                <i class="fas fa-exchange"></i>
+                                            </button>
+                                            <button type="button" class="my-1 my-lg-0 btn btn-sm_table btn-danger">
+                                                <i class="fas fa-trash-alt"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="card-table_pl">27</td>
+                                        <td>Kho thẻ Stock</td>
+                                        <td>Stock</td>
+                                        <td>2,732,000đ</td>
+                                        <td class="text-center">
+                                            <div class="custom-control custom-switch switch-module">
+                                                <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                                                <label class="custom-control-label" for="customSwitch1"></label>
+                                            </div>
+                                        </td>
+                                        <td class="text-center">
+                                            <button type="button" class="my-1 my-lg-0 btn btn-sm_table btn-warning">
+                                                <i class="fas fa-edit"></i>
+                                            </button>
+                                            <button type="button" class="my-1 my-lg-0 btn btn-sm_table btn-info">
+                                                <i class="fas fa-exchange"></i>
+                                            </button>
+                                            <button type="button" class="my-1 my-lg-0 btn btn-sm_table btn-danger">
+                                                <i class="fas fa-trash-alt"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="card-table_pl">27</td>
+                                        <td>Kho thẻ Stock</td>
+                                        <td>Stock</td>
+                                        <td>2,732,000đ</td>
+                                        <td class="text-center">
+                                            <div class="custom-control custom-switch switch-module">
+                                                <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                                                <label class="custom-control-label" for="customSwitch1"></label>
+                                            </div>
+                                        </td>
+                                        <td class="text-center">
+                                            <button type="button" class="my-1 my-lg-0 btn btn-sm_table btn-warning">
+                                                <i class="fas fa-edit"></i>
+                                            </button>
+                                            <button type="button" class="my-1 my-lg-0 btn btn-sm_table btn-info">
+                                                <i class="fas fa-exchange"></i>
+                                            </button>
+                                            <button type="button" class="my-1 my-lg-0 btn btn-sm_table btn-danger">
+                                                <i class="fas fa-trash-alt"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="card-table_pl">27</td>
+                                        <td>Kho thẻ Stock</td>
+                                        <td>Stock</td>
+                                        <td>2,732,000đ</td>
+                                        <td class="text-center">
+                                            <div class="custom-control custom-switch switch-module">
+                                                <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                                                <label class="custom-control-label" for="customSwitch1"></label>
+                                            </div>
+                                        </td>
+                                        <td class="text-center">
+                                            <button type="button" class="my-1 my-lg-0 btn btn-sm_table btn-warning">
+                                                <i class="fas fa-edit"></i>
+                                            </button>
+                                            <button type="button" class="my-1 my-lg-0 btn btn-sm_table btn-info">
+                                                <i class="fas fa-exchange"></i>
+                                            </button>
+                                            <button type="button" class="my-1 my-lg-0 btn btn-sm_table btn-danger">
+                                                <i class="fas fa-trash-alt"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="card-table_pl">27</td>
+                                        <td>Kho thẻ Stock</td>
+                                        <td>Stock</td>
+                                        <td>2,732,000đ</td>
+                                        <td class="text-center">
+                                            <div class="custom-control custom-switch switch-module">
+                                                <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                                                <label class="custom-control-label" for="customSwitch1"></label>
+                                            </div>
+                                        </td>
+                                        <td class="text-center">
+                                            <button type="button" class="my-1 my-lg-0 btn btn-sm_table btn-warning">
+                                                <i class="fas fa-edit"></i>
+                                            </button>
+                                            <button type="button" class="my-1 my-lg-0 btn btn-sm_table btn-info">
+                                                <i class="fas fa-exchange"></i>
+                                            </button>
+                                            <button type="button" class="my-1 my-lg-0 btn btn-sm_table btn-danger">
+                                                <i class="fas fa-trash-alt"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-7 col-lg-6">
+                    <div class="cpanel-card card">
+                        <div class="card-header border-bottom-0">
+                            <div class="card-title">
+                                Kho chưa cài đặt
+                            </div>
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="table-responsive">
+                                <table class="table table-module mb-0">
+                                    <thead>
+                                    <tr>
+                                        <th class="card-table_pl">ID</th>
+                                        <th>Tên kho</th>
+                                        <th>Mã kho</th>
+                                        <th class="text-center">Active</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td class="card-table_pl">1</td>
+                                        <td>Kho thẻ Moongirl</td>
+                                        <td>Moongirl</td>
+                                        <td class="text-center">
+                                            <button type="button" class="my-1 my-lg-0 btn btn-sm_table btn-warning">
+                                                Cài đặt
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="card-table_pl">1</td>
+                                        <td>Kho thẻ Moongirl</td>
+                                        <td>Moongirl</td>
+                                        <td class="text-center">
+                                            <button type="button" class="my-1 my-lg-0 btn btn-sm_table btn-warning">
+                                                Cài đặt
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="card-table_pl">1</td>
+                                        <td>Kho thẻ Moongirl</td>
+                                        <td>Moongirl</td>
+                                        <td class="text-center">
+                                            <button type="button" class="my-1 my-lg-0 btn btn-sm_table btn-warning">
+                                                Cài đặt
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="card-table_pl">1</td>
+                                        <td>Kho thẻ Moongirl</td>
+                                        <td>Moongirl</td>
+                                        <td class="text-center">
+                                            <button type="button" class="my-1 my-lg-0 btn btn-sm_table btn-warning">
+                                                Cài đặt
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="card-table_pl">1</td>
+                                        <td>Kho thẻ Moongirl</td>
+                                        <td>Moongirl</td>
+                                        <td class="text-center">
+                                            <button type="button" class="my-1 my-lg-0 btn btn-sm_table btn-warning">
+                                                Cài đặt
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cpanel-footer">
+            <div class="cpanel-wrap">
+                <div class="text-center">
+                    Template Cpanel v1 - Design by Nencer <span class="px-2">-</span>
+                    <a href="./">Tài liệu</a>
+                    <span class="px-2">-</span>
+                    <a href="tel:0333851915">Liên hệ</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type=" text/javascript" src="./assets/plugins/jquery.min.js"></script>
+<script type="text/javascript"
+        src="./assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/select2/js/select2.min.js"></script>
+<script type="text/javascript" src="./assets/js/app.js"></script>
+</body>
+</html>
