@@ -382,17 +382,11 @@ h6, .h6 {
     vertical-align: 2px;
 }
 
-/***** Custom Button *****/
+/***** End Custom Button *****/
 
 /***** Custom Switch *****/
 .switch-module {
-    padding-left: 0.25rem;
-    min-height: 1px;
-}
-
-.switch-module.switch-module_text {
-    padding-left: 3.75rem;
-    min-height: 1px;
+    padding-left: 4.25rem;
 }
 
 .switch-module .custom-control-input,
@@ -409,33 +403,19 @@ h6, .h6 {
     border-color: transparent !important;
 }
 
-.switch-module .custom-control-label {
-    display: block;
-}
-
 .switch-module .custom-control-label::before {
-    left: 0;
+    left: -3.75rem;
     width: 3.25rem;
     height: 1.5rem;
     border-radius: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.switch-module.switch-module_text .custom-control-label::before {
-    left: -3.75rem;
-}
-
-.switch-module.switch-module_text .custom-control-label::after {
-    left: calc(-3.75rem + 2px);
+    top: 0;
 }
 
 .switch-module .custom-control-label::after {
     width: calc(1.5rem - 4px);
     height: calc(1.5rem - 4px);
-    left: 2px;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 2px;
+    left: calc(-3.75rem + 2px);
     border-radius: 50%;
 }
 
@@ -449,8 +429,8 @@ h6, .h6 {
 }
 
 .switch-module .custom-control-input:checked ~ .custom-control-label::after {
-    -webkit-transform: translateY(-50%) translateX(1.75rem);
-    transform: translateY(-50%) translateX(1.75rem);
+    -webkit-transform: translateX(1.75rem);
+    transform: translateX(1.75rem);
 }
 
 /***** End Custom Switch *****/
