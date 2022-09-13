@@ -29,7 +29,7 @@ body {
 	font-size: var(--size-theme);
 	font-weight: 400;
 	font-style: normal;
-	background-color: #d3d6d6;
+	background-color: #fff;
 }
 
 a, a:hover, a:focus {
@@ -1253,7 +1253,6 @@ h6, .h6 {
 .template-cpanel .cpanel-wrap {
 	margin-bottom: 15px;
 	background-color: #fff;
-	padding: 10px;
 }
 
 .template-cpanel .cpanel-main {
@@ -1653,8 +1652,8 @@ h6, .h6 {
 }
 
 .cpanel-statistical_m1 .card-body .card-text {
-	font-size: 24px;
-	font-weight: 400;
+	font-size: 20px;
+	font-weight: 700;
 	color: var(--gray-700);
 }
 
@@ -1750,6 +1749,10 @@ h6, .h6 {
 	transform: rotate(180deg);
 }
 
+.cpanel-card .collapse {
+	flex: 1 1 0%;
+}
+
 .cpanel-card .card-body {
 	padding: 10px;
 	max-width: 100%;
@@ -1768,6 +1771,12 @@ h6, .h6 {
 	border-radius: 20px;
 }
 
+.cpanel-card .card-footer {
+	background-color: var(--white);
+	padding: 10px;
+	border-top: 1px solid var(--gray-100);
+}
+
 .cpanel-list .cpanel-list_item {
 	font-size: 13px;
 	line-height: 1.2;
@@ -1775,10 +1784,6 @@ h6, .h6 {
 
 .cpanel-list .cpanel-list_item > * {
 	margin-bottom: 5px;
-}
-
-.cpanel-list .cpanel-list_item p:last-child {
-	margin-bottom: 0;
 }
 
 .cpanel-list .cpanel-list_item + .cpanel-list_item {
@@ -1854,8 +1859,8 @@ h6, .h6 {
 .cpanel-shortcut .cpanel-shortcut_icon {
 	text-align: center;
 	margin-bottom: 5px;
-	width: 30px;
-	height: 30px;
+	width: 22px;
+	height: 22px;
 }
 
 .cpanel-shortcut .cpanel-shortcut_icon img {
