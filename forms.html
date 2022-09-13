@@ -1,630 +1,258 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport"
-		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
-	<title>Template Cpanel</title>
-	<meta name="description" content="Template Cpanel">
-	<meta name="author" content="">
+    <title>Template Cpanel</title>
+    <meta name="description" content="Template Cpanel">
+    <meta name="author" content="">
 
-	<meta property="og:title" content="Template Cpanel">
-	<meta property="og:type" content="website">
-	<meta property="og:url" content="">
-	<meta property="og:description" content="Template Cpanel">
-	<meta property="og:image" content="">
+    <meta property="og:title" content="Template Cpanel">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:description" content="Template Cpanel">
+    <meta property="og:image" content="">
 
-	<link rel="icon" href="/assets/images/favicon.png">
-	<link rel="apple-touch-icon" href="/assets/images/favicon.png">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
-		  rel="stylesheet">
-	<link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="./assets/plugins/select2/css/select2.min.css">
-	<link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
-	<link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" href="/assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="/assets/images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/plugins/select2/css/select2.min.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 
-	<style>
-		:root {
-			--template-color: #3c444d;
-			--template-hover: #2c3138;
+    <style>
+        :root {
+            --template-color: #3c444d;
+            --template-hover: #2c3138;
 
-			--primary-color: #20a53a;
-			--primary-hover: #045414;
-			--primary-rgb: 32, 165, 58;
-		}
-	</style>
+            --primary-color: #20a53a;
+            --primary-hover: #045414;
+            --primary-rgb: 32, 165, 58;
+        }
+    </style>
 </head>
 <body>
 <div class="template-cpanel" id="template-cpanel">
-	<div class="cpanel-overlay" id="cpanel-overlay"></div>
-	<div class="cpanel-sidebar">
-		<div class="sidebar-header">
-			<a href="/">
-				<img src="./assets/images/logo.svg" height="16" width="90" class="img-fluid" alt="">
-			</a>
-		</div>
-		<div class="sidebar-body">
-			<ul class="sidebar-body_menu" id="sidebar-menu">
-				<li>
-					<a href="./index.html">
-						<span class="icon"><i class="fal fa-home-alt"></i></span>
-						<span class="text">Trang chủ</span>
-					</a>
-				</li>
-				<li class="active">
-					<a href="./forms.html">
-						<span class="icon"><i class="fal fa-list-alt"></i></span>
-						<span class="text">Forms</span>
-					</a>
-				</li>
-				<li>
-					<a href="./buttons.html">
-						<span class="icon"><i class="fal fa-dot-circle"></i></span>
-						<span class="text">Buttons</span>
-					</a>
-				</li>
-				<li>
-					<a href="./tables.html">
-						<span class="icon"><i class="fal fa-table"></i></span>
-						<span class="text">Tables</span>
-					</a>
-				</li>
-				<li>
-					<a href="./filter.html">
-						<span class="icon"><i class="fal fa-filter"></i></span>
-						<span class="text">Filter</span>
-					</a>
-				</li>
-				<li>
-					<a href="./tabs.html">
-						<span class="icon"><i class="fal fa-th-large"></i></span>
-						<span class="text">Tabs</span>
-					</a>
-				</li>
-				<li>
-					<a href="./cards.html">
-						<span class="icon"><i class="fal fa-credit-card-front"></i></span>
-						<span class="text">Cards</span>
-					</a>
-				</li>
-				<li>
-					<a href="./modals.html">
-						<span class="icon"><i class="fal fa-dice-d6"></i></span>
-						<span class="text">Modals</span>
-					</a>
-				</li>
-				<li>
-					<a href="./labels.html">
-						<span class="icon"><i class="fal fa-badge-check"></i></span>
-						<span class="text">Labels</span>
-					</a>
-				</li>
-				<li>
-					<a href="./alerts.html">
-						<span class="icon"><i class="fal fa-exclamation-circle"></i></span>
-						<span class="text">Thông báo</span>
-					</a>
-				</li>
-				<li>
-					<a href="#collapse-1" data-toggle="collapse">
-						<span class="icon"><i class="fal fa-bars"></i></span>
-						<span class="text">Collapse</span>
-						<span class="arrow">
-							<i class="fal fa-angle-down"></i>
-						</span>
-					</a>
-					<ul id="collapse-1" class="collapse" data-parent="#sidebar-menu">
-						<li>
-							<a href="">
-								<span class="icon"><i class="fal fa-angle-right"></i></span>
-								<span class="text">
-									Không có giao diện
-								</span>
-							</a>
-						</li>
-						<li class="active">
-							<a href="">
-								<span class="icon"><i class="fal fa-angle-right"></i></span>
-								<span class="text">
-									Không có giao diện
-								</span>
-							</a>
-						</li>
-						<li>
-							<a href="">
-								<span class="icon"><i class="fal fa-angle-right"></i></span>
-								<span class="text">
-									Không có giao diện
-								</span>
-							</a>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<a href="https://fontawesome.com/v5/search" target="_blank">
-						<span class="icon"><i class="fal fa-smile-beam"></i></span>
-						<span class="text">Fonts Icon</span>
-					</a>
-				</li>
-			</ul>
-		</div>
-	</div>
-	<div class="cpanel-main">
-		<div class="cpanel-header">
-			<div class="cpanel-header_hamburger" id="call-sidebar">
-				<span></span>
-			</div>
-			<a class="cpanel-header_logo" href="/">
-				<img src="./assets/images/logo.svg" height="16" width="90" class="img-fluid" alt="">
-			</a>
-			<ol class="cpanel-breadcrumb breadcrumb">
-				<li class="breadcrumb-item">
-					<a href="#"><i class="fal fa-home-alt"></i>Trang chủ</a>
-				</li>
-				<li class="breadcrumb-item">
-					<a href="#">Form</a>
-				</li>
-			</ol>
-			<div class="cpanel-header_user">
-				<button type="button" class="header-user_button">
-					<img src="https://coreui.io/demos/bootstrap/4.2/default/assets/img/avatars/8.jpg" alt="">
-					Admin
-				</button>
-				<div class="header-user_dropdown">
-					<div class="dropdown-item">
-						<a href="">
-							<i class="fal fa-user-alt"></i>
-							Thông tin tài khoản
-						</a>
-					</div>
-					<div class="dropdown-item">
-						<a href="">
-							<i class="fal fa-lock-alt"></i>
-							Đổi mật khẩu
-						</a>
-					</div>
-					<div class="dropdown-item">
-						<a href="">
-							<i class="fal fa-sign-out"></i>
-							Đăng xuất
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="cpanel-body">
-			<div class="cpanel-wrap">
-				<div class="form-m1">
-					<form action="">
-						<div id="createRow">
-							<div class="row-item row row5 rowmb3">
-								<div class="col-lg-3 col-sm-12 col-12" id="theCao">
-									<select name="" class="form-control" id="">
-										<option data-index="0" selected value="">Viettel(85,88)</option>
-										<option data-index="1" value="">Vina(88,91)</option>
-										<option data-index="2" value="">Mobifone(77,80)</option>
-										<option data-index="3" value="">Vietnammobi(85,88)</option>
-										<option data-index="4" value="">Zing</option>
-										<option data-index="5" value="">GATE</option>
-									</select>
-								</div>
-								<div class="col-lg-3 col-sm-6 col-12">
-									<div class="position-relative form-icon form-icon_right">
-										<input type="text" class="form-control" placeholder="Mã thẻ">
-										<button type="button" class="copy-value form-button">
-											<i class="fas fa-paste"></i>
-										</button>
-									</div>
-								</div>
-								<div class="col-lg-3 col-sm-6 col-12">
-									<div class="position-relative form-icon form-icon_right">
-										<input type="text" class="form-control" placeholder="Mã seri">
-										<button type="button" class="copy-value form-button">
-											<i class="fas fa-paste"></i>
-										</button>
-									</div>
-								</div>
-								<div class="col-lg-2 col-sm-10 col-9" id="menhGia">
-									<select name="" class="form-control" id="">
-										<option data-index="0" selected value="">-- Mệnh giá --</option>
-										<option data-index="1" value="">10,000 đ</option>
-										<option data-index="2" value="">20,000 đ</option>
-										<option data-index="3" value="">30,000 đ</option>
-										<option data-index="4" value="">50,000 đ</option>
-										<option data-index="5" value="">100,000 đ</option>
-										<option data-index="6" value="">200,000 đ</option>
-										<option data-index="7" value="">300,000 đ</option>
-										<option data-index="8" value="">500,000 đ</option>
-										<option data-index="9" value="">1,000,000 đ</option>
-									</select>
-								</div>
-								<div class="col-lg-1 col-sm-2 col-3 text-right">
-									<button type="button" class="btn btn-small btn-success addRow  w-100">
-										<i class="fas fa-plus-circle"></i>
-										Thêm
-									</button>
-								</div>
-							</div>
-						</div>
-						<div class="text-center mt-2">
-							<button type="submit" class="btn btn-theme_secondary btn-lg">
-								<i class="fas fa-upload"></i>
-								Gửi thẻ cào
-							</button>
-						</div>
-					</form>
-				</div>
-			</div>
-			<div class="cpanel-wrap">
-				<div class="form-m1">
-					<form action="">
-						<div class="row-item row row5">
-							<div class="col-lg-3 col-sm-12 col-12">
-								<select name="" class="form-control" id="">
-									<option value="">Viettel(85,88)</option>
-									<option value="">Vina(88,91)</option>
-									<option value="">Mobifone(77,80)</option>
-									<option value="">Vietnammobi(85,88)</option>
-									<option value="">Zing</option>
-									<option value="">GATE</option>
-								</select>
-							</div>
-							<div class="col-lg-3 col-sm-6 col-12">
-								<!--<div class="input-group">
-									<div class="input-group-prepend">
-										<span class="input-group-text" id="basic-addon1">@</span>
-										<button class="btn btn-danger btn-small"><i class="fas fa-times"></i></button>
-									</div>
-									<input type="text" class="form-control" placeholder="Mã thẻ">
-								</div>-->
-
-								<div class="position-relative form-icon form-icon_left">
-									<input type="text" class="form-control" placeholder="Mã thẻ">
-									<button type="button" class="copy-value form-button">
-										<i class="fas fa-paste"></i>
-									</button>
-								</div>
-							</div>
-							<div class="col-lg-3 col-sm-6 col-12">
-								<div class="position-relative form-icon form-icon_right">
-									<input type="text" class="form-control" placeholder="Mã seri">
-									<button type="button" class="copy-value form-button">
-										<i class="fas fa-paste"></i>
-									</button>
-								</div>
-							</div>
-							<div class="col-lg-3 col-sm-10 col-9">
-								<select name="" class="form-control" id="">
-									<option value="">-- Mệnh giá --</option>
-									<option value="">10,000 đ</option>
-									<option value="">20,000 đ</option>
-									<option value="">30,000 đ</option>
-									<option value="">50,000 đ</option>
-									<option value="">100,000 đ</option>
-									<option value="">200,000 đ</option>
-									<option value="">300,000 đ</option>
-									<option value="">500,000 đ</option>
-									<option value="">1,000,000 đ</option>
-								</select>
-							</div>
-							<div class="col-lg-6 col-12">
-								<textarea name="" class="form-control" id="" rows="4"></textarea>
-							</div>
-							<div class="col-lg-6">
-								<div class="custom-control custom-switch switch-module">
-									<input type="checkbox" class="custom-control-input" id="customSwitch1">
-									<label class="custom-control-label" for="customSwitch1">Toggle this switch
-										element</label>
-								</div>
-								<br>
-								<div class="custom-control custom-switch switch-module">
-									<input type="checkbox" class="custom-control-input" disabled id="customSwitch2">
-									<label class="custom-control-label" for="customSwitch2">Disabled switch
-										element</label>
-								</div>
-							</div>
-						</div>
-						<div class="text-center">
-							<button type="submit" class="btn btn-primary btn-large font-weight-bold">
-								<i class="fas fa-upload"></i>
-								Gửi thẻ cào
-							</button>
-						</div>
-					</form>
-				</div>
-			</div>
-			<div class="row row-x-75">
-				<div class="col-lg-6">
-					<div class="cpanel-wrap">
-						<div class="form-m1">
-							<form action="">
-								<div id="">
-									<table class="table table-bordered table-striped table-module">
-										<tbody>
-										<tr>
-											<td>
-												<label for="" class="col-form-label">
-													Chọn quỹ:
-												</label>
-											</td>
-											<td>
-												<select name="" class="form-control" id="">
-													<option value="">Tài khoản quỹ VND - 38,046đ</option>
-													<option value="">Tài khoản quỹ VND - 38,046đ</option>
-													<option value="">Tài khoản quỹ VND - 38,046đ</option>
-												</select>
-											</td>
-										</tr>
-										<tr>
-											<td>
-												<label for="" class="col-form-label">
-													Tài khoản người nhận
-												</label>
-											</td>
-											<td>
-												<input type="text" class="form-control"
-													   placeholder="Nhập email hoặc số điện thoại">
-											</td>
-										</tr>
-										<tr>
-											<td>
-												<label for="" class="col-form-label">
-													Tên người nhận
-												</label>
-											</td>
-											<td>
-												<input type="text" class="form-control"
-													   placeholder="Nhập tên người nhận">
-											</td>
-										</tr>
-										<tr>
-											<td>
-												<label for="" class="col-form-label">
-													Số tiền
-												</label>
-											</td>
-											<td>
-												<input type="text" class="form-control"
-													   placeholder="đ">
-											</td>
-										</tr>
-										<tr>
-											<td>
-												<label for="" class="col-form-label">
-													Nội dung
-												</label>
-											</td>
-											<td>
-												<textarea name="" class="form-control" id="" rows="4"></textarea>
-											</td>
-										</tr>
-										<tr>
-											<td>
-											</td>
-											<td>
-												<button type="submit" class="btn btn-primary font-weight-bold">
-													<i class="fas fa-upload"></i>
-													Chuyển tiền
-												</button>
-											</td>
-										</tr>
-										</tbody>
-									</table>
-								</div>
-							</form>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-6">
-					<div class="cpanel-wrap">
-						<div class="form-m1">
-							<form action="">
-								<div class="row row10">
-									<div class="col-12">
-										<div class="row">
-											<div class="col-5 col-sm-4">
-												<label for="" class="col-form-label font-weight-bold">
-													Tên đăng nhập:
-												</label>
-											</div>
-											<div class="col-7 col-sm-8">
-												<input type="text" class="form-control" placeholder="Tên đăng nhập">
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="row row10">
-									<div class="col-12">
-										<div class="row">
-											<div class="col-5 col-sm-4">
-												<label for="" class="col-form-label font-weight-bold">
-													Họ và tên
-												</label>
-											</div>
-											<div class="col-7 col-sm-8">
-												<input type="text" class="form-control" placeholder="Họ và tên">
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="row row10">
-									<div class="col-12">
-										<div class="row">
-											<div class="col-5 col-sm-4">
-												<label for="" class="col-form-label font-weight-bold">
-													Số đt hoặc email
-												</label>
-											</div>
-											<div class="col-7 col-sm-8">
-												<input type="text" class="form-control" placeholder="Số đt hoặc email">
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="row row10">
-									<div class="col-12">
-										<div class="row">
-											<div class="col-5 col-sm-4">
-												<label for="" class="col-form-label font-weight-bold">
-													Mật khẩu
-												</label>
-											</div>
-											<div class="col-7 col-sm-8">
-												<input type="text" class="form-control" placeholder="Mật khẩu">
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="row row10">
-									<div class="col-12">
-										<div class="row">
-											<div class="col-5 col-sm-4">
-												<label for="" class="col-form-label font-weight-bold">
-													Mật khẩu cấp 2
-												</label>
-											</div>
-											<div class="col-7 col-sm-8">
-												<input type="text" class="form-control" placeholder="Mật khẩu cấp 2">
-												<span class="text-danger text-small">Mật khẩu cấp 2 không được giống với
-													mật
-													khẩu đăng nhập.</span>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="row row10 align-items-center">
-									<div class="col-5 col-sm-4">
-										<div class="form-group form-check mb-0">
-											<input type="checkbox" class="form-check-input" id="exampleCheck1">
-											<label class="form-check-label" for="exampleCheck1">Ghi nhớ đăng
-												nhập?</label>
-										</div>
-									</div>
-									<div class="col-7 col-sm-8">
-										<button type="submit"
-												class="btn btn-primary btn-default font-weight-bold w-100">
-											Đăng ký
-											tài khoản
-										</button>
-									</div>
-								</div>
-							</form>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-6">
-					<div class="cpanel-wrap">
-						<div class="form-floating">
-							<form action="">
-								<div class="form-item">
-									<!-- lần đầu load trang nếu input có sẵn value thì gắn vào thêm 1 class "valid" -->
-									<input type="email" value="Đã có sẵn value - gắn thêm vào 1 class 'valid'" id=""
-										   class="form-control valid">
-									<!--								<input type="email" value="" id="" class="form-control">-->
-									<label class="form-label" for="">Input có value</label>
-								</div>
-								<div class="form-item">
-									<input type="text" id="" class="form-control">
-									<label class="form-label" for="">Input mặc định</label>
-								</div>
-								<div class="form-item">
-									<textarea name="" id="" class="form-control" rows="4"></textarea>
-									<label class="form-label" for="">Textarea</label>
-								</div>
-								<div class="form-item">
-									<select name="" class="form-control">
-										<option value="-1">Input mặc định</option>
-										<option value="-1">Select Option</option>
-										<option value="-1">Select Option</option>
-										<option value="-1">Select Option</option>
-										<option value="-1">Select Option</option>
-										<option value="-1">Select Option</option>
-										<option value="-1">Select Option</option>
-									</select>
-									<label class="form-label" for="">Select Option</label>
-								</div>
-							</form>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-6">
-					<div class="cpanel-wrap">
-						<div class="form-floating">
-							<form action="">
-								<div class="form-item">
-									<!-- lần đầu load trang nếu input có sẵn value thì gắn vào thêm 1 class "valid" -->
-									<input type="email" value="Đã có sẵn value - gắn thêm vào 1 class 'valid'" id=""
-										   class="form-control valid">
-									<!--								<input type="email" value="" id="" class="form-control">-->
-									<label class="form-label" for="">Địa chỉ mail</label>
-								</div>
-								<div class="form-item">
-									<input type="password" id="" class="form-control">
-									<label class="form-label" for="">Mật khẩu</label>
-								</div>
-								<div class="form-item">
-									<div class="row mb-4">
-										<div class="col">
-											<div class="form-check">
-												<input class="form-check-input" type="checkbox" value=""
-													   id="checkboxRemember"
-													   checked/>
-												<label class="form-check-label" for="checkboxRemember">Ghi nhớ đăng
-													nhập?</label>
-											</div>
-										</div>
-										<div class="col text-right">
-											<a href="#">Quên mật khẩu</a>
-										</div>
-									</div>
-								</div>
-								<button type="submit"
-										class="btn btn-primary btn-default font-weight-bold w-100 mb-3">
-									Đăng nhập
-								</button>
-								<div class="text-center">
-									<p class="mb-3">Chưa có tài khoản?
-										<a href="#">Đăng ký</a>
-									</p>
-									<p class="mb-3">hoặc đăng nhập với:</p>
-									<button type="button" class="btn btn-primary btn-social">
-										<i class="fab fa-facebook-f"></i>
-									</button>
-									<button type="button" class="btn btn-primary btn-social">
-										<i class="fab fa-google"></i>
-									</button>
-									<button type="button" class="btn btn-primary btn-social">
-										<i class="fab fa-twitter"></i>
-									</button>
-									<button type="button" class="btn btn-primary btn-social">
-										<i class="fab fa-github"></i>
-									</button>
-								</div>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="cpanel-footer">
-			<div class="cpanel-wrap">
-				<div class="text-center">
-					Template Cpanel v1 - Design by Nencer <span class="px-2">-</span>
-					<a href="./">Tài liệu</a>
-					<span class="px-2">-</span>
-					<a href="tel:0333851915">Liên hệ</a>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="cpanel-overlay" id="cpanel-overlay"></div>
+    <div class="cpanel-sidebar">
+        <div class="sidebar-header">
+            <a href="/">
+                <img src="./assets/images/logo.svg" height="16" width="90" class="img-fluid" alt="">
+            </a>
+        </div>
+        <div class="sidebar-body">
+            <ul class="sidebar-body_menu" id="sidebar-menu">
+                <li>
+                    <a href="./index.html">
+                        <span class="icon"><i class="fal fa-home-alt"></i></span>
+                        <span class="text">Trang chủ</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="./forms.html">
+                        <span class="icon"><i class="fal fa-list-alt"></i></span>
+                        <span class="text">Forms</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./filter.html">
+                        <span class="icon"><i class="fal fa-filter"></i></span>
+                        <span class="text">Filter</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="cpanel-main">
+        <div class="cpanel-header">
+            <div class="cpanel-header_hamburger" id="call-sidebar">
+                <span></span>
+            </div>
+            <a class="cpanel-header_logo" href="/">
+                <img src="./assets/images/logo.svg" height="16" width="90" class="img-fluid" alt="">
+            </a>
+            <ol class="cpanel-breadcrumb breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="#"><i class="fal fa-home-alt"></i>Trang chủ</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="#">Form</a>
+                </li>
+            </ol>
+            <div class="cpanel-header_user">
+                <button type="button" class="header-user_button">
+                    <img src="https://coreui.io/demos/bootstrap/4.2/default/assets/img/avatars/8.jpg" alt="">
+                    Admin
+                </button>
+                <div class="header-user_dropdown">
+                    <div class="dropdown-item">
+                        <a href="">
+                            <i class="fal fa-user-alt"></i>
+                            Thông tin tài khoản
+                        </a>
+                    </div>
+                    <div class="dropdown-item">
+                        <a href="">
+                            <i class="fal fa-lock-alt"></i>
+                            Đổi mật khẩu
+                        </a>
+                    </div>
+                    <div class="dropdown-item">
+                        <a href="">
+                            <i class="fal fa-sign-out"></i>
+                            Đăng xuất
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cpanel-body">
+            <div class="row">
+                <div class="col-md-8 col-lg-6">
+                    <div class="cpanel-wrap">
+                        <div class="form-m1">
+                            <form action="">
+                                <div class="row row10 rowmb5">
+                                    <div class="col-lg-4">
+                                        <div class="row row5">
+                                            <label for=""
+                                                   class="col-form-label font-weight-bold col-lg-12 col-4 px-0">
+                                                Tên đăng nhập:
+                                            </label>
+                                            <input type="text" class="form-control col-lg-12 col-8"
+                                                   placeholder="Tên đăng nhập">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="row row5">
+                                            <label for=""
+                                                   class="col-form-label font-weight-bold col-lg-12 col-4 px-0">
+                                                Họ & tên:
+                                            </label>
+                                            <input type="text" class="form-control col-lg-12 col-8"
+                                                   placeholder="Họ & tên">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="row row5">
+                                            <label for=""
+                                                   class="col-form-label font-weight-bold col-lg-12 col-4 px-0">
+                                                Email:
+                                            </label>
+                                            <input type="text" class="form-control col-lg-12 col-8"
+                                                   placeholder="Email">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="row row5">
+                                            <label for=""
+                                                   class="col-form-label font-weight-bold col-lg-12 col-4 px-0">
+                                                Số điện thoại:
+                                            </label>
+                                            <input type="text" class="form-control col-lg-12 col-8"
+                                                   placeholder="Số điện thoại">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="row row5">
+                                            <label for=""
+                                                   class="col-form-label font-weight-bold col-lg-12 col-4 px-0">
+                                                Giới tính:
+                                            </label>
+                                            <select name="" class="form-control col-lg-12 col-8" id="">
+                                                <option value="">--- Chọn giới tính ---</option>
+                                                <option value="">Nam</option>
+                                                <option value="">Nữ</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="row row5">
+                                            <label for=""
+                                                   class="col-form-label font-weight-bold col-lg-12 col-4 px-0">
+                                                Nhóm:
+                                            </label>
+                                            <select name="" class="form-control col-lg-12 col-8" id="">
+                                                <option value="">Guest</option>
+                                                <option value="">Đại lí</option>
+                                                <option value="">Thành viên</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="row row5">
+                                            <label for=""
+                                                   class="col-form-label font-weight-bold col-lg-12 col-4 px-0">
+                                                Mật khẩu:
+                                            </label>
+                                            <input type="password" class="form-control col-lg-12 col-8">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="row row5">
+                                            <label for=""
+                                                   class="col-form-label font-weight-bold col-lg-12 col-4 px-0">
+                                                Nhập lại mật khẩu:
+                                            </label>
+                                            <input type="password" class="form-control col-lg-12 col-8">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="row row5">
+                                            <label for=""
+                                                   class="col-form-label font-weight-bold col-lg-12 col-4 px-0">
+                                                Vai trò:
+                                            </label>
+                                            <select name="" class="form-control col-lg-12 col-8" id="">
+                                                <option value="">Backend</option>
+                                                <option value="">Super Admin</option>
+                                                <option value="">User</option>
+                                                <option value="">Seller</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 px-0">
+                                        <div class="custom-control custom-switch switch-module switch-module_text">
+                                            <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                                            <label class="custom-control-label" for="customSwitch1">Toggle this switch
+                                                element</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 text-center mt-4">
+                                    <button type="submit"
+                                            class="btn btn-primary btn-default font-weight-bold">
+                                        Thêm tài khoản
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cpanel-footer">
+            <div class="cpanel-wrap">
+                <div class="text-center">
+                    Template Cpanel v1 - Design by Nencer <span class="px-2">-</span>
+                    <a href="./">Tài liệu</a>
+                    <span class="px-2">-</span>
+                    <a href="tel:0333851915">Liên hệ</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <script type=" text/javascript" src="./assets/plugins/jquery.min.js"></script>
 <script type="text/javascript"
-		src="./assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+        src="./assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script type="text/javascript" src="./assets/plugins/select2/js/select2.min.js"></script>
 <script type="text/javascript" src="./assets/js/app.js"></script>
 </body>
