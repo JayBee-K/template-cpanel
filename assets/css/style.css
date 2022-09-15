@@ -413,8 +413,8 @@ h6, .h6 {
 }
 
 .switch-module .custom-control-label::before {
-	left: -2.8rem;
-	width: 2.8rem;
+	left: -2.4em;
+	width: 2.4rem;
 	height: 1.2rem;
 	border-radius: 20px;
 	top: 0;
@@ -424,7 +424,7 @@ h6, .h6 {
 	width: calc(1.2rem - 4px);
 	height: calc(1.2rem - 4px);
 	top: 2px;
-	left: calc(-2.8rem + 2px);
+	left: calc(-2.4rem + 3px);
 	border-radius: 50%;
 }
 
@@ -438,8 +438,8 @@ h6, .h6 {
 }
 
 .switch-module .custom-control-input:checked ~ .custom-control-label::after {
-	-webkit-transform: translateX(1.65rem);
-	transform: translateX(1.65rem);
+	-webkit-transform: translateX(1.25rem);
+	transform: translateX(1.25rem);
 }
 
 /***** End Custom Switch *****/
@@ -875,7 +875,7 @@ h6, .h6 {
 
 .table-module td, .table-module th {
 	padding: 0.35rem;
-	font-size: 13px;
+	font-size: 13.5px;
 	vertical-align: middle;
 }
 
