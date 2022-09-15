@@ -1,382 +1,388 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport"
-		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
-	<title>Template Cpanel</title>
-	<meta name="description" content="Template Cpanel">
-	<meta name="author" content="">
+    <title>Template Cpanel</title>
+    <meta name="description" content="Template Cpanel">
+    <meta name="author" content="">
 
-	<meta property="og:title" content="Template Cpanel">
-	<meta property="og:type" content="website">
-	<meta property="og:url" content="">
-	<meta property="og:description" content="Template Cpanel">
-	<meta property="og:image" content="">
+    <meta property="og:title" content="Template Cpanel">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:description" content="Template Cpanel">
+    <meta property="og:image" content="">
 
-	<link rel="icon" href="/assets/images/favicon.png">
-	<link rel="apple-touch-icon" href="/assets/images/favicon.png">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
-		  rel="stylesheet">
-	<link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="./assets/plugins/select2/css/select2.min.css">
-	<link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
-	<link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" href="/assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="/assets/images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/plugins/select2/css/select2.min.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 
-	<style>
-		:root {
-			--template-color: #3c444d;
-			--template-hover: #2c3138;
+    <style>
+        :root {
+            --template-color: #3c444d;
+            --template-hover: #2c3138;
 
-			--primary-color: #20a53a;
-			--primary-hover: #10952a;
-			--primary-rgb: 32, 165, 58;
-		}
-	</style>
+            --primary-color: #20a53a;
+            --primary-hover: #10952a;
+            --primary-rgb: 32, 165, 58;
+        }
+    </style>
 </head>
 <body>
 <div class="template-cpanel" id="template-cpanel">
-	<div class="cpanel-overlay" id="cpanel-overlay"></div>
-	<div class="cpanel-sidebar">
-		<div class="sidebar-header">
-			<a href="/">
-				<img src="./assets/images/logo.svg" height="16" width="90" class="img-fluid" alt="">
-			</a>
-		</div>
-		<div class="sidebar-body">
-			<ul class="sidebar-body_menu" id="sidebar-menu">
-				<li>
-					<a href="./index.html">
-						<span class="icon"><i class="fal fa-home-alt"></i></span>
-						<span class="text">Trang chủ</span>
-					</a>
-				</li>
-				<li>
-					<a href="#collapse-config" data-toggle="collapse">
-						<span class="icon"><i class="fal fa-cog"></i></span>
-						<span class="text">Cấu hình</span>
-						<span class="arrow">
-							<i class="fal fa-angle-down"></i>
-						</span>
-					</a>
-					<ul id="collapse-config" class="collapse" data-parent="#sidebar-menu">
-						<li>
-							<a href="./cau-hinh-chung.html">
-								<span class="icon"><i class="fal fa-angle-right"></i></span>
-								<span class="text">
-									Cấu hình chung
-								</span>
-							</a>
-						</li>
-						<li>
-							<a href="./cau-hinh-kho-the.html">
-								<span class="icon"><i class="fal fa-angle-right"></i></span>
-								<span class="text">
-									Cấu hình kho thẻ
-								</span>
-							</a>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<a href="./danh-sach-nap.html">
-						<span class="icon"><i class="fal fa-credit-card"></i></span>
-						<span class="text">Danh sách nạp</span>
-					</a>
-				</li>
-				<li>
-					<a href="#collapse-user" data-toggle="collapse">
-						<span class="icon"><i class="fal fa-user-alt"></i></span>
-						<span class="text">Users</span>
-						<span class="arrow">
-							<i class="fal fa-angle-down"></i>
-						</span>
-					</a>
-					<ul id="collapse-user" class="collapse" data-parent="#sidebar-menu">
-						<li>
-							<a href="./danh-sach-user.html">
-								<span class="icon"><i class="fal fa-angle-right"></i></span>
-								<span class="text">
-									Danh sách users
-								</span>
-							</a>
-						</li>
-						<li>
-							<a href="./them-user.html">
-								<span class="icon"><i class="fal fa-angle-right"></i></span>
-								<span class="text">
-									Thêm user
-								</span>
-							</a>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<a href="#collapse-tintuc" data-toggle="collapse">
-						<span class="icon"><i class="fal fa-newspaper"></i></span>
-						<span class="text">Tin tức</span>
-						<span class="arrow">
-							<i class="fal fa-angle-down"></i>
-						</span>
-					</a>
-					<ul id="collapse-tintuc" class="collapse" data-parent="#sidebar-menu">
-						<li>
-							<a href="./danh-sach-tin-tuc.html">
-								<span class="icon"><i class="fal fa-angle-right"></i></span>
-								<span class="text">
-									Danh sách tin tuc
-								</span>
-							</a>
-						</li>
-						<li>
-							<a href="./them-tin-tuc.html">
-								<span class="icon"><i class="fal fa-angle-right"></i></span>
-								<span class="text">
-									Thêm tin tức
-								</span>
-							</a>
-						</li>
-					</ul>
-				</li>
-				<li class="active">
-					<a href="./vi-dien-tu.html">
-						<span class="icon"><i class="fal fa-wallet"></i></span>
-						<span class="text">Ví điện tử</span>
-					</a>
-				</li>
-			</ul>
-		</div>
-	</div>
-	<div class="cpanel-main">
-		<div class="cpanel-header">
-			<div class="cpanel-header_hamburger" id="call-sidebar">
-				<span></span>
-			</div>
-			<a class="cpanel-header_logo" href="/">
-				<img src="./assets/images/logo.svg" height="16" width="90" class="img-fluid" alt="">
-			</a>
-			<div class="cpanel-header_navigation">
-				<ul class="list-unstyled mb-0">
-					<li>
-						<a href="">Trang chủ</a>
-					</li>
-					<li>
-						<a href="">Dashboard</a>
-					</li>
-					<li>
-						<a href="">Liên kết nhanh</a>
-					</li>
-				</ul>
-			</div>
-			<div class="cpanel-header_search">
-				<div class="form-m1">
-					<form action="">
-						<div class="position-relative form-icon form-icon_right">
-							<input type="text" class="form-control" placeholder="Từ khoá tìm kiếm...">
-							<button type="submit" class="form-button">
-								<i class="fal fa-search"></i>
-							</button>
-						</div>
-					</form>
-				</div>
-			</div>
-			<div class="cpanel-header_user">
-				<button type="button" class="header-user_button">
-					<img src="https://coreui.io/demos/bootstrap/4.2/default/assets/img/avatars/8.jpg" alt="">
-					Admin
-				</button>
-				<div class="header-user_dropdown">
-					<div class="dropdown-item">
-						<a href="">
-							<i class="fal fa-user-alt"></i>
-							Thông tin tài khoản
-						</a>
-					</div>
-					<div class="dropdown-item">
-						<a href="">
-							<i class="fal fa-lock-alt"></i>
-							Đổi mật khẩu
-						</a>
-					</div>
-					<div class="dropdown-item">
-						<a href="">
-							<i class="fal fa-sign-out"></i>
-							Đăng xuất
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="cpanel-body">
-			<div class="row">
-				<div class="col-12">
-					<div class="cpanel-heading">
-						<div class="cpanel-heading_wrap">
-							<div class="heading-title">
-								Thông tin ví điện tử
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row row5">
-				<div class="col-12">
-					<div class="row row10 rowmb5">
-						<div class="col-md-6">
-							<div class="table-responsive">
-								<table class="table table-bordered table-striped table-hover table-module mb-0">
-									<tbody>
-									<tr>
-										<td>Thành viên</td>
-										<th>Lê Thành Trung</th>
-									</tr>
-									<tr>
-										<td>Địa chỉ ví</td>
-										<th>0034519739</th>
-									</tr>
-									<tr>
-										<td>Loại ví</td>
-										<th>VNĐ</th>
-									</tr>
-									<tr>
-										<td>Số dư khả dụng</td>
-										<th>0 VNĐ</th>
-									</tr>
-									<tr>
-										<td>Ngày tạo</td>
-										<th>2022-09-07 14:45:27</th>
-									</tr>
-									<tr>
-										<td>Ngày cập nhật</td>
-										<th>2022-09-07 14:45:27</th>
-									</tr>
-								</table>
-							</div>
-						</div>
-						<div class="col-md-6">
-							<div class="form-m1">
-								<form action="">
-									<div class="table-responsive">
-										<table class="table table-bordered table-striped table-hover table-module mb-0">
-											<tbody>
-											<tr>
-												<td>
-													<label for=""
-														   class="col-form-label font-weight-bold py-0">
-														Trạng thái:
-													</label>
-												</td>
-												<td>
-													<div class="custom-control custom-switch switch-module">
-														<input type="checkbox" class="custom-control-input"
-															   id="customSwitch1">
-														<label class="custom-control-label"
-															   for="customSwitch1"></label>
-													</div>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<label for=""
-														   class="col-form-label font-weight-bold py-0">
-														Hình thức:
-													</label>
-												</td>
-												<td>
-													<div class="form-check form-check-inline">
-														<input class="form-check-input" type="radio"
-															   id="inlineCheckbox1" value="">
-														<label class="form-check-label"
-															   for="inlineCheckbox1">Chọn loại</label>
-													</div>
-													<div class="form-check form-check-inline">
-														<input class="form-check-input" type="radio"
-															   id="inlineCheckbox2" value="">
-														<label class="form-check-label"
-															   for="inlineCheckbox2">Nạp tiền</label>
-													</div>
-													<div class="form-check form-check-inline">
-														<input class="form-check-input" type="radio"
-															   id="inlineCheckbox3" value="">
-														<label class="form-check-label" for="inlineCheckbox3">
-															Rút tiền</label>
-													</div>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<label for=""
-														   class="col-form-label font-weight-bold py-0">
-														Số tiền:
-													</label>
-												</td>
-												<td>
-													<input type="text" class="form-control"
-														   placeholder="Số tiền">
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<label for=""
-														   class="col-form-label font-weight-bold py-0">
-														Số tiền gồm phí:
-													</label>
-												</td>
-												<td>
-													<input type="text" class="form-control" disabled
-														   placeholder="0 VNĐ">
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<label for=""
-														   class="col-form-label font-weight-bold py-0">
-														Mô tả giao dịch:
-													</label>
-												</td>
-												<td>
-													<textarea name="" id="" rows="2"
-															  class="form-control"
-															  placeholder="Mô tả giao dịch"></textarea>
-												</td>
-											</tr>
-											<tr>
-												<td></td>
-												<td>
-													<button type="submit"
-															class="btn btn-primary btn-default">
-														Thực hiện giao dịch
-													</button>
-												</td>
-											</tr>
-										</table>
-									</div>
-								</form>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="cpanel-footer">
-			<div class="cpanel-wrap">
-				<div class="text-center">
-					Template Cpanel v1 - Design by Nencer <span class="px-2">-</span>
-					<a href="./">Tài liệu</a>
-					<span class="px-2">-</span>
-					<a href="tel:0333851915">Liên hệ</a>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="cpanel-overlay" id="cpanel-overlay"></div>
+    <div class="cpanel-sidebar">
+        <div class="sidebar-header">
+            <a href="/">
+                <img src="./assets/images/logo.svg" height="16" width="90" class="img-fluid" alt="">
+            </a>
+        </div>
+        <div class="sidebar-body">
+            <ul class="sidebar-body_menu" id="sidebar-menu">
+                <li>
+                    <a href="./index.html">
+                        <span class="icon"><i class="fal fa-home-alt"></i></span>
+                        <span class="text">Trang chủ</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#collapse-config" data-toggle="collapse">
+                        <span class="icon"><i class="fal fa-cog"></i></span>
+                        <span class="text">Cấu hình</span>
+                        <span class="arrow">
+                            <i class="fal fa-angle-down"></i>
+                        </span>
+                    </a>
+                    <ul id="collapse-config" class="collapse" data-parent="#sidebar-menu">
+                        <li>
+                            <a href="./cau-hinh-chung.html">
+                                <span class="icon"><i class="fal fa-angle-right"></i></span>
+                                <span class="text">
+                                    Cấu hình chung
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./cau-hinh-kho-the.html">
+                                <span class="icon"><i class="fal fa-angle-right"></i></span>
+                                <span class="text">
+                                    Cấu hình kho thẻ
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./danh-sach-nap.html">
+                        <span class="icon"><i class="fal fa-credit-card"></i></span>
+                        <span class="text">Danh sách nạp</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#collapse-user" data-toggle="collapse">
+                        <span class="icon"><i class="fal fa-user-alt"></i></span>
+                        <span class="text">Users</span>
+                        <span class="arrow">
+                            <i class="fal fa-angle-down"></i>
+                        </span>
+                    </a>
+                    <ul id="collapse-user" class="collapse" data-parent="#sidebar-menu">
+                        <li>
+                            <a href="./danh-sach-user.html">
+                                <span class="icon"><i class="fal fa-angle-right"></i></span>
+                                <span class="text">
+                                    Danh sách users
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./them-user.html">
+                                <span class="icon"><i class="fal fa-angle-right"></i></span>
+                                <span class="text">
+                                    Thêm user
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#collapse-tintuc" data-toggle="collapse">
+                        <span class="icon"><i class="fal fa-newspaper"></i></span>
+                        <span class="text">Tin tức</span>
+                        <span class="arrow">
+                            <i class="fal fa-angle-down"></i>
+                        </span>
+                    </a>
+                    <ul id="collapse-tintuc" class="collapse" data-parent="#sidebar-menu">
+                        <li>
+                            <a href="./danh-sach-tin-tuc.html">
+                                <span class="icon"><i class="fal fa-angle-right"></i></span>
+                                <span class="text">
+                                    Danh sách tin tuc
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./them-tin-tuc.html">
+                                <span class="icon"><i class="fal fa-angle-right"></i></span>
+                                <span class="text">
+                                    Thêm tin tức
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href="./vi-dien-tu.html">
+                        <span class="icon"><i class="fal fa-wallet"></i></span>
+                        <span class="text">Ví điện tử</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./booking.html">
+                        <span class="icon"><i class="fal fa-ticket-alt"></i></span>
+                        <span class="text">Booking</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="cpanel-main">
+        <div class="cpanel-header">
+            <div class="cpanel-header_hamburger" id="call-sidebar">
+                <span></span>
+            </div>
+            <a class="cpanel-header_logo" href="/">
+                <img src="./assets/images/logo.svg" height="16" width="90" class="img-fluid" alt="">
+            </a>
+            <div class="cpanel-header_navigation">
+                <ul class="list-unstyled mb-0">
+                    <li>
+                        <a href="">Trang chủ</a>
+                    </li>
+                    <li>
+                        <a href="">Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="">Liên kết nhanh</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="cpanel-header_search">
+                <div class="form-m1">
+                    <form action="">
+                        <div class="position-relative form-icon form-icon_right">
+                            <input type="text" class="form-control" placeholder="Từ khoá tìm kiếm...">
+                            <button type="submit" class="form-button">
+                                <i class="fal fa-search"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="cpanel-header_user">
+                <button type="button" class="header-user_button">
+                    <img src="https://coreui.io/demos/bootstrap/4.2/default/assets/img/avatars/8.jpg" alt="">
+                    Admin
+                </button>
+                <div class="header-user_dropdown">
+                    <div class="dropdown-item">
+                        <a href="">
+                            <i class="fal fa-user-alt"></i>
+                            Thông tin tài khoản
+                        </a>
+                    </div>
+                    <div class="dropdown-item">
+                        <a href="">
+                            <i class="fal fa-lock-alt"></i>
+                            Đổi mật khẩu
+                        </a>
+                    </div>
+                    <div class="dropdown-item">
+                        <a href="">
+                            <i class="fal fa-sign-out"></i>
+                            Đăng xuất
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cpanel-body">
+            <div class="row">
+                <div class="col-12">
+                    <div class="cpanel-heading">
+                        <div class="cpanel-heading_wrap">
+                            <div class="heading-title">
+                                Thông tin ví điện tử
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row5">
+                <div class="col-12">
+                    <div class="row row10 rowmb5">
+                        <div class="col-md-6">
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-striped table-hover table-module mb-0">
+                                    <tbody>
+                                    <tr>
+                                        <td>Thành viên</td>
+                                        <th>Lê Thành Trung</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Địa chỉ ví</td>
+                                        <th>0034519739</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Loại ví</td>
+                                        <th>VNĐ</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Số dư khả dụng</td>
+                                        <th>0 VNĐ</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Ngày tạo</td>
+                                        <th>2022-09-07 14:45:27</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Ngày cập nhật</td>
+                                        <th>2022-09-07 14:45:27</th>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-m1">
+                                <form action="">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered table-striped table-hover table-module mb-0">
+                                            <tbody>
+                                            <tr>
+                                                <td>
+                                                    <label for=""
+                                                           class="col-form-label font-weight-bold py-0">
+                                                        Trạng thái:
+                                                    </label>
+                                                </td>
+                                                <td>
+                                                    <div class="custom-control custom-switch switch-module">
+                                                        <input type="checkbox" class="custom-control-input"
+                                                               id="customSwitch1">
+                                                        <label class="custom-control-label"
+                                                               for="customSwitch1"></label>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <label for=""
+                                                           class="col-form-label font-weight-bold py-0">
+                                                        Hình thức:
+                                                    </label>
+                                                </td>
+                                                <td>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio"
+                                                               id="inlineCheckbox1" value="">
+                                                        <label class="form-check-label"
+                                                               for="inlineCheckbox1">Chọn loại</label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio"
+                                                               id="inlineCheckbox2" value="">
+                                                        <label class="form-check-label"
+                                                               for="inlineCheckbox2">Nạp tiền</label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio"
+                                                               id="inlineCheckbox3" value="">
+                                                        <label class="form-check-label" for="inlineCheckbox3">
+                                                            Rút tiền</label>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <label for=""
+                                                           class="col-form-label font-weight-bold py-0">
+                                                        Số tiền:
+                                                    </label>
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control"
+                                                           placeholder="Số tiền">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <label for=""
+                                                           class="col-form-label font-weight-bold py-0">
+                                                        Số tiền gồm phí:
+                                                    </label>
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control" disabled
+                                                           placeholder="0 VNĐ">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <label for=""
+                                                           class="col-form-label font-weight-bold py-0">
+                                                        Mô tả giao dịch:
+                                                    </label>
+                                                </td>
+                                                <td>
+                                                    <textarea name="" id="" rows="2"
+                                                              class="form-control"
+                                                              placeholder="Mô tả giao dịch"></textarea>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>
+                                                    <button type="submit"
+                                                            class="btn btn-primary btn-default">
+                                                        Thực hiện giao dịch
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cpanel-footer">
+            <div class="cpanel-wrap">
+                <div class="text-center">
+                    Template Cpanel v1 - Design by Nencer <span class="px-2">-</span>
+                    <a href="./">Tài liệu</a>
+                    <span class="px-2">-</span>
+                    <a href="tel:0333851915">Liên hệ</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <script type=" text/javascript" src="./assets/plugins/jquery.min.js"></script>
 <script type="text/javascript"
-		src="./assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+        src="./assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script type="text/javascript" src="./assets/plugins/select2/js/select2.min.js"></script>
 <script type="text/javascript" src="./assets/js/app.js"></script>
 </body>

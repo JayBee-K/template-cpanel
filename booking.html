@@ -1,261 +1,1281 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport"
-		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
-	<title>Template Cpanel</title>
-	<meta name="description" content="Template Cpanel">
-	<meta name="author" content="">
+    <title>Template Cpanel</title>
+    <meta name="description" content="Template Cpanel">
+    <meta name="author" content="">
 
-	<meta property="og:title" content="Template Cpanel">
-	<meta property="og:type" content="website">
-	<meta property="og:url" content="">
-	<meta property="og:description" content="Template Cpanel">
-	<meta property="og:image" content="">
+    <meta property="og:title" content="Template Cpanel">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:description" content="Template Cpanel">
+    <meta property="og:image" content="">
 
-	<link rel="icon" href="/assets/images/favicon.png">
-	<link rel="apple-touch-icon" href="/assets/images/favicon.png">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
-		  rel="stylesheet">
-	<link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="./assets/plugins/select2/css/select2.min.css">
-	<link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
-	<link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" href="/assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="/assets/images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/plugins/select2/css/select2.min.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 
-	<style>
-		:root {
-			--template-color: #3c444d;
-			--template-hover: #2c3138;
+    <style>
+        :root {
+            --template-color: #3c444d;
+            --template-hover: #2c3138;
 
-			--primary-color: #20a53a;
-			--primary-hover: #10952a;
-			--primary-rgb: 32, 165, 58;
-		}
-	</style>
+            --primary-color: #20a53a;
+            --primary-hover: #10952a;
+            --primary-rgb: 32, 165, 58;
+        }
+    </style>
 </head>
 <body>
-<div class="template-cpanel" id="template-cpanel">
-	<div class="cpanel-overlay" id="cpanel-overlay"></div>
-	<div class="cpanel-sidebar">
-		<div class="sidebar-header">
-			<a href="/">
-				<img src="./assets/images/logo.svg" height="16" width="90" class="img-fluid" alt="">
-			</a>
-		</div>
-		<div class="sidebar-body">
-			<ul class="sidebar-body_menu" id="sidebar-menu">
-				<li>
-					<a href="./index.html">
-						<span class="icon"><i class="fal fa-home-alt"></i></span>
-						<span class="text">Trang chủ</span>
-					</a>
-				</li>
-				<li>
-					<a href="#collapse-config" data-toggle="collapse">
-						<span class="icon"><i class="fal fa-cog"></i></span>
-						<span class="text">Cấu hình</span>
-						<span class="arrow">
-							<i class="fal fa-angle-down"></i>
-						</span>
-					</a>
-					<ul id="collapse-config" class="collapse" data-parent="#sidebar-menu">
-						<li>
-							<a href="./cau-hinh-chung.html">
-								<span class="icon"><i class="fal fa-angle-right"></i></span>
-								<span class="text">
-									Cấu hình chung
-								</span>
-							</a>
-						</li>
-						<li>
-							<a href="./cau-hinh-kho-the.html">
-								<span class="icon"><i class="fal fa-angle-right"></i></span>
-								<span class="text">
-									Cấu hình kho thẻ
-								</span>
-							</a>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<a href="./danh-sach-nap.html">
-						<span class="icon"><i class="fal fa-credit-card"></i></span>
-						<span class="text">Danh sách nạp</span>
-					</a>
-				</li>
-				<li>
-					<a href="#collapse-user" data-toggle="collapse">
-						<span class="icon"><i class="fal fa-user-alt"></i></span>
-						<span class="text">Users</span>
-						<span class="arrow">
-							<i class="fal fa-angle-down"></i>
-						</span>
-					</a>
-					<ul id="collapse-user" class="collapse" data-parent="#sidebar-menu">
-						<li>
-							<a href="./danh-sach-user.html">
-								<span class="icon"><i class="fal fa-angle-right"></i></span>
-								<span class="text">
-									Danh sách users
-								</span>
-							</a>
-						</li>
-						<li>
-							<a href="./them-user.html">
-								<span class="icon"><i class="fal fa-angle-right"></i></span>
-								<span class="text">
-									Thêm user
-								</span>
-							</a>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<a href="#collapse-tintuc" data-toggle="collapse">
-						<span class="icon"><i class="fal fa-newspaper"></i></span>
-						<span class="text">Tin tức</span>
-						<span class="arrow">
-							<i class="fal fa-angle-down"></i>
-						</span>
-					</a>
-					<ul id="collapse-tintuc" class="collapse" data-parent="#sidebar-menu">
-						<li>
-							<a href="./danh-sach-tin-tuc.html">
-								<span class="icon"><i class="fal fa-angle-right"></i></span>
-								<span class="text">
-									Danh sách tin tuc
-								</span>
-							</a>
-						</li>
-						<li>
-							<a href="./them-tin-tuc.html">
-								<span class="icon"><i class="fal fa-angle-right"></i></span>
-								<span class="text">
-									Thêm tin tức
-								</span>
-							</a>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<a href="./vi-dien-tu.html">
-						<span class="icon"><i class="fal fa-wallet"></i></span>
-						<span class="text">Ví điện tử</span>
-					</a>
-				</li>
-				<li class="active">
-					<a href="./booking.html">
-						<span class="icon"><i class="fal fa-ticket-alt"></i></span>
-						<span class="text">Booking</span>
-					</a>
-				</li>
-			</ul>
-		</div>
-	</div>
-	<div class="cpanel-main">
-		<div class="cpanel-header">
-			<div class="cpanel-header_hamburger" id="call-sidebar">
-				<span></span>
-			</div>
-			<a class="cpanel-header_logo" href="/">
-				<img src="./assets/images/logo.svg" height="16" width="90" class="img-fluid" alt="">
-			</a>
-			<div class="cpanel-header_navigation">
-				<ul class="list-unstyled mb-0">
-					<li>
-						<a href="">Trang chủ</a>
-					</li>
-					<li>
-						<a href="">Dashboard</a>
-					</li>
-					<li>
-						<a href="">Liên kết nhanh</a>
-					</li>
-				</ul>
-			</div>
-			<div class="cpanel-header_search">
-				<div class="form-m1">
-					<form action="">
-						<div class="position-relative form-icon form-icon_right">
-							<input type="text" class="form-control" placeholder="Từ khoá tìm kiếm...">
-							<button type="submit" class="form-button">
-								<i class="fal fa-search"></i>
-							</button>
-						</div>
-					</form>
-				</div>
-			</div>
-			<div class="cpanel-header_user">
-				<button type="button" class="header-user_button">
-					<img src="https://coreui.io/demos/bootstrap/4.2/default/assets/img/avatars/8.jpg" alt="">
-					Admin
-				</button>
-				<div class="header-user_dropdown">
-					<div class="dropdown-item">
-						<a href="">
-							<i class="fal fa-user-alt"></i>
-							Thông tin tài khoản
-						</a>
-					</div>
-					<div class="dropdown-item">
-						<a href="">
-							<i class="fal fa-lock-alt"></i>
-							Đổi mật khẩu
-						</a>
-					</div>
-					<div class="dropdown-item">
-						<a href="">
-							<i class="fal fa-sign-out"></i>
-							Đăng xuất
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="cpanel-body">
-			<div class="row">
-				<div class="col-12">
-					<div class="cpanel-heading">
-						<div class="cpanel-heading_wrap">
-							<div class="heading-title">
-								Lịch booking sân
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row row5">
-				<div class="col-12">
-					<div class="card cpanel-card card-booking">
-						<div class="card-header">
-							<div class="card-title">
 
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="cpanel-footer">
-			<div class="cpanel-wrap">
-				<div class="text-center">
-					Template Cpanel v1 - Design by Nencer <span class="px-2">-</span>
-					<a href="./">Tài liệu</a>
-					<span class="px-2">-</span>
-					<a href="tel:0333851915">Liên hệ</a>
-				</div>
-			</div>
-		</div>
-	</div>
+<div class="modal fade modal-module modal-default" id="popupBooking" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title">Đặt lịch</div>
+                <button type="button" class="close" data-dismiss="modal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-m1">
+                    <form action="">
+                        <div class="row row5">
+                            <div class="col-lg-6">
+                                <label for="" class="col-form-label font-weight-bold">
+                                    Tên khách hàng
+                                </label>
+                                <input type="text" class="form-control" placeholder="Tên khách hàng">
+                            </div>
+                            <div class="col-lg-6">
+                                <label for="" class="col-form-label font-weight-bold">
+                                    Số điện thoại
+                                </label>
+                                <input type="text" class="form-control" placeholder="Số điện thoại">
+                            </div>
+                            <div class="col-lg-6">
+                                <label for="" class="col-form-label font-weight-bold">
+                                    Sân
+                                </label>
+                                <select name="" class="form-control" id="">
+                                    <option value="">Sân 1</option>
+                                    <option value="">Sân 2</option>
+                                    <option value="">Sân 3</option>
+                                    <option value="">Sân 4</option>
+                                    <option value="">Sân 5</option>
+                                    <option value="">Sân 6</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-6">
+                                <label for="" class="col-form-label font-weight-bold">
+                                    Khung giờ
+                                </label>
+                                <select name="" class="form-control" id="">
+                                    <option value="">7:00 - 8:00</option>
+                                    <option value="">8:00 - 9:00</option>
+                                    <option value="">9:00 - 10:00</option>
+                                    <option value="">10:00 - 11:00</option>
+                                    <option value="">11:00 - 12:00</option>
+                                    <option value="">13:00 - 14:00</option>
+                                    <option value="">14:00 - 15:00</option>
+                                    <option value="">15:00 - 16:00</option>
+                                    <option value="">16:00 - 17:00</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-6">
+                                <label for="" class="col-form-label font-weight-bold">
+                                    Số khách
+                                </label>
+                                <input type="text" class="form-control" placeholder="Số khách">
+                            </div>
+                            <div class="col-lg-6">
+                                <label for="" class="col-form-label font-weight-bold">
+                                    Dịch vụ đi kèm
+                                </label>
+                                <select name="" class="form-control" id="">
+                                    <option value="">Xe golf</option>
+                                    <option value="">Dụng cụ đánh golf</option>
+                                    <option value="">Ăn trưa</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="text-center mt-4">
+                            <button type="submit" class="btn btn-primary btn-default">
+                                Đặt lịch
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="template-cpanel" id="template-cpanel">
+    <div class="cpanel-overlay" id="cpanel-overlay"></div>
+    <div class="cpanel-sidebar">
+        <div class="sidebar-header">
+            <a href="/">
+                <img src="./assets/images/logo.svg" height="16" width="90" class="img-fluid" alt="">
+            </a>
+        </div>
+        <div class="sidebar-body">
+            <ul class="sidebar-body_menu" id="sidebar-menu">
+                <li>
+                    <a href="./index.html">
+                        <span class="icon"><i class="fal fa-home-alt"></i></span>
+                        <span class="text">Trang chủ</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#collapse-config" data-toggle="collapse">
+                        <span class="icon"><i class="fal fa-cog"></i></span>
+                        <span class="text">Cấu hình</span>
+                        <span class="arrow">
+                            <i class="fal fa-angle-down"></i>
+                        </span>
+                    </a>
+                    <ul id="collapse-config" class="collapse" data-parent="#sidebar-menu">
+                        <li>
+                            <a href="./cau-hinh-chung.html">
+                                <span class="icon"><i class="fal fa-angle-right"></i></span>
+                                <span class="text">
+                                    Cấu hình chung
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./cau-hinh-kho-the.html">
+                                <span class="icon"><i class="fal fa-angle-right"></i></span>
+                                <span class="text">
+                                    Cấu hình kho thẻ
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./danh-sach-nap.html">
+                        <span class="icon"><i class="fal fa-credit-card"></i></span>
+                        <span class="text">Danh sách nạp</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#collapse-user" data-toggle="collapse">
+                        <span class="icon"><i class="fal fa-user-alt"></i></span>
+                        <span class="text">Users</span>
+                        <span class="arrow">
+                            <i class="fal fa-angle-down"></i>
+                        </span>
+                    </a>
+                    <ul id="collapse-user" class="collapse" data-parent="#sidebar-menu">
+                        <li>
+                            <a href="./danh-sach-user.html">
+                                <span class="icon"><i class="fal fa-angle-right"></i></span>
+                                <span class="text">
+                                    Danh sách users
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./them-user.html">
+                                <span class="icon"><i class="fal fa-angle-right"></i></span>
+                                <span class="text">
+                                    Thêm user
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#collapse-tintuc" data-toggle="collapse">
+                        <span class="icon"><i class="fal fa-newspaper"></i></span>
+                        <span class="text">Tin tức</span>
+                        <span class="arrow">
+                            <i class="fal fa-angle-down"></i>
+                        </span>
+                    </a>
+                    <ul id="collapse-tintuc" class="collapse" data-parent="#sidebar-menu">
+                        <li>
+                            <a href="./danh-sach-tin-tuc.html">
+                                <span class="icon"><i class="fal fa-angle-right"></i></span>
+                                <span class="text">
+                                    Danh sách tin tuc
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./them-tin-tuc.html">
+                                <span class="icon"><i class="fal fa-angle-right"></i></span>
+                                <span class="text">
+                                    Thêm tin tức
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./vi-dien-tu.html">
+                        <span class="icon"><i class="fal fa-wallet"></i></span>
+                        <span class="text">Ví điện tử</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="./booking.html">
+                        <span class="icon"><i class="fal fa-ticket-alt"></i></span>
+                        <span class="text">Booking</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="cpanel-main">
+        <div class="cpanel-header">
+            <div class="cpanel-header_hamburger" id="call-sidebar">
+                <span></span>
+            </div>
+            <a class="cpanel-header_logo" href="/">
+                <img src="./assets/images/logo.svg" height="16" width="90" class="img-fluid" alt="">
+            </a>
+            <div class="cpanel-header_navigation">
+                <ul class="list-unstyled mb-0">
+                    <li>
+                        <a href="">Trang chủ</a>
+                    </li>
+                    <li>
+                        <a href="">Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="">Liên kết nhanh</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="cpanel-header_search">
+                <div class="form-m1">
+                    <form action="">
+                        <div class="position-relative form-icon form-icon_right">
+                            <input type="text" class="form-control" placeholder="Từ khoá tìm kiếm...">
+                            <button type="submit" class="form-button">
+                                <i class="fal fa-search"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="cpanel-header_user">
+                <button type="button" class="header-user_button">
+                    <img src="https://coreui.io/demos/bootstrap/4.2/default/assets/img/avatars/8.jpg"
+                         alt="">
+                    Admin
+                </button>
+                <div class="header-user_dropdown">
+                    <div class="dropdown-item">
+                        <a href="">
+                            <i class="fal fa-user-alt"></i>
+                            Thông tin tài khoản
+                        </a>
+                    </div>
+                    <div class="dropdown-item">
+                        <a href="">
+                            <i class="fal fa-lock-alt"></i>
+                            Đổi mật khẩu
+                        </a>
+                    </div>
+                    <div class="dropdown-item">
+                        <a href="">
+                            <i class="fal fa-sign-out"></i>
+                            Đăng xuất
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cpanel-body">
+            <div class="row">
+                <div class="col-12">
+                    <div class="cpanel-heading">
+                        <div class="cpanel-heading_wrap">
+                            <div class="heading-title">
+                                Lịch booking sân
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row5">
+                <div class="col-12">
+                    <div class="card cpanel-card card-booking">
+                        <div class="card-header">
+                            <div class="card-meta">
+                                <div class="card-meta_item active">
+                                    <i class="far fa-clouds-sun"></i>
+                                    <span>
+                                        24<sup>o</sup>
+                                    </span>
+                                </div>
+                                <div class="card-meta_item">
+                                    <i class="far fa-golf-ball"></i>
+                                    <span>
+                                        11
+                                    </span>
+                                </div>
+                                <div class="card-meta_item">
+                                    <i class="far fa-user-alt"></i>
+                                    <span>
+                                        32
+                                    </span>
+                                </div>
+                                <div class="card-meta_item">
+                                    <i class="far fa-caravan-alt"></i>
+                                    <span>
+                                        0
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="card-time">
+                                <div class="card-time_day" id="day">15</div>
+                                <div class="card-time_inner">
+                                    <div class="card-time_rank">
+                                        Thứ năm
+                                    </div>
+                                    <div class="card-time_bottom">
+                                        <div class="card-time_month">
+                                            Tháng 09
+                                        </div>
+                                        <div class="card-time_year">
+                                            2022
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-tab">
+                                <ul class="nav nav-tabs">
+                                    <li class="nav-item">
+                                        <a class="nav-link today" data-toggle="tab" href="#tab-01">
+                                            Hôm nay
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#tab-02">
+                                            Thứ sáu, ngày 16
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" data-toggle="tab" href="#tab-03">
+                                            Chủ nhật, ngày 18
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#tab-04">
+                                            Thứ hai, ngày 19
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#tab-05">
+                                            Thứ ba, ngày 20
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#tab-06">
+                                            Thứ tư, ngày 21
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#tab-07">
+                                            Thứ năm, ngày 22
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#tab-08">
+                                            Thứ sáu, ngày 23
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#tab-09">
+                                            Thứ bảy, ngày 24
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#tab-10">
+                                            Chủ nhật, ngày 25
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#tab-02">
+                                            Thứ hai, ngày 26
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card-bookings">
+                                <div class="card-bookings_item">
+                                    <div class="card-bookings_item-time">
+                                        07:34
+                                    </div>
+                                    <div class="card-bookings_item-price">
+                                        <div class="badge">
+                                            <span>
+                                                750,000
+                                                <span>VNĐ</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="card-bookings_item-buttons">
+                                        <div class="card-bookings_item-buttons--item">
+                                            <a href="#popupBooking" data-toggle="modal"
+                                               class="card-bookings_item-buttons--link">
+                                                <i class="fas fa-plus-circle"></i>
+                                            </a>
+                                        </div>
+                                        <div class="card-bookings_item-buttons--item">
+                                            <a href="#popupBooking" data-toggle="modal"
+                                               class="card-bookings_item-buttons--link">
+                                                <i class="fas fa-plus-circle"></i>
+                                            </a>
+                                        </div>
+                                        <div class="card-bookings_item-buttons--item">
+                                            <a href="#popupBooking" data-toggle="modal"
+                                               class="card-bookings_item-buttons--link">
+                                                <i class="fas fa-plus-circle"></i>
+                                            </a>
+                                        </div>
+                                        <div class="card-bookings_item-buttons--item">
+                                            <a href="#popupBooking" data-toggle="modal"
+                                               class="card-bookings_item-buttons--link">
+                                                <i class="fas fa-plus-circle"></i>
+                                            </a>
+                                        </div>
+                                        <div class="card-bookings_item-buttons--item">
+                                            <a href="#popupBooking" data-toggle="modal"
+                                               class="card-bookings_item-buttons--link">
+                                                <i class="fas fa-plus-circle"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-bookings_item">
+                                    <div class="card-bookings_item-time">
+                                        07:34
+                                    </div>
+                                    <div class="card-bookings_item-price">
+                                        <div class="badge">
+                                            <span>
+                                                750,000
+                                                <span>VNĐ</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="card-bookings_item-buttons">
+                                        <div class="card-bookings_item-buttons--item">
+                                            <div class="card-bookings_item-buttons--highlight bg-warning">
+                                                <div class="button-highlight_check checked"></div>
+                                                <div class="button-highlight_icon">
+                                                    <i class="fas fa-usd-circle"></i>
+                                                </div>
+                                                <div class="button-highlight_name">Player Name Player Name Player Name</div>
+                                            </div>
+                                        </div>
+                                        <div class="card-bookings_item-buttons--item">
+                                            <a href="#popupBooking" data-toggle="modal"
+                                               class="card-bookings_item-buttons--link">
+                                                <i class="fas fa-plus-circle"></i>
+                                            </a>
+                                        </div>
+                                        <div class="card-bookings_item-buttons--item">
+                                            <a href="#popupBooking" data-toggle="modal"
+                                               class="card-bookings_item-buttons--link">
+                                                <i class="fas fa-plus-circle"></i>
+                                            </a>
+                                        </div>
+                                        <div class="card-bookings_item-buttons--item">
+                                            <a href="#popupBooking" data-toggle="modal"
+                                               class="card-bookings_item-buttons--link">
+                                                <i class="fas fa-plus-circle"></i>
+                                            </a>
+                                        </div>
+                                        <div class="card-bookings_item-buttons--item">
+                                            <a href="#popupBooking" data-toggle="modal"
+                                               class="card-bookings_item-buttons--link">
+                                                <i class="fas fa-plus-circle"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-bookings_item">
+                                    <div class="card-bookings_item-time">
+                                        07:34
+                                    </div>
+                                    <div class="card-bookings_item-price">
+                                        <div class="badge">
+                                            <span>
+                                                750,000
+                                                <span>VNĐ</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="card-bookings_item-buttons">
+                                        <div class="card-bookings_item-buttons--item">
+                                            <div class="card-bookings_item-buttons--highlight bg-warning">
+                                                <div class="button-highlight_check checked"></div>
+                                                <div class="button-highlight_icon">
+                                                    <i class="fas fa-usd-circle"></i>
+                                                </div>
+                                                <div class="button-highlight_name">Player Name</div>
+                                            </div>
+                                        </div>
+                                        <div class="card-bookings_item-buttons--item">
+                                            <div class="card-bookings_item-buttons--highlight bg-primary">
+                                                <div class="button-highlight_check"></div>
+                                                <div class="button-highlight_icon">
+                                                    <i class="fas fa-usd-circle"></i>
+                                                </div>
+                                                <div class="button-highlight_name">Player Name</div>
+                                            </div>
+                                        </div>
+                                        <div class="card-bookings_item-buttons--item">
+                                            <div class="card-bookings_item-buttons--highlight bg-danger">
+                                                <div class="button-highlight_check"></div>
+                                                <div class="button-highlight_icon">
+                                                    <i class="fas fa-usd-circle"></i>
+                                                </div>
+                                                <div class="button-highlight_name">Player Name</div>
+                                            </div>
+                                        </div>
+                                        <div class="card-bookings_item-buttons--item">
+                                            <div class="card-bookings_item-buttons--highlight bg-success">
+                                                <div class="button-highlight_check"></div>
+                                                <div class="button-highlight_icon">
+                                                    <i class="fas fa-usd-circle"></i>
+                                                </div>
+                                                <div class="button-highlight_name">Player Name</div>
+                                            </div>
+                                        </div>
+                                        <div class="card-bookings_item-buttons--item">
+                                            <div class="card-bookings_item-buttons--highlight bg-info">
+                                                <div class="button-highlight_check"></div>
+                                                <div class="button-highlight_icon">
+                                                    <i class="fas fa-usd-circle"></i>
+                                                </div>
+                                                <div class="button-highlight_name">Player Name</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-bookings_item">
+                                    <div class="card-bookings_item-time">
+                                        07:34
+                                    </div>
+                                    <div class="card-bookings_item-price">
+                                        <div class="badge">
+                                            <span>
+                                                750,000
+                                                <span>VNĐ</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="card-bookings_item-buttons">
+                                        <div class="card-bookings_item-buttons--item">
+                                            <div class="card-bookings_item-buttons--highlight bg-secondary">
+                                                <div class="button-highlight_check"></div>
+                                                <div class="button-highlight_name">Guest</div>
+                                            </div>
+                                        </div>
+                                        <div class="card-bookings_item-buttons--item">
+                                            <div class="card-bookings_item-buttons--highlight bg-primary">
+                                                <div class="button-highlight_check"></div>
+                                                <div class="button-highlight_name">Guest</div>
+                                            </div>
+                                        </div>
+                                        <div class="card-bookings_item-buttons--item">
+                                            <div class="card-bookings_item-buttons--highlight bg-danger">
+                                                <div class="button-highlight_check"></div>
+                                                <div class="button-highlight_icon">
+                                                    <i class="fas fa-usd-circle"></i>
+                                                </div>
+                                                <div class="button-highlight_name">Player Name</div>
+                                            </div>
+                                        </div>
+                                        <div class="card-bookings_item-buttons--item">
+                                            <div class="card-bookings_item-buttons--highlight bg-success">
+                                                <div class="button-highlight_check"></div>
+                                                <div class="button-highlight_icon">
+                                                    <i class="fas fa-usd-circle"></i>
+                                                </div>
+                                                <div class="button-highlight_name">Player Name</div>
+                                            </div>
+                                        </div>
+                                        <div class="card-bookings_item-buttons--item">
+                                            <a href="#popupBooking" data-toggle="modal"
+                                               class="card-bookings_item-buttons--link">
+                                                <i class="fas fa-plus-circle"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-bookings_item">
+                                    <div class="card-bookings_item-time">
+                                        07:34
+                                    </div>
+                                    <div class="card-bookings_item-price">
+                                        <div class="badge">
+                                            <span>
+                                                750,000
+                                                <span>VNĐ</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="card-bookings_item-buttons">
+                                        <div class="card-bookings_item-buttons--item">
+                                            <a href="#popupBooking" data-toggle="modal"
+                                               class="card-bookings_item-buttons--link">
+                                                <i class="fas fa-plus-circle"></i>
+                                            </a>
+                                        </div>
+                                        <div class="card-bookings_item-buttons--item">
+                                            <a href="#popupBooking" data-toggle="modal"
+                                               class="card-bookings_item-buttons--link">
+                                                <i class="fas fa-plus-circle"></i>
+                                            </a>
+                                        </div>
+                                        <div class="card-bookings_item-buttons--item">
+                                            <a href="#popupBooking" data-toggle="modal"
+                                               class="card-bookings_item-buttons--link">
+                                                <i class="fas fa-plus-circle"></i>
+                                            </a>
+                                        </div>
+                                        <div class="card-bookings_item-buttons--item">
+                                            <a href="#popupBooking" data-toggle="modal"
+                                               class="card-bookings_item-buttons--link">
+                                                <i class="fas fa-plus-circle"></i>
+                                            </a>
+                                        </div>
+                                        <div class="card-bookings_item-buttons--item">
+                                            <a href="#popupBooking" data-toggle="modal"
+                                               class="card-bookings_item-buttons--link">
+                                                <i class="fas fa-plus-circle"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-bookings_item">
+                                    <div class="card-bookings_item-time">
+                                        07:34
+                                    </div>
+                                    <div class="card-bookings_item-price">
+                                        <div class="badge">
+                                            <span>
+                                                750,000
+                                                <span>VNĐ</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="card-bookings_item-buttons">
+                                        <div class="card-bookings_item-buttons--item">
+                                            <div class="card-bookings_item-buttons--highlight bg-warning">
+                                                <div class="button-highlight_check checked"></div>
+                                                <div class="button-highlight_icon">
+                                                    <i class="fas fa-usd-circle"></i>
+                                                </div>
+                                                <div class="button-highlight_name">Player Name</div>
+                                            </div>
+                                        </div>
+                                        <div class="card-bookings_item-buttons--item">
+                                            <a href="#popupBooking" data-toggle="modal"
+                                               class="card-bookings_item-buttons--link">
+                                                <i class="fas fa-plus-circle"></i>
+                                            </a>
+                                        </div>
+                                        <div class="card-bookings_item-buttons--item">
+                                            <a href="#popupBooking" data-toggle="modal"
+                                               class="card-bookings_item-buttons--link">
+                                                <i class="fas fa-plus-circle"></i>
+                                            </a>
+                                        </div>
+                                        <div class="card-bookings_item-buttons--item">
+                                            <a href="#popupBooking" data-toggle="modal"
+                                               class="card-bookings_item-buttons--link">
+                                                <i class="fas fa-plus-circle"></i>
+                                            </a>
+                                        </div>
+                                        <div class="card-bookings_item-buttons--item">
+                                            <a href="#popupBooking" data-toggle="modal"
+                                               class="card-bookings_item-buttons--link">
+                                                <i class="fas fa-plus-circle"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-bookings_item">
+                                    <div class="card-bookings_item-time">
+                                        07:34
+                                    </div>
+                                    <div class="card-bookings_item-price">
+                                        <div class="badge">
+                                            <span>
+                                                750,000
+                                                <span>VNĐ</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="card-bookings_item-buttons">
+                                        <div class="card-bookings_item-buttons--item">
+                                            <div class="card-bookings_item-buttons--highlight bg-warning">
+                                                <div class="button-highlight_check checked"></div>
+                                                <div class="button-highlight_icon">
+                                                    <i class="fas fa-usd-circle"></i>
+                                                </div>
+                                                <div class="button-highlight_name">Player Name</div>
+                                            </div>
+                                        </div>
+                                        <div class="card-bookings_item-buttons--item">
+                                            <div class="card-bookings_item-buttons--highlight bg-primary">
+                                                <div class="button-highlight_check"></div>
+                                                <div class="button-highlight_icon">
+                                                    <i class="fas fa-usd-circle"></i>
+                                                </div>
+                                                <div class="button-highlight_name">Player Name</div>
+                                            </div>
+                                        </div>
+                                        <div class="card-bookings_item-buttons--item">
+                                            <div class="card-bookings_item-buttons--highlight bg-danger">
+                                                <div class="button-highlight_check"></div>
+                                                <div class="button-highlight_icon">
+                                                    <i class="fas fa-usd-circle"></i>
+                                                </div>
+                                                <div class="button-highlight_name">Player Name</div>
+                                            </div>
+                                        </div>
+                                        <div class="card-bookings_item-buttons--item">
+                                            <div class="card-bookings_item-buttons--highlight bg-success">
+                                                <div class="button-highlight_check"></div>
+                                                <div class="button-highlight_icon">
+                                                    <i class="fas fa-usd-circle"></i>
+                                                </div>
+                                                <div class="button-highlight_name">Player Name</div>
+                                            </div>
+                                        </div>
+                                        <div class="card-bookings_item-buttons--item">
+                                            <div class="card-bookings_item-buttons--highlight bg-info">
+                                                <div class="button-highlight_check"></div>
+                                                <div class="button-highlight_icon">
+                                                    <i class="fas fa-usd-circle"></i>
+                                                </div>
+                                                <div class="button-highlight_name">Player Name</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-bookings_item">
+                                    <div class="card-bookings_item-time">
+                                        07:34
+                                    </div>
+                                    <div class="card-bookings_item-price">
+                                        <div class="badge">
+                                            <span>
+                                                750,000
+                                                <span>VNĐ</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="card-bookings_item-buttons">
+                                        <div class="card-bookings_item-buttons--item">
+                                            <div class="card-bookings_item-buttons--highlight bg-secondary">
+                                                <div class="button-highlight_check"></div>
+                                                <div class="button-highlight_name">Guest</div>
+                                            </div>
+                                        </div>
+                                        <div class="card-bookings_item-buttons--item">
+                                            <div class="card-bookings_item-buttons--highlight bg-primary">
+                                                <div class="button-highlight_check"></div>
+                                                <div class="button-highlight_name">Guest</div>
+                                            </div>
+                                        </div>
+                                        <div class="card-bookings_item-buttons--item">
+                                            <div class="card-bookings_item-buttons--highlight bg-danger">
+                                                <div class="button-highlight_check"></div>
+                                                <div class="button-highlight_icon">
+                                                    <i class="fas fa-usd-circle"></i>
+                                                </div>
+                                                <div class="button-highlight_name">Player Name</div>
+                                            </div>
+                                        </div>
+                                        <div class="card-bookings_item-buttons--item">
+                                            <div class="card-bookings_item-buttons--highlight bg-success">
+                                                <div class="button-highlight_check"></div>
+                                                <div class="button-highlight_icon">
+                                                    <i class="fas fa-usd-circle"></i>
+                                                </div>
+                                                <div class="button-highlight_name">Player Name</div>
+                                            </div>
+                                        </div>
+                                        <div class="card-bookings_item-buttons--item">
+                                            <a href="#popupBooking" data-toggle="modal"
+                                               class="card-bookings_item-buttons--link">
+                                                <i class="fas fa-plus-circle"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-highlight">
+                                <div class="card-highlight_inner">
+                                    <div class="card-highlight_icon">
+                                        <i class="far fa-trophy-alt"></i>
+                                    </div>
+                                    <div class="card-highlight_content">
+                                        <div class="card-highlight_content-title">
+                                            Men's League
+                                        </div>
+                                        <div class="card-highlight_content-time">
+                                            8:30 - 12:00, Thứ năm 15/09/2022
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-bookings">
+                                <div class="card-bookings_item">
+                                    <div class="card-bookings_item-time">
+                                        07:34
+                                    </div>
+                                    <div class="card-bookings_item-price">
+                                        <div class="badge">
+                                            <span>
+                                                750,000
+                                                <span>VNĐ</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="card-bookings_item-buttons">
+                                        <div class="card-bookings_item-buttons--item">
+                                            <a href="#popupBooking" data-toggle="modal"
+                                               class="card-bookings_item-buttons--link">
+                                                <i class="fas fa-plus-circle"></i>
+                                            </a>
+                                        </div>
+                                        <div class="card-bookings_item-buttons--item">
+                                            <a href="#popupBooking" data-toggle="modal"
+                                               class="card-bookings_item-buttons--link">
+                                                <i class="fas fa-plus-circle"></i>
+                                            </a>
+                                        </div>
+                                        <div class="card-bookings_item-buttons--item">
+                                            <a href="#popupBooking" data-toggle="modal"
+                                               class="card-bookings_item-buttons--link">
+                                                <i class="fas fa-plus-circle"></i>
+                                            </a>
+                                        </div>
+                                        <div class="card-bookings_item-buttons--item">
+                                            <a href="#popupBooking" data-toggle="modal"
+                                               class="card-bookings_item-buttons--link">
+                                                <i class="fas fa-plus-circle"></i>
+                                            </a>
+                                        </div>
+                                        <div class="card-bookings_item-buttons--item">
+                                            <a href="#popupBooking" data-toggle="modal"
+                                               class="card-bookings_item-buttons--link">
+                                                <i class="fas fa-plus-circle"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-bookings_item">
+                                    <div class="card-bookings_item-time">
+                                        07:34
+                                    </div>
+                                    <div class="card-bookings_item-price">
+                                        <div class="badge">
+                                            <span>
+                                                750,000
+                                                <span>VNĐ</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="card-bookings_item-buttons">
+                                        <div class="card-bookings_item-buttons--item">
+                                            <div class="card-bookings_item-buttons--highlight bg-warning">
+                                                <div class="button-highlight_check checked"></div>
+                                                <div class="button-highlight_icon">
+                                                    <i class="fas fa-usd-circle"></i>
+                                                </div>
+                                                <div class="button-highlight_name">Player Name</div>
+                                            </div>
+                                        </div>
+                                        <div class="card-bookings_item-buttons--item">
+                                            <a href="#popupBooking" data-toggle="modal"
+                                               class="card-bookings_item-buttons--link">
+                                                <i class="fas fa-plus-circle"></i>
+                                            </a>
+                                        </div>
+                                        <div class="card-bookings_item-buttons--item">
+                                            <a href="#popupBooking" data-toggle="modal"
+                                               class="card-bookings_item-buttons--link">
+                                                <i class="fas fa-plus-circle"></i>
+                                            </a>
+                                        </div>
+                                        <div class="card-bookings_item-buttons--item">
+                                            <a href="#popupBooking" data-toggle="modal"
+                                               class="card-bookings_item-buttons--link">
+                                                <i class="fas fa-plus-circle"></i>
+                                            </a>
+                                        </div>
+                                        <div class="card-bookings_item-buttons--item">
+                                            <a href="#popupBooking" data-toggle="modal"
+                                               class="card-bookings_item-buttons--link">
+                                                <i class="fas fa-plus-circle"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-bookings_item">
+                                    <div class="card-bookings_item-time">
+                                        07:34
+                                    </div>
+                                    <div class="card-bookings_item-price">
+                                        <div class="badge">
+                                            <span>
+                                                750,000
+                                                <span>VNĐ</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="card-bookings_item-buttons">
+                                        <div class="card-bookings_item-buttons--item">
+                                            <div class="card-bookings_item-buttons--highlight bg-warning">
+                                                <div class="button-highlight_check checked"></div>
+                                                <div class="button-highlight_icon">
+                                                    <i class="fas fa-usd-circle"></i>
+                                                </div>
+                                                <div class="button-highlight_name">Player Name</div>
+                                            </div>
+                                        </div>
+                                        <div class="card-bookings_item-buttons--item">
+                                            <div class="card-bookings_item-buttons--highlight bg-primary">
+                                                <div class="button-highlight_check"></div>
+                                                <div class="button-highlight_icon">
+                                                    <i class="fas fa-usd-circle"></i>
+                                                </div>
+                                                <div class="button-highlight_name">Player Name</div>
+                                            </div>
+                                        </div>
+                                        <div class="card-bookings_item-buttons--item">
+                                            <div class="card-bookings_item-buttons--highlight bg-danger">
+                                                <div class="button-highlight_check"></div>
+                                                <div class="button-highlight_icon">
+                                                    <i class="fas fa-usd-circle"></i>
+                                                </div>
+                                                <div class="button-highlight_name">Player Name</div>
+                                            </div>
+                                        </div>
+                                        <div class="card-bookings_item-buttons--item">
+                                            <div class="card-bookings_item-buttons--highlight bg-success">
+                                                <div class="button-highlight_check"></div>
+                                                <div class="button-highlight_icon">
+                                                    <i class="fas fa-usd-circle"></i>
+                                                </div>
+                                                <div class="button-highlight_name">Player Name</div>
+                                            </div>
+                                        </div>
+                                        <div class="card-bookings_item-buttons--item">
+                                            <div class="card-bookings_item-buttons--highlight bg-info">
+                                                <div class="button-highlight_check"></div>
+                                                <div class="button-highlight_icon">
+                                                    <i class="fas fa-usd-circle"></i>
+                                                </div>
+                                                <div class="button-highlight_name">Player Name</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-bookings_item">
+                                    <div class="card-bookings_item-time">
+                                        07:34
+                                    </div>
+                                    <div class="card-bookings_item-price">
+                                        <div class="badge">
+                                            <span>
+                                                750,000
+                                                <span>VNĐ</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="card-bookings_item-buttons">
+                                        <div class="card-bookings_item-buttons--item">
+                                            <div class="card-bookings_item-buttons--highlight bg-secondary">
+                                                <div class="button-highlight_check"></div>
+                                                <div class="button-highlight_name">Guest</div>
+                                            </div>
+                                        </div>
+                                        <div class="card-bookings_item-buttons--item">
+                                            <div class="card-bookings_item-buttons--highlight bg-primary">
+                                                <div class="button-highlight_check"></div>
+                                                <div class="button-highlight_name">Guest</div>
+                                            </div>
+                                        </div>
+                                        <div class="card-bookings_item-buttons--item">
+                                            <div class="card-bookings_item-buttons--highlight bg-danger">
+                                                <div class="button-highlight_check"></div>
+                                                <div class="button-highlight_icon">
+                                                    <i class="fas fa-usd-circle"></i>
+                                                </div>
+                                                <div class="button-highlight_name">Player Name</div>
+                                            </div>
+                                        </div>
+                                        <div class="card-bookings_item-buttons--item">
+                                            <div class="card-bookings_item-buttons--highlight bg-success">
+                                                <div class="button-highlight_check"></div>
+                                                <div class="button-highlight_icon">
+                                                    <i class="fas fa-usd-circle"></i>
+                                                </div>
+                                                <div class="button-highlight_name">Player Name</div>
+                                            </div>
+                                        </div>
+                                        <div class="card-bookings_item-buttons--item">
+                                            <a href="#popupBooking" data-toggle="modal"
+                                               class="card-bookings_item-buttons--link">
+                                                <i class="fas fa-plus-circle"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-bookings_item">
+                                    <div class="card-bookings_item-time">
+                                        07:34
+                                    </div>
+                                    <div class="card-bookings_item-price">
+                                        <div class="badge">
+                                            <span>
+                                                750,000
+                                                <span>VNĐ</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="card-bookings_item-buttons">
+                                        <div class="card-bookings_item-buttons--item">
+                                            <a href="#popupBooking" data-toggle="modal"
+                                               class="card-bookings_item-buttons--link">
+                                                <i class="fas fa-plus-circle"></i>
+                                            </a>
+                                        </div>
+                                        <div class="card-bookings_item-buttons--item">
+                                            <a href="#popupBooking" data-toggle="modal"
+                                               class="card-bookings_item-buttons--link">
+                                                <i class="fas fa-plus-circle"></i>
+                                            </a>
+                                        </div>
+                                        <div class="card-bookings_item-buttons--item">
+                                            <a href="#popupBooking" data-toggle="modal"
+                                               class="card-bookings_item-buttons--link">
+                                                <i class="fas fa-plus-circle"></i>
+                                            </a>
+                                        </div>
+                                        <div class="card-bookings_item-buttons--item">
+                                            <a href="#popupBooking" data-toggle="modal"
+                                               class="card-bookings_item-buttons--link">
+                                                <i class="fas fa-plus-circle"></i>
+                                            </a>
+                                        </div>
+                                        <div class="card-bookings_item-buttons--item">
+                                            <a href="#popupBooking" data-toggle="modal"
+                                               class="card-bookings_item-buttons--link">
+                                                <i class="fas fa-plus-circle"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-bookings_item">
+                                    <div class="card-bookings_item-time">
+                                        07:34
+                                    </div>
+                                    <div class="card-bookings_item-price">
+                                        <div class="badge">
+                                            <span>
+                                                750,000
+                                                <span>VNĐ</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="card-bookings_item-buttons">
+                                        <div class="card-bookings_item-buttons--item">
+                                            <div class="card-bookings_item-buttons--highlight bg-warning">
+                                                <div class="button-highlight_check checked"></div>
+                                                <div class="button-highlight_icon">
+                                                    <i class="fas fa-usd-circle"></i>
+                                                </div>
+                                                <div class="button-highlight_name">Player Name</div>
+                                            </div>
+                                        </div>
+                                        <div class="card-bookings_item-buttons--item">
+                                            <a href="#popupBooking" data-toggle="modal"
+                                               class="card-bookings_item-buttons--link">
+                                                <i class="fas fa-plus-circle"></i>
+                                            </a>
+                                        </div>
+                                        <div class="card-bookings_item-buttons--item">
+                                            <a href="#popupBooking" data-toggle="modal"
+                                               class="card-bookings_item-buttons--link">
+                                                <i class="fas fa-plus-circle"></i>
+                                            </a>
+                                        </div>
+                                        <div class="card-bookings_item-buttons--item">
+                                            <a href="#popupBooking" data-toggle="modal"
+                                               class="card-bookings_item-buttons--link">
+                                                <i class="fas fa-plus-circle"></i>
+                                            </a>
+                                        </div>
+                                        <div class="card-bookings_item-buttons--item">
+                                            <a href="#popupBooking" data-toggle="modal"
+                                               class="card-bookings_item-buttons--link">
+                                                <i class="fas fa-plus-circle"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-bookings_item">
+                                    <div class="card-bookings_item-time">
+                                        07:34
+                                    </div>
+                                    <div class="card-bookings_item-price">
+                                        <div class="badge">
+                                            <span>
+                                                750,000
+                                                <span>VNĐ</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="card-bookings_item-buttons">
+                                        <div class="card-bookings_item-buttons--item">
+                                            <div class="card-bookings_item-buttons--highlight bg-warning">
+                                                <div class="button-highlight_check checked"></div>
+                                                <div class="button-highlight_icon">
+                                                    <i class="fas fa-usd-circle"></i>
+                                                </div>
+                                                <div class="button-highlight_name">Player Name</div>
+                                            </div>
+                                        </div>
+                                        <div class="card-bookings_item-buttons--item">
+                                            <div class="card-bookings_item-buttons--highlight bg-primary">
+                                                <div class="button-highlight_check"></div>
+                                                <div class="button-highlight_icon">
+                                                    <i class="fas fa-usd-circle"></i>
+                                                </div>
+                                                <div class="button-highlight_name">Player Name</div>
+                                            </div>
+                                        </div>
+                                        <div class="card-bookings_item-buttons--item">
+                                            <div class="card-bookings_item-buttons--highlight bg-danger">
+                                                <div class="button-highlight_check"></div>
+                                                <div class="button-highlight_icon">
+                                                    <i class="fas fa-usd-circle"></i>
+                                                </div>
+                                                <div class="button-highlight_name">Player Name</div>
+                                            </div>
+                                        </div>
+                                        <div class="card-bookings_item-buttons--item">
+                                            <div class="card-bookings_item-buttons--highlight bg-success">
+                                                <div class="button-highlight_check"></div>
+                                                <div class="button-highlight_icon">
+                                                    <i class="fas fa-usd-circle"></i>
+                                                </div>
+                                                <div class="button-highlight_name">Player Name</div>
+                                            </div>
+                                        </div>
+                                        <div class="card-bookings_item-buttons--item">
+                                            <div class="card-bookings_item-buttons--highlight bg-info">
+                                                <div class="button-highlight_check"></div>
+                                                <div class="button-highlight_icon">
+                                                    <i class="fas fa-usd-circle"></i>
+                                                </div>
+                                                <div class="button-highlight_name">Player Name</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-bookings_item">
+                                    <div class="card-bookings_item-time">
+                                        07:34
+                                    </div>
+                                    <div class="card-bookings_item-price">
+                                        <div class="badge">
+                                            <span>
+                                                750,000
+                                                <span>VNĐ</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="card-bookings_item-buttons">
+                                        <div class="card-bookings_item-buttons--item">
+                                            <div class="card-bookings_item-buttons--highlight bg-secondary">
+                                                <div class="button-highlight_check"></div>
+                                                <div class="button-highlight_name">Guest</div>
+                                            </div>
+                                        </div>
+                                        <div class="card-bookings_item-buttons--item">
+                                            <div class="card-bookings_item-buttons--highlight bg-primary">
+                                                <div class="button-highlight_check"></div>
+                                                <div class="button-highlight_name">Guest</div>
+                                            </div>
+                                        </div>
+                                        <div class="card-bookings_item-buttons--item">
+                                            <div class="card-bookings_item-buttons--highlight bg-danger">
+                                                <div class="button-highlight_check"></div>
+                                                <div class="button-highlight_icon">
+                                                    <i class="fas fa-usd-circle"></i>
+                                                </div>
+                                                <div class="button-highlight_name">Player Name</div>
+                                            </div>
+                                        </div>
+                                        <div class="card-bookings_item-buttons--item">
+                                            <div class="card-bookings_item-buttons--highlight bg-success">
+                                                <div class="button-highlight_check"></div>
+                                                <div class="button-highlight_icon">
+                                                    <i class="fas fa-usd-circle"></i>
+                                                </div>
+                                                <div class="button-highlight_name">Player Name</div>
+                                            </div>
+                                        </div>
+                                        <div class="card-bookings_item-buttons--item">
+                                            <a href="#popupBooking" data-toggle="modal"
+                                               class="card-bookings_item-buttons--link">
+                                                <i class="fas fa-plus-circle"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cpanel-footer">
+            <div class="cpanel-wrap">
+                <div class="text-center">
+                    Template Cpanel v1 - Design by Nencer <span class="px-2">-</span>
+                    <a href="./">Tài liệu</a>
+                    <span class="px-2">-</span>
+                    <a href="tel:0333851915">Liên hệ</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <script type=" text/javascript" src="./assets/plugins/jquery.min.js"></script>
 <script type="text/javascript"
-		src="./assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+        src="./assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script type="text/javascript" src="./assets/plugins/select2/js/select2.min.js"></script>
 <script type="text/javascript" src="./assets/js/app.js"></script>
 </body>
