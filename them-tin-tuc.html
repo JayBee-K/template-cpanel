@@ -22,7 +22,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
           rel="stylesheet">
     <link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="./assets/plugins/bootstrap-flatpickr/bootstrap-flatpickr.min.css">
+    <link rel="stylesheet" href="./assets/plugins/bootstrap-flatpickr/bootstrap-flatpickr.min.css">
+<link rel="stylesheet" href="./assets/plugins/sweetalert2/sweetalert2.min.css">
     <link rel="stylesheet" href="./assets/plugins/select2/css/select2.min.css">
     <link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -248,97 +249,119 @@
                     <form action="">
                         <div class="row row-x-5">
                             <div class="col-lg-6">
-                                <label for=""
-                                       class="col-form-label font-weight-bold">
-                                    Tiêu đề
-                                </label>
-                                <input type="text" class="form-control"
-                                       placeholder="Tiêu đề">
-                            </div>
-                            <div class="col-lg-6">
-                                <label for=""
-                                       class="col-form-label font-weight-bold">
-                                    Đường dẫn SEO
-                                </label>
-                                <input type="text" class="form-control"
-                                       placeholder="Đường dẫn SEO">
-                            </div>
-                            <div class="col-lg-4">
-                                <label for=""
-                                       class="col-form-label font-weight-bold">
-                                    Tác giả:
-                                </label>
-                                <input type="text" class="form-control"
-                                       placeholder="Tác giả">
-                            </div>
-                            <div class="col-lg-4">
-                                <label for=""
-                                       class="col-form-label font-weight-bold">
-                                    Email:
-                                </label>
-                                <input type="text" class="form-control"
-                                       placeholder="Email">
-                            </div>
-                            <div class="col-lg-4">
-                                <label for=""
-                                       class="col-form-label font-weight-bold">
-                                    Ảnh
-                                </label>
-                                <input type="file" class="form-control-file">
-                            </div>
-                            <div class="col-lg-3">
-                                <div class="row no-gutters align-items-center">
+                                <div class="position-relative mt-1">
                                     <label for=""
                                            class="col-form-label font-weight-bold">
-                                        Lượt xem:
+                                        Tiêu đề
                                     </label>
                                     <input type="text" class="form-control"
-                                           placeholder="Lượt xem">
+                                           placeholder="Tiêu đề">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="position-relative mt-1">
+                                    <label for=""
+                                           class="col-form-label font-weight-bold">
+                                        Đường dẫn SEO
+                                    </label>
+                                    <input type="text" class="form-control"
+                                           placeholder="Đường dẫn SEO">
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="position-relative mt-1">
+                                    <label for=""
+                                           class="col-form-label font-weight-bold">
+                                        Tác giả:
+                                    </label>
+                                    <input type="text" class="form-control"
+                                           placeholder="Tác giả">
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="position-relative mt-1">
+                                    <label for=""
+                                           class="col-form-label font-weight-bold">
+                                        Email:
+                                    </label>
+                                    <input type="text" class="form-control"
+                                           placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="position-relative mt-1">
+                                    <label for=""
+                                           class="col-form-label font-weight-bold">
+                                        Ảnh
+                                    </label>
+                                    <input type="file" class="form-control-file">
                                 </div>
                             </div>
                             <div class="col-lg-3">
-                                <label for=""
-                                       class="col-form-label font-weight-bold">
-                                    Ngôn ngữ:
-                                </label>
-                                <select name="" class="form-control" id="">
-                                    <option value="">Tiếng việt</option>
-                                    <option value="">Tiếng Anh</option>
-                                </select>
-                            </div>
-                            <div class="col-lg-3">
-                                <label for=""
-                                       class="col-form-label font-weight-bold">
-                                    Ngày đăng:
-                                </label>
-                                <div class="position-relative z-index-2">
-                                    <input class="form-control" value="2022-09-10" name="" type="date">
-                                    <div class="icon-ios"><!-- Giữ lại cái này cho em nha --></div>
+                                <div class="position-relative mt-1">
+                                    <div class="row no-gutters align-items-center">
+                                        <label for=""
+                                               class="col-form-label font-weight-bold">
+                                            Lượt xem:
+                                        </label>
+                                        <input type="text" class="form-control"
+                                               placeholder="Lượt xem">
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-lg-3">
-                                <label for=""
-                                       class="col-form-label font-weight-bold">
-                                    Trạng thái:
-                                </label>
-                                <select name="" class="form-control" id="">
-                                    <option value="">Bật</option>
-                                    <option value="">Tắt</option>
-                                </select>
+                                <div class="position-relative mt-1">
+                                    <label for=""
+                                           class="col-form-label font-weight-bold">
+                                        Ngôn ngữ:
+                                    </label>
+                                    <select name="" class="form-control" id="">
+                                        <option value="">Tiếng việt</option>
+                                        <option value="">Tiếng Anh</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="position-relative mt-1">
+                                    <label for=""
+                                           class="col-form-label font-weight-bold">
+                                        Ngày đăng:
+                                    </label>
+                                    <div class="position-relative z-index-2">
+                                        <input class="form-control" value="2022-09-10" name="" type="date">
+                                        <div class="icon-ios"><!-- Giữ lại cái này cho em nha --></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="position-relative mt-1">
+                                    <label for=""
+                                           class="col-form-label font-weight-bold">
+                                        Trạng thái:
+                                    </label>
+                                    <select name="" class="form-control" id="">
+                                        <option value="">Bật</option>
+                                        <option value="">Tắt</option>
+                                    </select>
+                                </div>
                             </div>
                             <div class="col-lg-12">
-                                <label for=""
-                                       class="col-form-label font-weight-bold">
-                                    Mô tả ngắn:
-                                </label>
-                                <textarea name="" id="" rows="3" class="form-control"></textarea>
+                                <div class="position-relative mt-1">
+                                    <label for=""
+                                           class="col-form-label font-weight-bold">
+                                        Mô tả ngắn:
+                                    </label>
+                                    <textarea name="" id="" rows="3" class="form-control"></textarea>
+                                </div>
                             </div>
                             <div class="col-lg-12">
-                                <label for=""
-                                       class="col-form-label font-weight-bold">
-                                    Nội dung:
-                                </label>
-                                <textarea name="" id="" rows="5" class="form-control"></textarea>
+                                <div class="position-relative mt-1">
+                                    <label for=""
+                                           class="col-form-label font-weight-bold">
+                                        Nội dung:
+                                    </label>
+                                    <textarea name="" id="" rows="5" class="form-control"></textarea>
+                                </div>
                             </div>
                         </div>
                         <div class="mt-4">
@@ -368,9 +391,10 @@
 <script type="text/javascript"
         src="./assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script type="text/javascript"
-		src="./assets/plugins/bootstrap-flatpickr/bootstrap-flatpickr.js"></script>
+        src="./assets/plugins/bootstrap-flatpickr/bootstrap-flatpickr.js"></script>
 <script type="text/javascript"
-		src="./assets/plugins/bootstrap-flatpickr/bootstrap-flatpickr-vn.js"></script>
+        src="./assets/plugins/bootstrap-flatpickr/bootstrap-flatpickr-vn.js"></script>
+<script type="text/javascript" src="./assets/plugins/sweetalert2/sweetalert2.min.js"></script>
 <script type="text/javascript" src="./assets/plugins/select2/js/select2.min.js"></script>
 <script type="text/javascript" src="./assets/js/app.js"></script>
 </body>
