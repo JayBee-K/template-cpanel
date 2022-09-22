@@ -31,7 +31,7 @@
 
     let initCheckAll = function () {
         $('.check-all').click(function () {
-            if ($(".check-only").is("checked")) {
+            if ($(".check-only").is(":checked")) {
                 $('.check-only').attr('checked', false);
             } else {
                 $('.check-only').attr('checked', true);
