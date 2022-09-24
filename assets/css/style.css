@@ -1235,17 +1235,21 @@ label:not([class*=col-form]) {
 
 /***** Custom Pagination *****/
 .section-pagination {
-	margin-left: -2px;
+	margin-right: -2px;
 }
 
-.section-pagination .pagination .page-item {
-	margin: 0 2px;
+.section-pagination .pagination {
+	justify-content: flex-end;
 }
 
 @media screen and (max-width: 575px) {
 	.section-pagination .pagination {
 		justify-content: center;
 	}
+}
+
+.section-pagination .pagination .page-item {
+	margin: 0 2px;
 }
 
 .section-pagination .pagination .page-item .page-link {
