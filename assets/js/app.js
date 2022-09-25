@@ -31,10 +31,20 @@
 
     let initCheckAll = function () {
         $('.check-all').click(function () {
-            if ($(".check-only").is(":checked")) {
-                $('.check-only').attr('checked', false);
+            if ($(this).is(':checked')) {
+                $('.check-only').each(function () {
+                    $(this).prop('checked', true);
+                });
             } else {
-                $('.check-only').attr('checked', true);
+                $('.check-only').each(function () {
+                    $(this).prop('checked', false);
+                });
+            }
+        });
+
+        $('.check-only').click(function () {
+            if(!$(this).is(':checked')) {
+                $('.check-all').prop('checked', false);
             }
         });
     }
