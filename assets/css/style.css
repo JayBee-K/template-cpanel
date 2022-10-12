@@ -2758,3 +2758,28 @@ label:not([class*=col-form]) {
 .swal2-container .swal2-html-container {
     font-size: 15px;
 }
+
+.form-m1 .select2-container--default .select2-selection--multiple {
+    height: unset;
+    min-height: 30px;
+    display: block;
+    overflow: unset;
+    white-space: normal;
+}
+
+.form-m1 .select2-container .select2-selection--multiple .select2-selection__rendered {
+    display: inline-block;
+    white-space: normal;
+    padding: 0;
+    transform: translateY(5px);
+}
+
+.form-m1 .select2-container--default .select2-selection--multiple .select2-selection__choice {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.form-m1 .select2-container--default .select2-selection--multiple .select2-selection__choice {
+    font-size: 12px;
+    line-height: 18px;
+}
