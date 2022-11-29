@@ -251,10 +251,22 @@
 			}
 		});
 
-		$('.sort-selected').on("select2:select", function (event) {
+		$('.sort-selected').select2().on("select2:select", function (event) {
 			let element = $(event.params.data.element);
 			element.detach();
 			$('.sort-selected').append(element).trigger('change');
 		});
+
+		if (arrTemp.length > 0 && $('.sort-selected').length) {
+			arrTemp.map(function (value) {
+				$('.sort-selected option').each(function () {
+					let elm = $(this);
+					if (elm.attr('value') === value) {
+						elm.attr('selected', true);
+						$('.sort-selected').append(elm.attr('selected', true)).trigger('change')
+					}
+				})
+			})
+		}
 	});
 })(jQuery);
