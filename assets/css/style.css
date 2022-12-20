@@ -2159,11 +2159,11 @@ label:not([class*=col-form]) {
 
 .card-booking .card-body {
     padding: 0;
+	overflow: hidden;
 }
 
 .card-booking .card-body .card-tab {
     background-color: var(--light);
-    border-top: 1px solid var(--gray-200);
     border-bottom: 1px solid var(--gray-200);
     padding: 5px 15px;
     white-space: nowrap;
