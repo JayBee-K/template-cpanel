@@ -1,170 +1,176 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
-    <title>Template Cpanel</title>
-    <meta name="description" content="Template Cpanel">
-    <meta name="author" content="">
+	<title>Template Cpanel</title>
+	<meta name="description" content="Template Cpanel">
+	<meta name="author" content="">
 
-    <meta property="og:title" content="Template Cpanel">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="">
-    <meta property="og:description" content="Template Cpanel">
-    <meta property="og:image" content="">
+	<meta property="og:title" content="Template Cpanel">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="">
+	<meta property="og:description" content="Template Cpanel">
+	<meta property="og:image" content="">
 
-    <link rel="icon" href="/assets/images/favicon.png">
-    <link rel="apple-touch-icon" href="/assets/images/favicon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
-          rel="stylesheet">
-    <link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/plugins/bootstrap-flatpickr/bootstrap-flatpickr.min.css">
-    <link rel="stylesheet" href="./assets/plugins/sweetalert2/sweetalert2.min.css">
-    <link rel="stylesheet" href="./assets/plugins/select2/css/select2.min.css">
-    <link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+	<link rel="icon" href="/assets/images/favicon.png">
+	<link rel="apple-touch-icon" href="/assets/images/favicon.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
+		  rel="stylesheet">
+	<link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./assets/plugins/bootstrap-flatpickr/bootstrap-flatpickr.min.css">
+	<link rel="stylesheet" href="./assets/plugins/sweetalert2/sweetalert2.min.css">
+	<link rel="stylesheet" href="./assets/plugins/select2/css/select2.min.css">
+	<link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="./assets/css/style.css">
 
-    <style>
-        :root {
-            --template-color: #3c444d;
-            --template-hover: #2c3138;
+	<style>
+		:root {
+			--template-color: #3c444d;
+			--template-hover: #2c3138;
 
-            --primary-color: #20a53a;
-            --primary-hover: #10952a;
-            --primary-rgb: 32, 165, 58;
-        }
-    </style>
+			--primary-color: #20a53a;
+			--primary-hover: #10952a;
+			--primary-rgb: 32, 165, 58;
+		}
+	</style>
 </head>
 <body>
 <div class="template-cpanel" id="template-cpanel">
-    <div class="cpanel-overlay" id="cpanel-overlay"></div>
-    <div class="cpanel-sidebar">
-        <div class="sidebar-header">
-            <a href="/">
-                <img src="./assets/images/logo.svg" height="16" width="90" class="img-fluid" alt="">
-            </a>
-        </div>
-        <div class="sidebar-body">
-            <ul class="sidebar-body_menu" id="sidebar-menu">
-                <li>
-                    <a href="./index.html">
-                        <span class="icon"><i class="fal fa-home-alt"></i></span>
-                        <span class="text">Trang chủ</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#collapse-config" data-toggle="collapse">
-                        <span class="icon"><i class="fal fa-cog"></i></span>
-                        <span class="text">Cấu hình</span>
-                        <span class="arrow">
-                            <i class="fal fa-angle-down"></i>
-                        </span>
-                    </a>
-                    <ul id="collapse-config" class="collapse" data-parent="#sidebar-menu">
-                        <li>
-                            <a href="./cau-hinh-chung.html">
-                                <span class="icon"><i class="fal fa-angle-right"></i></span>
-                                <span class="text">
-                                    Cấu hình chung
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="./cau-hinh-kho-the.html">
-                                <span class="icon"><i class="fal fa-angle-right"></i></span>
-                                <span class="text">
-                                    Cấu hình kho thẻ
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="./danh-sach-nap.html">
-                        <span class="icon"><i class="fal fa-credit-card"></i></span>
-                        <span class="text">Danh sách nạp</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#collapse-user" data-toggle="collapse">
-                        <span class="icon"><i class="fal fa-user-alt"></i></span>
-                        <span class="text">Users</span>
-                        <span class="arrow">
-                            <i class="fal fa-angle-down"></i>
-                        </span>
-                    </a>
-                    <ul id="collapse-user" class="collapse" data-parent="#sidebar-menu">
-                        <li>
-                            <a href="./danh-sach-user.html">
-                                <span class="icon"><i class="fal fa-angle-right"></i></span>
-                                <span class="text">
-                                    Danh sách users
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="./them-user.html">
-                                <span class="icon"><i class="fal fa-angle-right"></i></span>
-                                <span class="text">
-                                    Thêm user
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#collapse-tintuc" data-toggle="collapse">
-                        <span class="icon"><i class="fal fa-newspaper"></i></span>
-                        <span class="text">Tin tức</span>
-                        <span class="arrow">
-                            <i class="fal fa-angle-down"></i>
-                        </span>
-                    </a>
-                    <ul id="collapse-tintuc" class="collapse" data-parent="#sidebar-menu">
-                        <li>
-                            <a href="./danh-sach-tin-tuc.html">
-                                <span class="icon"><i class="fal fa-angle-right"></i></span>
-                                <span class="text">
-                                    Danh sách tin tuc
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="./them-tin-tuc.html">
-                                <span class="icon"><i class="fal fa-angle-right"></i></span>
-                                <span class="text">
-                                    Thêm tin tức
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="./vi-dien-tu.html">
-                        <span class="icon"><i class="fal fa-wallet"></i></span>
-                        <span class="text">Ví điện tử</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="./booking.html">
-                        <span class="icon"><i class="fal fa-ticket-alt"></i></span>
-                        <span class="text">Booking</span>
-                    </a>
-                </li>
-                <li class="active">
-                    <a href="./booking.html">
-                        <span class="icon"><i class="fal fa-server"></i></span>
-                        <span class="text">Dịch vụ</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div class="cpanel-main">
+	<div class="cpanel-overlay" id="cpanel-overlay"></div>
+	<div class="cpanel-sidebar">
+		<div class="sidebar-header">
+			<a href="/">
+				<img src="./assets/images/logo.svg" height="16" width="90" class="img-fluid" alt="">
+			</a>
+		</div>
+		<div class="sidebar-body">
+			<ul class="sidebar-body_menu" id="sidebar-menu">
+				<li>
+					<a href="./index.html">
+						<span class="icon"><i class="fal fa-home-alt"></i></span>
+						<span class="text">Trang chủ</span>
+					</a>
+				</li>
+				<li>
+					<a href="#collapse-config" data-toggle="collapse">
+						<span class="icon"><i class="fal fa-cog"></i></span>
+						<span class="text">Cấu hình</span>
+						<span class="arrow">
+							<i class="fal fa-angle-down"></i>
+						</span>
+					</a>
+					<ul id="collapse-config" class="collapse" data-parent="#sidebar-menu">
+						<li>
+							<a href="./cau-hinh-chung.html">
+								<span class="icon"><i class="fal fa-angle-right"></i></span>
+								<span class="text">
+									Cấu hình chung
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="./cau-hinh-kho-the.html">
+								<span class="icon"><i class="fal fa-angle-right"></i></span>
+								<span class="text">
+									Cấu hình kho thẻ
+								</span>
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="./danh-sach-nap.html">
+						<span class="icon"><i class="fal fa-credit-card"></i></span>
+						<span class="text">Danh sách nạp</span>
+					</a>
+				</li>
+				<li>
+					<a href="#collapse-user" data-toggle="collapse">
+						<span class="icon"><i class="fal fa-user-alt"></i></span>
+						<span class="text">Users</span>
+						<span class="arrow">
+							<i class="fal fa-angle-down"></i>
+						</span>
+					</a>
+					<ul id="collapse-user" class="collapse" data-parent="#sidebar-menu">
+						<li>
+							<a href="./danh-sach-user.html">
+								<span class="icon"><i class="fal fa-angle-right"></i></span>
+								<span class="text">
+									Danh sách users
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="./them-user.html">
+								<span class="icon"><i class="fal fa-angle-right"></i></span>
+								<span class="text">
+									Thêm user
+								</span>
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#collapse-tintuc" data-toggle="collapse">
+						<span class="icon"><i class="fal fa-newspaper"></i></span>
+						<span class="text">Tin tức</span>
+						<span class="arrow">
+							<i class="fal fa-angle-down"></i>
+						</span>
+					</a>
+					<ul id="collapse-tintuc" class="collapse" data-parent="#sidebar-menu">
+						<li>
+							<a href="./danh-sach-tin-tuc.html">
+								<span class="icon"><i class="fal fa-angle-right"></i></span>
+								<span class="text">
+									Danh sách tin tuc
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="./them-tin-tuc.html">
+								<span class="icon"><i class="fal fa-angle-right"></i></span>
+								<span class="text">
+									Thêm tin tức
+								</span>
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="./vi-dien-tu.html">
+						<span class="icon"><i class="fal fa-wallet"></i></span>
+						<span class="text">Ví điện tử</span>
+					</a>
+				</li>
+				<li>
+					<a href="./booking.html">
+						<span class="icon"><i class="fal fa-ticket-alt"></i></span>
+						<span class="text">Booking</span>
+					</a>
+				</li>
+				<li class="active">
+					<a href="./booking.html">
+						<span class="icon"><i class="fal fa-server"></i></span>
+						<span class="text">Dịch vụ</span>
+					</a>
+				</li>
+				<li>
+					<a href="./quan-ly-file.html">
+						<span class="icon"><i class="fal fa-file-archive"></i></span>
+						<span class="text">Quản lý file</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="cpanel-main">
 		<div class="cpanel-header">
 			<div class="cpanel-header_hamburger" id="call-sidebar">
 				<span></span>
@@ -211,323 +217,324 @@
 					</span>
 				</a>
 			</div>
-		</div>>
-        <div class="cpanel-body">
-            <div class="row">
-                <div class="col-12">
-                    <div class="cpanel-heading">
-                        <div class="cpanel-heading_wrap">
-                            <div class="heading-title">
-                                Sửa dịch vụ
-                            </div>
-                        </div>
-                        <div class="cpanel-heading_links">
-                            <a href="">
-                                <i class="fas fa-home-alt"></i>
-                                Tất cả
-                            </a>
-                            <a href="">
-                                <i class="fas fa-user-alt"></i>
-                                Quản trị viên
-                            </a>
-                            <a href="">
-                                <i class="fas fa-plus"></i>
-                                Thêm mới
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row row5">
-                <div class="col-lg-6">
-                    <div class="form-m1">
-                        <div class="row row5">
-                            <div class="col-12">
-                                <label for="" class="col-form-label py-0 font-weight-bold">
-                                    THÔNG TIN KHÁCH HÀNG
-                                </label>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="position-relative">
-                                    <label for="" class="col-form-label py-0 font-weight-bold">
-                                        Tên khách hàng
-                                    </label>
-                                    <input type="text" disabled value="Bùi Đức Hà" class="form-control"
-                                           placeholder="">
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="position-relative">
-                                    <label for="" class="col-form-label py-0 font-weight-bold">
-                                        SĐT/Email
-                                    </label>
-                                    <input type="text" disabled value="0947198287 / vuathe.vn@gmail.com"
-                                           class="form-control"
-                                           placeholder="">
-                                </div>
-                            </div>
-                            <div class="col-12 mt-3">
-                                <label for="" class="col-form-label py-0 font-weight-bold">
-                                    THÔNG TIN DỊCH VỤ
-                                </label>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="position-relative">
-                                    <label for="" class="col-form-label py-0 font-weight-bold">
-                                        Loại dịch vụ
-                                    </label>
-                                    <input type="text" disabled value="Máy chủ ảo"
-                                           class="form-control"
-                                           placeholder="">
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="position-relative">
-                                    <label for="" class="col-form-label py-0 font-weight-bold">
-                                        Chọn sản phẩm
-                                    </label>
-                                    <select name="" class="form-control" id="">
-                                        <option value="">Máy chủ Ram 1GB</option>
-                                        <option value="">Máy chủ Ram 1GB</option>
-                                        <option value="">Máy chủ Ram 1GB</option>
-                                        <option value="">Máy chủ Ram 1GB</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="position-relative">
-                                    <label for="" class="col-form-label py-0 font-weight-bold">
-                                        Chu kỳ thanh toán <span class="text-danger">*</span>
-                                    </label>
-                                    <select name="" class="form-control" id="">
-                                        <option value="">3 theo tháng</option>
-                                        <option value="">6 theo tháng</option>
-                                        <option value="">9 theo tháng</option>
-                                        <option value="">12 theo tháng</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="position-relative">
-                                    <label for="" class="col-form-label py-0 font-weight-bold">
-                                        Số lượng
-                                    </label>
-                                    <input type="text" value="1"
-                                           class="form-control"
-                                           placeholder="">
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="position-relative">
-                                    <label for="" class="col-form-label py-0 font-weight-bold">
-                                        Tên dịch vụ
-                                    </label>
-                                    <input type="text" value="thedientu.com"
-                                           class="form-control"
-                                           placeholder="">
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="position-relative">
-                                    <label for="" class="col-form-label py-0 font-weight-bold">
-                                        Mã dịch vụ
-                                    </label>
-                                    <input type="text" value="thedientu"
-                                           class="form-control"
-                                           placeholder="">
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="position-relative">
-                                    <label for="" class="col-form-label py-0 font-weight-bold">
-                                        Ngày bắt đầu
-                                    </label>
-                                    <div class="position-relative z-index-2">
-                                        <input class="form-control" value="2022-09-10" name="" type="date">
-                                        <div class="icon-ios"><!-- Giữ lại cái này cho em nha --></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="position-relative">
-                                    <label for="" class="col-form-label py-0 font-weight-bold">
-                                        Ngày kết thúc
-                                    </label>
-                                    <div class="position-relative z-index-2">
-                                        <input class="form-control" value="2022-09-10" name="" type="date">
-                                        <div class="icon-ios"><!-- Giữ lại cái này cho em nha --></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="cpanel-card card">
-                        <div class="card-body">
-                            <div class="form-m1">
-                                <div class="row row5">
-                                    <div class="col-12">
-                                        <label for="" class="col-form-label py-0 font-weight-bold">
-                                            THÔNG SỐ DỊCH VỤ
-                                        </label>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="table-responsive">
-                                            <table class="table table-bordered table-module mb-0">
-                                                <tbody>
-                                                <tr>
-                                                    <th>
-                                                        Khoá mã
-                                                    </th>
-                                                    <th>
-                                                        Giá trị (số học)
-                                                    </th>
-                                                    <th>
-                                                        Đơn vị (mb, gb...)
-                                                    </th>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <label for="" class="col-form-label py-0">
-                                                            Cores
-                                                        </label>
-                                                    </td>
-                                                    <td>
-                                                        <input type="text" class="form-control" placeholder=""
-                                                               value="8">
-                                                    </td>
-                                                    <td>
-                                                        <input type="text" class="form-control" placeholder=""
-                                                               value="Core">
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <label for="" class="col-form-label py-0">
-                                                            Ram
-                                                        </label>
-                                                    </td>
-                                                    <td>
-                                                        <input type="text" class="form-control" placeholder=""
-                                                               value="60">
-                                                    </td>
-                                                    <td>
-                                                        <input type="text" class="form-control" placeholder=""
-                                                               value="GB">
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <label for="" class="col-form-label py-0">
-                                                            Disk Space
-                                                        </label>
-                                                    </td>
-                                                    <td>
-                                                        <input type="text" class="form-control" placeholder=""
-                                                               value="100">
-                                                    </td>
-                                                    <td>
-                                                        <input type="text" class="form-control" placeholder=""
-                                                               value="GB">
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <label for="" class="col-form-label py-0">
-                                                            Band Width
-                                                        </label>
-                                                    </td>
-                                                    <td>
-                                                        <input type="text" class="form-control" placeholder=""
-                                                               value="2">
-                                                    </td>
-                                                    <td>
-                                                        <input type="text" class="form-control" placeholder=""
-                                                               value="">
-                                                    </td>
-                                                </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 mt-3">
-                                        <label for="" class="col-form-label py-0 font-weight-bold">
-                                            THÔNG TIN ĐIỀU KHIỂN
-                                        </label>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="position-relative">
-                                            <label for="" class="col-form-label py-0 font-weight-bold">
-                                                service.ip
-                                            </label>
-                                            <input type="text"
-                                                   class="form-control"
-                                                   placeholder="">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="position-relative">
-                                            <label for="" class="col-form-label py-0 font-weight-bold">
-                                                service.username
-                                            </label>
-                                            <input type="text"
-                                                   class="form-control"
-                                                   placeholder="">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="position-relative">
-                                            <label for="" class="col-form-label py-0 font-weight-bold">
-                                                service.password
-                                            </label>
-                                            <input type="text"
-                                                   class="form-control"
-                                                   placeholder="">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="position-relative">
-                                            <label for="" class="col-form-label py-0 font-weight-bold">
-                                                service.port
-                                            </label>
-                                            <input type="text"
-                                                   class="form-control"
-                                                   placeholder="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="mt-4">
-                <button type="submit" class="btn btn-primary btn-default">
-                    Lưu thông tin
-                </button>
-            </div>
-        </div>
-    </div>
-    <div class="cpanel-footer">
-        <div class="cpanel-wrap">
-            <div class="text-center">
-                Template Cpanel v1 - Design by Nencer <span class="px-2">-</span>
-                <a href="./">Tài liệu</a>
-                <span class="px-2">-</span>
-                <a href="tel:0333851915">Liên hệ</a>
-            </div>
-        </div>
-    </div>
+		</div>
+		>
+		<div class="cpanel-body">
+			<div class="row">
+				<div class="col-12">
+					<div class="cpanel-heading">
+						<div class="cpanel-heading_wrap">
+							<div class="heading-title">
+								Sửa dịch vụ
+							</div>
+						</div>
+						<div class="cpanel-heading_links">
+							<a href="">
+								<i class="fas fa-home-alt"></i>
+								Tất cả
+							</a>
+							<a href="">
+								<i class="fas fa-user-alt"></i>
+								Quản trị viên
+							</a>
+							<a href="">
+								<i class="fas fa-plus"></i>
+								Thêm mới
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row row5">
+				<div class="col-lg-6">
+					<div class="form-m1">
+						<div class="row row5">
+							<div class="col-12">
+								<label for="" class="col-form-label py-0 font-weight-bold">
+									THÔNG TIN KHÁCH HÀNG
+								</label>
+							</div>
+							<div class="col-sm-6">
+								<div class="position-relative">
+									<label for="" class="col-form-label py-0 font-weight-bold">
+										Tên khách hàng
+									</label>
+									<input type="text" disabled value="Bùi Đức Hà" class="form-control"
+										   placeholder="">
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="position-relative">
+									<label for="" class="col-form-label py-0 font-weight-bold">
+										SĐT/Email
+									</label>
+									<input type="text" disabled value="0947198287 / vuathe.vn@gmail.com"
+										   class="form-control"
+										   placeholder="">
+								</div>
+							</div>
+							<div class="col-12 mt-3">
+								<label for="" class="col-form-label py-0 font-weight-bold">
+									THÔNG TIN DỊCH VỤ
+								</label>
+							</div>
+							<div class="col-sm-6">
+								<div class="position-relative">
+									<label for="" class="col-form-label py-0 font-weight-bold">
+										Loại dịch vụ
+									</label>
+									<input type="text" disabled value="Máy chủ ảo"
+										   class="form-control"
+										   placeholder="">
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="position-relative">
+									<label for="" class="col-form-label py-0 font-weight-bold">
+										Chọn sản phẩm
+									</label>
+									<select name="" class="form-control" id="">
+										<option value="">Máy chủ Ram 1GB</option>
+										<option value="">Máy chủ Ram 1GB</option>
+										<option value="">Máy chủ Ram 1GB</option>
+										<option value="">Máy chủ Ram 1GB</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="position-relative">
+									<label for="" class="col-form-label py-0 font-weight-bold">
+										Chu kỳ thanh toán <span class="text-danger">*</span>
+									</label>
+									<select name="" class="form-control" id="">
+										<option value="">3 theo tháng</option>
+										<option value="">6 theo tháng</option>
+										<option value="">9 theo tháng</option>
+										<option value="">12 theo tháng</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="position-relative">
+									<label for="" class="col-form-label py-0 font-weight-bold">
+										Số lượng
+									</label>
+									<input type="text" value="1"
+										   class="form-control"
+										   placeholder="">
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="position-relative">
+									<label for="" class="col-form-label py-0 font-weight-bold">
+										Tên dịch vụ
+									</label>
+									<input type="text" value="thedientu.com"
+										   class="form-control"
+										   placeholder="">
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="position-relative">
+									<label for="" class="col-form-label py-0 font-weight-bold">
+										Mã dịch vụ
+									</label>
+									<input type="text" value="thedientu"
+										   class="form-control"
+										   placeholder="">
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="position-relative">
+									<label for="" class="col-form-label py-0 font-weight-bold">
+										Ngày bắt đầu
+									</label>
+									<div class="position-relative z-index-2">
+										<input class="form-control" value="2022-09-10" name="" type="date">
+										<div class="icon-ios"><!-- Giữ lại cái này cho em nha --></div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="position-relative">
+									<label for="" class="col-form-label py-0 font-weight-bold">
+										Ngày kết thúc
+									</label>
+									<div class="position-relative z-index-2">
+										<input class="form-control" value="2022-09-10" name="" type="date">
+										<div class="icon-ios"><!-- Giữ lại cái này cho em nha --></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="cpanel-card card">
+						<div class="card-body">
+							<div class="form-m1">
+								<div class="row row5">
+									<div class="col-12">
+										<label for="" class="col-form-label py-0 font-weight-bold">
+											THÔNG SỐ DỊCH VỤ
+										</label>
+									</div>
+									<div class="col-12">
+										<div class="table-responsive">
+											<table class="table table-bordered table-module mb-0">
+												<tbody>
+												<tr>
+													<th>
+														Khoá mã
+													</th>
+													<th>
+														Giá trị (số học)
+													</th>
+													<th>
+														Đơn vị (mb, gb...)
+													</th>
+												</tr>
+												<tr>
+													<td>
+														<label for="" class="col-form-label py-0">
+															Cores
+														</label>
+													</td>
+													<td>
+														<input type="text" class="form-control" placeholder=""
+															   value="8">
+													</td>
+													<td>
+														<input type="text" class="form-control" placeholder=""
+															   value="Core">
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<label for="" class="col-form-label py-0">
+															Ram
+														</label>
+													</td>
+													<td>
+														<input type="text" class="form-control" placeholder=""
+															   value="60">
+													</td>
+													<td>
+														<input type="text" class="form-control" placeholder=""
+															   value="GB">
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<label for="" class="col-form-label py-0">
+															Disk Space
+														</label>
+													</td>
+													<td>
+														<input type="text" class="form-control" placeholder=""
+															   value="100">
+													</td>
+													<td>
+														<input type="text" class="form-control" placeholder=""
+															   value="GB">
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<label for="" class="col-form-label py-0">
+															Band Width
+														</label>
+													</td>
+													<td>
+														<input type="text" class="form-control" placeholder=""
+															   value="2">
+													</td>
+													<td>
+														<input type="text" class="form-control" placeholder=""
+															   value="">
+													</td>
+												</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<div class="col-12 mt-3">
+										<label for="" class="col-form-label py-0 font-weight-bold">
+											THÔNG TIN ĐIỀU KHIỂN
+										</label>
+									</div>
+									<div class="col-sm-6">
+										<div class="position-relative">
+											<label for="" class="col-form-label py-0 font-weight-bold">
+												service.ip
+											</label>
+											<input type="text"
+												   class="form-control"
+												   placeholder="">
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="position-relative">
+											<label for="" class="col-form-label py-0 font-weight-bold">
+												service.username
+											</label>
+											<input type="text"
+												   class="form-control"
+												   placeholder="">
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="position-relative">
+											<label for="" class="col-form-label py-0 font-weight-bold">
+												service.password
+											</label>
+											<input type="text"
+												   class="form-control"
+												   placeholder="">
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="position-relative">
+											<label for="" class="col-form-label py-0 font-weight-bold">
+												service.port
+											</label>
+											<input type="text"
+												   class="form-control"
+												   placeholder="">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="mt-4">
+				<button type="submit" class="btn btn-primary btn-default">
+					Lưu thông tin
+				</button>
+			</div>
+		</div>
+	</div>
+	<div class="cpanel-footer">
+		<div class="cpanel-wrap">
+			<div class="text-center">
+				Template Cpanel v1 - Design by Nencer <span class="px-2">-</span>
+				<a href="./">Tài liệu</a>
+				<span class="px-2">-</span>
+				<a href="tel:0333851915">Liên hệ</a>
+			</div>
+		</div>
+	</div>
 </div>
 
 <script type=" text/javascript" src="./assets/plugins/jquery.min.js"></script>
 <script type="text/javascript"
-        src="./assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+		src="./assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script type="text/javascript"
-        src="./assets/plugins/bootstrap-flatpickr/bootstrap-flatpickr.js"></script>
+		src="./assets/plugins/bootstrap-flatpickr/bootstrap-flatpickr.js"></script>
 <script type="text/javascript"
-        src="./assets/plugins/bootstrap-flatpickr/bootstrap-flatpickr-vn.js"></script>
+		src="./assets/plugins/bootstrap-flatpickr/bootstrap-flatpickr-vn.js"></script>
 <script type="text/javascript" src="./assets/plugins/sweetalert2/sweetalert2.min.js"></script>
 <script type="text/javascript" src="./assets/plugins/select2/js/select2.min.js"></script>
 <script type="text/javascript" src="./assets/js/app.js"></script>
