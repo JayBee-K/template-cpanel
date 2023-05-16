@@ -257,7 +257,7 @@
 			$('.sort-selected').append(element).trigger('change');
 		});
 
-		if (arrTemp.length > 0 && $('.sort-selected').length) {
+		if (typeof arrTemp != 'undefined' && arrTemp.length > 0 && $('.sort-selected').length) {
 			arrTemp.map(function (value) {
 				$('.sort-selected option').each(function () {
 					let elm = $(this);
