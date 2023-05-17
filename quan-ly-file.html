@@ -1,336 +1,486 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
-    <title>Template Cpanel</title>
-    <meta name="description" content="Template Cpanel">
-    <meta name="author" content="">
+	<title>Template Cpanel</title>
+	<meta name="description" content="Template Cpanel">
+	<meta name="author" content="">
 
-    <meta property="og:title" content="Template Cpanel">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="">
-    <meta property="og:description" content="Template Cpanel">
-    <meta property="og:image" content="">
+	<meta property="og:title" content="Template Cpanel">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="">
+	<meta property="og:description" content="Template Cpanel">
+	<meta property="og:image" content="">
 
-    <link rel="icon" href="/assets/images/favicon.png">
-    <link rel="apple-touch-icon" href="/assets/images/favicon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
-          rel="stylesheet">
-    <link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/plugins/bootstrap-flatpickr/bootstrap-flatpickr.min.css">
-    <link rel="stylesheet" href="./assets/plugins/sweetalert2/sweetalert2.min.css">
-    <link rel="stylesheet" href="./assets/plugins/select2/css/select2.min.css">
-    <link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+	<link rel="icon" href="/assets/images/favicon.png">
+	<link rel="apple-touch-icon" href="/assets/images/favicon.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
+		  rel="stylesheet">
+	<link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./assets/plugins/bootstrap-flatpickr/bootstrap-flatpickr.min.css">
+	<link rel="stylesheet" href="./assets/plugins/sweetalert2/sweetalert2.min.css">
+	<link rel="stylesheet" href="./assets/plugins/select2/css/select2.min.css">
+	<link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="./assets/css/style.css">
 
-    <style>
-        :root {
-            --template-color: #3c444d;
-            --template-hover: #2c3138;
+	<style>
+		:root {
+			--template-color: #3c444d;
+			--template-hover: #2c3138;
 
-            --primary-color: #20a53a;
-            --primary-hover: #10952a;
-            --primary-rgb: 32, 165, 58;
-        }
-    </style>
+			--primary-color: #20a53a;
+			--primary-hover: #10952a;
+			--primary-rgb: 32, 165, 58;
+		}
+	</style>
 </head>
 <body>
 <div class="modal fade modal-file" id="modalFile" data-backdrop="static" data-keyboard="false">
-    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">Quản lý file</h5>
-                <button type="button" class="modal-button modal-expand">
-                    <i class="far fa-expand"></i>
-                </button>
-                <button type="button" class="modal-button modal-close" data-dismiss="modal">
-                    <i class="fal fa-times"></i>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="manage-toolbars">
-                    <div class="toolbars-item">
-                        <i class="fas fa-file-upload"></i>
-                        Upload
-                    </div>
-                    <div class="toolbars-item">
-                        <i class="fas fa-folder-plus"></i>
-                        New Subfolder
-                    </div>
-                    <div class="toolbars-item">
-                        <i class="fas fa-file-edit"></i>
-                        Rename
-                    </div>
-                    <div class="toolbars-item">
-                        <i class="fas fa-folder-times"></i>
-                        Delete Subfolder
-                    </div>
-                    <div class="toolbars-search">
-                        <input type="text" placeholder="Filder" class="form-control">
-                    </div>
-                    <div class="toolbars-setting">
-                        <i class="fas fa-cog"></i>
-                    </div>
-                </div>
-                <div class="manage-grid">
-                    <div class="manage-folders manage-scrollbar">
-                        <ul class="folders-list list-unstyled mb-0">
-                            <li class="folders-item">
-                                <a href="javascript:void(0)">
-                                    <i class="fas fa-folder folders-item_icon"></i>
-                                    <span class="folder-item_name">
-                                        Files
-                                    </span>
-                                </a>
-                            </li>
-                            <li class="folders-item">
-                                <a href="javascript:void(0)">
-                                    <i class="fas fa-folder folders-item_icon"></i>
-                                    <span class="folder-item_name">
-                                        Images
-                                    </span>
-                                    <span data-toggle="collapse" data-target="" class="folders-item_button">
-                                        <i class="fas fa-caret-right"></i>
-                                    </span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="manage-files manage-scrollbar"></div>
-                </div>
-            </div>
-        </div>
-    </div>
+	<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title">Quản lý file</h5>
+				<button type="button" class="modal-button modal-expand">
+					<i class="far fa-expand"></i>
+				</button>
+				<button type="button" class="modal-button modal-close" data-dismiss="modal">
+					<i class="fal fa-times"></i>
+				</button>
+			</div>
+			<div class="modal-body">
+				<div class="manage-toolbars">
+					<div class="toolbars-item">
+						<i class="fas fa-file-upload"></i>
+						Upload
+					</div>
+					<div class="toolbars-item">
+						<i class="fas fa-folder-plus"></i>
+						New Subfolder
+					</div>
+					<div class="toolbars-item">
+						<i class="fas fa-file-edit"></i>
+						Rename
+					</div>
+					<div class="toolbars-item">
+						<i class="fas fa-folder-times"></i>
+						Delete Subfolder
+					</div>
+					<div class="toolbars-search">
+						<input type="text" placeholder="Filder" class="form-control">
+					</div>
+					<div class="toolbars-setting">
+						<i class="fas fa-cog"></i>
+					</div>
+				</div>
+				<div class="manage-grid">
+					<div class="manage-folders manage-scrollbar" id="folder-collapse">
+						<ul class="folders-list list-unstyled mb-0">
+							<li class="folders-item">
+								<a href="javascript:void(0)">
+									<i class="fas fa-folder folders-item_icon"></i>
+									<span class="folder-item_name">
+										Files
+									</span>
+								</a>
+							</li>
+							<li class="folders-item">
+								<a href="./index.html">
+									<i class="fas fa-folder folders-item_icon"></i>
+									<span class="folder-item_name">
+										Images
+									</span>
+									<span data-toggle="collapse" data-target="#folder-sub-lv1-1"
+										  class="folders-item_button folder-collapse_item">
+										<i class="fas fa-caret-right"></i>
+									</span>
+								</a>
+								<ul class="folders-list collapse list-unstyled mb-0"
+									id="folder-sub-lv1-1"
+									data-parent="#folder-collapse">
+									<li class="folders-item">
+										<a href="javascript:void(0)">
+											<i class="fas fa-folder folders-item_icon"></i>
+											<span class="folder-item_name">
+												Slider
+											</span>
+										</a>
+									</li>
+									<li class="folders-item">
+										<a href="./index.html">
+											<i class="fas fa-folder folders-item_icon"></i>
+											<span class="folder-item_name">
+												Product
+											</span>
+											<span data-toggle="collapse" data-target="#folder-sub-lv1-lv2-1"
+												  class="folders-item_button folder-collapse_item">
+												<i class="fas fa-caret-right"></i>
+											</span>
+										</a>
+										<ul class="folders-list collapse list-unstyled mb-0"
+											id="folder-sub-lv1-lv2-1"
+											data-parent="#folder-sub-lv1-1">
+											<li class="folders-item">
+												<a href="javascript:void(0)">
+													<i class="fas fa-folder folders-item_icon"></i>
+													<span class="folder-item_name">
+														Product 1
+													</span>
+												</a>
+											</li>
+											<li class="folders-item">
+												<a href="javascript:void(0)">
+													<i class="fas fa-folder folders-item_icon"></i>
+													<span class="folder-item_name">
+														Product 2
+													</span>
+												</a>
+											</li>
+											<li class="folders-item">
+												<a href="javascript:void(0)">
+													<i class="fas fa-folder folders-item_icon"></i>
+													<span class="folder-item_name">
+														Product 3
+													</span>
+												</a>
+											</li>
+										</ul>
+									</li>
+									<li class="folders-item">
+										<a href="./index.html">
+											<i class="fas fa-folder folders-item_icon"></i>
+											<span class="folder-item_name">
+												Article
+											</span>
+											<span data-toggle="collapse" data-target="#folder-sub-lv1-lv2-2"
+												  class="folders-item_button folder-collapse_item">
+												<i class="fas fa-caret-right"></i>
+											</span>
+										</a>
+										<ul class="folders-list collapse list-unstyled mb-0"
+											id="folder-sub-lv1-lv2-2"
+											data-parent="#folder-sub-lv1-1">
+											<li class="folders-item">
+												<a href="javascript:void(0)">
+													<i class="fas fa-folder folders-item_icon"></i>
+													<span class="folder-item_name">
+														Article 1
+													</span>
+												</a>
+											</li>
+											<li class="folders-item">
+												<a href="javascript:void(0)">
+													<i class="fas fa-folder folders-item_icon"></i>
+													<span class="folder-item_name">
+														Article 2
+													</span>
+												</a>
+											</li>
+											<li class="folders-item">
+												<a href="javascript:void(0)">
+													<i class="fas fa-folder folders-item_icon"></i>
+													<span class="folder-item_name">
+														Article 3
+													</span>
+												</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+
+							<li class="folders-item">
+								<a href="./index.html">
+									<i class="fas fa-folder folders-item_icon"></i>
+									<span class="folder-item_name">
+										Games
+									</span>
+									<span data-toggle="collapse" data-target="#folder-sub-lv1-2"
+										  class="folders-item_button folder-collapse_item">
+										<i class="fas fa-caret-right"></i>
+									</span>
+								</a>
+								<ul class="folders-list collapse list-unstyled mb-0"
+									id="folder-sub-lv1-2"
+									data-parent="#folder-collapse">
+									<li class="folders-item">
+										<a href="javascript:void(0)">
+											<i class="fas fa-folder folders-item_icon"></i>
+											<span class="folder-item_name">
+												Liên Quân
+											</span>
+										</a>
+									</li>
+									<li class="folders-item">
+										<a href="javascript:void(0)">
+											<i class="fas fa-folder folders-item_icon"></i>
+											<span class="folder-item_name">
+												FreeFire
+											</span>
+										</a>
+									</li>
+									<li class="folders-item">
+										<a href="javascript:void(0)">
+											<i class="fas fa-folder folders-item_icon"></i>
+											<span class="folder-item_name">
+												Ngọc Rồng
+											</span>
+										</a>
+									</li>
+									<li class="folders-item">
+										<a href="javascript:void(0)">
+											<i class="fas fa-folder folders-item_icon"></i>
+											<span class="folder-item_name">
+												Pubg
+											</span>
+										</a>
+									</li>
+									<li class="folders-item">
+										<a href="javascript:void(0)">
+											<i class="fas fa-folder folders-item_icon"></i>
+											<span class="folder-item_name">
+												Pubg Mobile
+											</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div class="manage-files manage-scrollbar"></div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 
 
 <div class="template-cpanel" id="template-cpanel">
-    <div class="cpanel-overlay" id="cpanel-overlay"></div>
-    <div class="cpanel-sidebar">
-        <div class="sidebar-header">
-            <a href="/">
-                <img src="./assets/images/logo.svg" height="16" width="90" class="img-fluid" alt="">
-            </a>
-        </div>
-        <div class="sidebar-body">
-            <ul class="sidebar-body_menu" id="sidebar-menu">
-                <li class="active">
-                    <a href="./index.html">
-                        <span class="icon"><i class="fal fa-home-alt"></i></span>
-                        <span class="text">Trang chủ</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#collapse-config" data-toggle="collapse">
-                        <span class="icon"><i class="fal fa-cog"></i></span>
-                        <span class="text">Cấu hình</span>
-                        <span class="arrow">
-                            <i class="fal fa-angle-down"></i>
-                        </span>
-                    </a>
-                    <ul id="collapse-config" class="collapse" data-parent="#sidebar-menu">
-                        <li>
-                            <a href="./cau-hinh-chung.html">
-                                <span class="icon"><i class="fal fa-angle-right"></i></span>
-                                <span class="text">
-                                    Cấu hình chung
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="./cau-hinh-kho-the.html">
-                                <span class="icon"><i class="fal fa-angle-right"></i></span>
-                                <span class="text">
-                                    Cấu hình kho thẻ
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="./danh-sach-nap.html">
-                        <span class="icon"><i class="fal fa-credit-card"></i></span>
-                        <span class="text">Danh sách nạp</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#collapse-user" data-toggle="collapse">
-                        <span class="icon"><i class="fal fa-user-alt"></i></span>
-                        <span class="text">Users</span>
-                        <span class="arrow">
-                            <i class="fal fa-angle-down"></i>
-                        </span>
-                    </a>
-                    <ul id="collapse-user" class="collapse" data-parent="#sidebar-menu">
-                        <li>
-                            <a href="./danh-sach-user.html">
-                                <span class="icon"><i class="fal fa-angle-right"></i></span>
-                                <span class="text">
-                                    Danh sách users
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="./them-user.html">
-                                <span class="icon"><i class="fal fa-angle-right"></i></span>
-                                <span class="text">
-                                    Thêm user
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#collapse-tintuc" data-toggle="collapse">
-                        <span class="icon"><i class="fal fa-newspaper"></i></span>
-                        <span class="text">Tin tức</span>
-                        <span class="arrow">
-                            <i class="fal fa-angle-down"></i>
-                        </span>
-                    </a>
-                    <ul id="collapse-tintuc" class="collapse" data-parent="#sidebar-menu">
-                        <li>
-                            <a href="./danh-sach-tin-tuc.html">
-                                <span class="icon"><i class="fal fa-angle-right"></i></span>
-                                <span class="text">
-                                    Danh sách tin tuc
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="./them-tin-tuc.html">
-                                <span class="icon"><i class="fal fa-angle-right"></i></span>
-                                <span class="text">
-                                    Thêm tin tức
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="./vi-dien-tu.html">
-                        <span class="icon"><i class="fal fa-wallet"></i></span>
-                        <span class="text">Ví điện tử</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="./booking.html">
-                        <span class="icon"><i class="fal fa-ticket-alt"></i></span>
-                        <span class="text">Booking</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="./quan-ly-file.html">
-                        <span class="icon"><i class="fal fa-file-archive"></i></span>
-                        <span class="text">Quản lý file</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div class="cpanel-main">
-        <div class="cpanel-header">
-            <div class="cpanel-header_hamburger" id="call-sidebar">
-                <span></span>
-            </div>
-            <a class="cpanel-header_logo" href="/">
-                <img src="./assets/images/logo.svg" height="16" width="90" class="img-fluid" alt="">
-            </a>
-            <div class="cpanel-header_navigation">
-                <ul class="list-unstyled mb-0">
-                    <li>
-                        <a href="">Trang chủ</a>
-                    </li>
-                    <li>
-                        <a href="">Dashboard</a>
-                    </li>
-                    <li>
-                        <a href="">Liên kết nhanh</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="cpanel-header_search">
-                <div class="form-m1">
-                    <form action="">
-                        <div class="position-relative form-icon form-icon_right">
-                            <input type="text" class="form-control" placeholder="Từ khoá tìm kiếm...">
-                            <button type="submit" class="form-button">
-                                <i class="fal fa-search"></i>
-                            </button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <div class="cpanel-header_user d-flex align-items-center">
-                <a href="" class="header-user_button">
-                    <span>
-                        <i class="fas fa-user"></i>
-                    </span>
-                    Admin
-                </a>
-                <a href="" class="btn-link align-items-center d-flex ml-4">
-                    <i class="fal fa-sign-out"></i>
-                    <span class="d-none d-lg-block ml-2">
-                        Đăng xuất
-                    </span>
-                </a>
-            </div>
-        </div>
-        <div class="cpanel-body">
-            <div class="row">
-                <div class="col-12">
-                    <div class="cpanel-heading">
-                        <div class="cpanel-heading_wrap">
-                            <div class="heading-title">
-                                Quản lý file
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row row5">
-                <div class="col-12">
-                    <div class="text-center">
-                        <button type="button" data-target="#modalFile" data-toggle="modal" class="btn btn-primary">
-                            Quản lý file
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="cpanel-footer">
-            <div class="cpanel-wrap">
-                <div class="text-center">
-                    Template Cpanel v1 - Design by Nencer <span class="px-2">-</span>
-                    <a href="./">Tài liệu</a>
-                    <span class="px-2">-</span>
-                    <a href="tel:0333851915">Liên hệ</a>
-                </div>
-            </div>
-        </div>
-    </div>
+	<div class="cpanel-overlay" id="cpanel-overlay"></div>
+	<div class="cpanel-sidebar">
+		<div class="sidebar-header">
+			<a href="/">
+				<img src="./assets/images/logo.svg" height="16" width="90" class="img-fluid" alt="">
+			</a>
+		</div>
+		<div class="sidebar-body">
+			<ul class="sidebar-body_menu" id="sidebar-menu">
+				<li class="active">
+					<a href="./index.html">
+						<span class="icon"><i class="fal fa-home-alt"></i></span>
+						<span class="text">Trang chủ</span>
+					</a>
+				</li>
+				<li>
+					<a href="#collapse-config" data-toggle="collapse">
+						<span class="icon"><i class="fal fa-cog"></i></span>
+						<span class="text">Cấu hình</span>
+						<span class="arrow">
+							<i class="fal fa-angle-down"></i>
+						</span>
+					</a>
+					<ul id="collapse-config" class="collapse" data-parent="#sidebar-menu">
+						<li>
+							<a href="./cau-hinh-chung.html">
+								<span class="icon"><i class="fal fa-angle-right"></i></span>
+								<span class="text">
+									Cấu hình chung
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="./cau-hinh-kho-the.html">
+								<span class="icon"><i class="fal fa-angle-right"></i></span>
+								<span class="text">
+									Cấu hình kho thẻ
+								</span>
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="./danh-sach-nap.html">
+						<span class="icon"><i class="fal fa-credit-card"></i></span>
+						<span class="text">Danh sách nạp</span>
+					</a>
+				</li>
+				<li>
+					<a href="#collapse-user" data-toggle="collapse">
+						<span class="icon"><i class="fal fa-user-alt"></i></span>
+						<span class="text">Users</span>
+						<span class="arrow">
+							<i class="fal fa-angle-down"></i>
+						</span>
+					</a>
+					<ul id="collapse-user" class="collapse" data-parent="#sidebar-menu">
+						<li>
+							<a href="./danh-sach-user.html">
+								<span class="icon"><i class="fal fa-angle-right"></i></span>
+								<span class="text">
+									Danh sách users
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="./them-user.html">
+								<span class="icon"><i class="fal fa-angle-right"></i></span>
+								<span class="text">
+									Thêm user
+								</span>
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#collapse-tintuc" data-toggle="collapse">
+						<span class="icon"><i class="fal fa-newspaper"></i></span>
+						<span class="text">Tin tức</span>
+						<span class="arrow">
+							<i class="fal fa-angle-down"></i>
+						</span>
+					</a>
+					<ul id="collapse-tintuc" class="collapse" data-parent="#sidebar-menu">
+						<li>
+							<a href="./danh-sach-tin-tuc.html">
+								<span class="icon"><i class="fal fa-angle-right"></i></span>
+								<span class="text">
+									Danh sách tin tuc
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="./them-tin-tuc.html">
+								<span class="icon"><i class="fal fa-angle-right"></i></span>
+								<span class="text">
+									Thêm tin tức
+								</span>
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="./vi-dien-tu.html">
+						<span class="icon"><i class="fal fa-wallet"></i></span>
+						<span class="text">Ví điện tử</span>
+					</a>
+				</li>
+				<li>
+					<a href="./booking.html">
+						<span class="icon"><i class="fal fa-ticket-alt"></i></span>
+						<span class="text">Booking</span>
+					</a>
+				</li>
+				<li>
+					<a href="./quan-ly-file.html">
+						<span class="icon"><i class="fal fa-file-archive"></i></span>
+						<span class="text">Quản lý file</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="cpanel-main">
+		<div class="cpanel-header">
+			<div class="cpanel-header_hamburger" id="call-sidebar">
+				<span></span>
+			</div>
+			<a class="cpanel-header_logo" href="/">
+				<img src="./assets/images/logo.svg" height="16" width="90" class="img-fluid" alt="">
+			</a>
+			<div class="cpanel-header_navigation">
+				<ul class="list-unstyled mb-0">
+					<li>
+						<a href="">Trang chủ</a>
+					</li>
+					<li>
+						<a href="">Dashboard</a>
+					</li>
+					<li>
+						<a href="">Liên kết nhanh</a>
+					</li>
+				</ul>
+			</div>
+			<div class="cpanel-header_search">
+				<div class="form-m1">
+					<form action="">
+						<div class="position-relative form-icon form-icon_right">
+							<input type="text" class="form-control" placeholder="Từ khoá tìm kiếm...">
+							<button type="submit" class="form-button">
+								<i class="fal fa-search"></i>
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="cpanel-header_user d-flex align-items-center">
+				<a href="" class="header-user_button">
+					<span>
+						<i class="fas fa-user"></i>
+					</span>
+					Admin
+				</a>
+				<a href="" class="btn-link align-items-center d-flex ml-4">
+					<i class="fal fa-sign-out"></i>
+					<span class="d-none d-lg-block ml-2">
+						Đăng xuất
+					</span>
+				</a>
+			</div>
+		</div>
+		<div class="cpanel-body">
+			<div class="row">
+				<div class="col-12">
+					<div class="cpanel-heading">
+						<div class="cpanel-heading_wrap">
+							<div class="heading-title">
+								Quản lý file
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row row5">
+				<div class="col-12">
+					<div class="text-center">
+						<button type="button" data-target="#modalFile" data-toggle="modal" class="btn btn-primary">
+							Quản lý file
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="cpanel-footer">
+			<div class="cpanel-wrap">
+				<div class="text-center">
+					Template Cpanel v1 - Design by Nencer <span class="px-2">-</span>
+					<a href="./">Tài liệu</a>
+					<span class="px-2">-</span>
+					<a href="tel:0333851915">Liên hệ</a>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 
 <script type=" text/javascript" src="./assets/plugins/jquery.min.js"></script>
 <script type="text/javascript"
-        src="./assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+		src="./assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script type="text/javascript"
-        src="./assets/plugins/bootstrap-flatpickr/bootstrap-flatpickr.js"></script>
+		src="./assets/plugins/bootstrap-flatpickr/bootstrap-flatpickr.js"></script>
 <script type="text/javascript"
-        src="./assets/plugins/bootstrap-flatpickr/bootstrap-flatpickr-vn.js"></script>
+		src="./assets/plugins/bootstrap-flatpickr/bootstrap-flatpickr-vn.js"></script>
 <script type="text/javascript" src="./assets/plugins/sweetalert2/sweetalert2.min.js"></script>
 <script type="text/javascript" src="./assets/plugins/select2/js/select2.min.js"></script>
 <script type="text/javascript" src="./assets/js/app.js"></script>
 
 <script>
-    $(document).ready(function () {
-        $('#modalFile').modal('show');
-    })
+	$(document).ready(function () {
+		$('#modalFile').modal('show');
+	})
 </script>
 </body>
 </html>

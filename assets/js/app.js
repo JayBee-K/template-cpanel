@@ -235,6 +235,36 @@
 		}
 	}
 
+
+	let handleCollapseSidebar = function () {
+		const folderCollapse = $('#folder-collapse');
+		if (folderCollapse.length == 0) {
+			return false;
+		}
+
+		/*folderCollapse.find(".folders-list").map(function () {
+			console.log($(this));
+			$(this).on('show.bs.collapse', function (e) {
+				$(this).closest('ul').find('.collapse.show').collapse('hide');
+			});
+		})*/
+
+		folderCollapse.find(".folder-collapse_item").map(function () {
+			let elm = $(this);
+			elm.parent().addClass('has-sub');
+			elm.click(function (event) {
+				event.preventDefault();
+				$(this).closest('ul').find('a').removeClass('collapse-show');
+				let statusCollapse = $(this).attr('aria-expanded');
+				if (statusCollapse == undefined || statusCollapse == 'false') {
+					$(this).parent().addClass('collapse-show');
+				} else {
+					$(this).parent().removeClass('collapse-show');
+				}
+			});
+		});
+	}
+
 	$(function () {
 		initSidebar();
 		initCheckAll();
@@ -268,5 +298,7 @@
 				})
 			})
 		}
+
+		handleCollapseSidebar();
 	});
 })(jQuery);
