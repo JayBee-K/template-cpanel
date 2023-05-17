@@ -2985,13 +2985,13 @@ label:not([class*=col-form]) {
 	padding-right: 28px;
 }
 
-.modal-file .manage-grid .manage-folders .folders-list .folders-item a.collapse-show {
+.modal-file .manage-grid .manage-folders .folders-list .folders-item a.active {
 	--color-icon: #fff;
 	color: #fff;
 	background: #306fe3 !important;
 }
 
-.modal-file .manage-grid .manage-folders .folders-list .folders-item a.collapse-show .folders-item_button > i {
+.modal-file .manage-grid .manage-folders .folders-list .folders-item a.active .folders-item_button > i {
 	transform: rotate(90deg);
 }
 

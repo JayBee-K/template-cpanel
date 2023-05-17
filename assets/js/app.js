@@ -256,12 +256,12 @@
 			elm.parent().addClass('has-sub');
 			elm.click(function (event) {
 				event.preventDefault();
-				$(this).closest('ul').find('a').removeClass('collapse-show');
+				$(this).closest('ul').find('a').removeClass('active');
 				let statusCollapse = $(this).attr('aria-expanded');
 				if (statusCollapse == undefined || statusCollapse == 'false') {
-					$(this).parent().addClass('collapse-show');
+					$(this).parent().addClass('active');
 				} else {
-					$(this).parent().removeClass('collapse-show');
+					$(this).parent().removeClass('active');
 				}
 			});
 		});
