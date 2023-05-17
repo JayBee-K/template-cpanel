@@ -242,16 +242,14 @@
 			return false;
 		}
 
-		folderCollapse.find(".folders-list").map(function () {
+		folderCollapse.find('.folders-item').children(".folders-list").map(function () {
 			let elm = $(this);
-			elm.on('shown.bs.collapse', function (e) {
-				elm.children('.folders-item').children('.folders-list.collapse.show').collapse('hide');
+			elm.on('hidden.bs.collapse', function (e) {
+				e.stopPropagation();
+				$(this).find('.collapse').collapse('hide');
 			})
 		})
 
-		// folderCollapse.find(".folders-list").on('shown.bs.collapse', function (e) {
-		// 	$(this).children('.folders-item').children('.folders-list.collapse.show').collapse('hide');
-		// })
 
 		folderCollapse.find(".folder-collapse_item").map(function () {
 			let elm = $(this);

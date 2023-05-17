@@ -2913,6 +2913,10 @@ label:not([class*=col-form]) {
 	border-top: 1px solid #c8cbd0;
 }
 
+.modal-file .manage-grid .manage-folders .folders-list .folders-list.show {
+	border-top-color: rgba(255, 255, 255, .2);
+}
+
 .modal-file .manage-grid .manage-folders > .folders-list {
 	border-bottom: 1px solid #c8cbd0;
 }
