@@ -2910,15 +2910,11 @@ label:not([class*=col-form]) {
 
 .modal-file .manage-grid .manage-folders .folders-list .folders-list,
 .modal-file .manage-grid .manage-folders .folders-list .folders-item + .folders-item {
-	border-top: 1px solid #c8cbd0;
-}
-
-.modal-file .manage-grid .manage-folders .folders-list .folders-list.show {
-	border-top-color: rgba(255, 255, 255, .2);
+	border-top: 1px solid var(--gray-300);
 }
 
 .modal-file .manage-grid .manage-folders > .folders-list {
-	border-bottom: 1px solid #c8cbd0;
+	border-bottom: 1px solid var(--gray-300);
 }
 
 .modal-file .manage-grid .manage-folders .folders-list .folders-item a {
@@ -2956,7 +2952,7 @@ label:not([class*=col-form]) {
 
 .modal-file .manage-grid .manage-folders .folders-list .folders-item .folders-item_button {
 	position: absolute;
-	width: 28px;
+	width: 38px;
 	height: 100%;
 	top: 50%;
 	transform: translateY(-50%);
@@ -2967,6 +2963,7 @@ label:not([class*=col-form]) {
 	line-height: 1;
 	font-size: 16px;
 	z-index: 2;
+	border-left: 1px solid var(--gray-300);
 }
 
 .modal-file .manage-grid .manage-folders .folders-list .folders-item .folders-item_button > i {
@@ -3006,6 +3003,7 @@ label:not([class*=col-form]) {
 
 .modal-file .manage-scrollbar {
 	max-height: 100%;
+	overflow-x: hidden;
 	overflow-y: auto;
 }
 
@@ -3023,4 +3021,96 @@ label:not([class*=col-form]) {
 
 .modal-file .manage-scrollbar::-webkit-scrollbar-thumb:hover {
 	background: #c9c9c9;
+}
+
+.modal-file .files-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 12px;
+	margin: -6px -6px 0;
+}
+
+.modal-file .files-wrapper .files-item {
+	width: calc(100% / 6);
+	padding: 6px;
+	flex-shrink: 0;
+}
+
+.modal-file .files-wrapper .files-item .files-item_btn {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	width: 100%;
+	border: 1px solid var(--gray-300);
+	border-radius: 4px;
+}
+
+.modal-file .files-wrapper .files-item .files-item_btn:before {
+	display: block;
+	content: "";
+	padding-top: 100%;
+}
+
+.modal-file .files-wrapper .files-item .files-item_btn:after {
+	position: absolute;
+	top: 3px;
+	right: 3px;
+	content: "\f00c";
+	font-family: "Font Awesome 5 Pro";
+	width: 16px;
+	height: 16px;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	border-radius: 4px;
+	background-color: #306fe3;
+	color: var(--white);
+	font-size: 10px;
+}
+
+.modal-file .files-wrapper .files-item .files-item_btn .files-item_img {
+	max-width: 100%;
+	position: absolute;
+}
+
+.modal-file .files-wrapper .files-item .files-item_btn .files-item_info {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	overflow: hidden;
+	padding: 6px;
+	background-color: rgba(217, 217, 217, 0.8);
+	font-size: 11px;
+	color: #595858;
+	line-height: 1.3;
+}
+
+.modal-file .files-wrapper .files-item .files-item_btn .files-item_name {
+	font-weight: 500;
+	font-size: 13px;
+	color: #252525;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	margin-bottom: 3px;
+}
+
+.modal-file .files-wrapper .files-item .files-item_btn.active {
+	border-color: #306fe3;
+}
+
+.modal-file .files-wrapper .files-item .files-item_btn.active:after {
+	display: flex;
+}
+
+.modal-file .files-wrapper .files-item .files-item_btn.active .files-item_info {
+	background: rgba(48, 111, 217, 0.9);
+	color: #efefef;
+}
+
+.modal-file .files-wrapper .files-item .files-item_btn.active .files-item_info .files-item_name{
+	color: #fff;
 }
