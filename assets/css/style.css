@@ -2945,6 +2945,10 @@ label:not([class*=col-form]) {
 	box-shadow: rgba(255, 255, 255, .6) 0 1px 0 inset;
 }
 
+.modal-file .manage-toolbars .toolbars-item.toolbars-item_folder {
+	display: none;
+}
+
 .modal-file .manage-toolbars .toolbars-item > i {
 	font-size: 16px;
 	color: #333;
@@ -3199,23 +3203,78 @@ label:not([class*=col-form]) {
 	color: #fff;
 }
 
-@media screen and (max-width: 768px) {
-	.template-cpanel .cpanel-header .cpanel-header_user .header-user_button span,
-	.template-cpanel .cpanel-header .cpanel-header_user .header-user_button img {
-		width: 30px;
-		height: 30px;
-		font-size: var(--size-theme);
+@media screen and (max-width: 991px) {
+	.modal-file .manage-toolbars .toolbars-item {
+		width: 33px;
+		height: 33px;
+		flex-shrink: 0;
 	}
 
-	.template-cpanel .cpanel-header .card-header_language .header-language_btn > span {
+	.modal-file .manage-toolbars .toolbars-item > span {
 		display: none;
 	}
 
-	.template-cpanel .cpanel-header .card-header_language .header-language_btn .header-language_btn__item img {
-		margin: 0;
+	.modal-file .manage-toolbars .toolbars-item.toolbars-item_folder {
+		padding: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 
-	.template-cpanel .cpanel-header .cpanel-header_user {
-		margin-left: 10px;
+	.modal-file .manage-grid .manage-folders {
+		position: absolute;
+		top: 0;
+		left: -115%;
+		z-index: 3;
+		background: #fff;
+		height: 100%;
+		width: 75%;
+		max-width: 375px;
+		opacity: 0;
+		visibility: hidden;
+		pointer-events: none;
+		transition: var(--transition-default);
+		border-right: 0;
+	}
+
+	.modal-file .manage-grid .manage-folders.is-show {
+		left: 0;
+		opacity: 1;
+		visibility: visible;
+		pointer-events: auto;
+	}
+
+	.modal-file .manage-grid .manage-overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		opacity: 0;
+		visibility: hidden;
+		pointer-events: none;
+		transition: var(--transition-default);
+		z-index: 2;
+		background-color: rgba(0, 0, 0, .5);
+	}
+
+	.modal-file .manage-grid .manage-folders.is-show ~ .manage-overlay {
+		opacity: 1;
+		visibility: visible;
+		pointer-events: auto;
+	}
+
+	.modal-file .manage-grid .manage-files {
+		width: 100%;
+	}
+
+	.modal-file .files-wrapper .files-item {
+		width: calc(100% / 4);
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.modal-file .files-wrapper .files-item {
+		width: calc(100% / 2);
 	}
 }
