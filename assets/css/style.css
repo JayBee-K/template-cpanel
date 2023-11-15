@@ -1481,9 +1481,93 @@ label:not([class*=col-form]) {
 	margin-left: 20px;
 }
 
+.template-cpanel .cpanel-header .card-header_language {
+	margin-left: auto;
+}
+
+.template-cpanel .cpanel-header .card-header_language .header-language_btn {
+	padding: 10px 0;
+	-webkit-transition: var(--transition-default);
+	-o-transition: var(--transition-default);
+	transition: var(--transition-default);
+	font-size: var(--size-theme);
+}
+
+.template-cpanel .cpanel-header .card-header_language .header-language_btn .header-language_btn__item img {
+	height: 30px;
+	width: 30px;
+	margin-right: 6px;
+}
+
+.template-cpanel .cpanel-header .card-header_language .header-language_btn > i {
+	margin-left: 6px;
+	font-size: 1.15em;
+	-webkit-transition: .3s ease transform;
+	-o-transition: .3s ease transform;
+	transition: .3s ease transform;
+}
+
+.template-cpanel .cpanel-header .card-header_language:hover .header-language_btn > i {
+	-webkit-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+
+.template-cpanel .cpanel-header .card-header_language .header-language_list {
+	background-color: var(--white);
+	min-width: 175px;
+	-webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+	-webkit-transition: var(--transition-default);
+	-o-transition: var(--transition-default);
+	transition: var(--transition-default);
+	border-radius: 0 0 4px 4px;
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+	top: 100%;
+	right: 15px;
+	z-index: 2;
+}
+
+.template-cpanel .cpanel-header .card-header_language:hover .header-language_list {
+	opacity: 1;
+	visibility: visible;
+	pointer-events: auto;
+	top: 100%;
+	right: 0;
+}
+
+.template-cpanel .cpanel-header .card-header_language .header-language_list .language-item {
+	padding: 12px 15px;
+	color: #232323;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	gap: 8px;
+}
+
+.template-cpanel .cpanel-header .card-header_language .header-language_list .language-item img {
+	height: 20px;
+	width: 20px;
+}
+
+.template-cpanel .cpanel-header .card-header_language .header-language_list .language-item:hover {
+	background: #f4f4f4;
+}
+
+.template-cpanel .cpanel-header .card-header_language .header-language_list .language-item.language-item_active {
+	color: var(--primary-color);
+	background: #f4f4f4;
+}
+
+
 .template-cpanel .cpanel-header .cpanel-header_user {
 	position: relative;
-	margin-left: auto;
+	margin-left: 20px;
 }
 
 .template-cpanel .cpanel-header .cpanel-header_user .header-user_button {
@@ -3111,6 +3195,27 @@ label:not([class*=col-form]) {
 	color: #efefef;
 }
 
-.modal-file .files-wrapper .files-item .files-item_btn.active .files-item_info .files-item_name{
+.modal-file .files-wrapper .files-item .files-item_btn.active .files-item_info .files-item_name {
 	color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+	.template-cpanel .cpanel-header .cpanel-header_user .header-user_button span,
+	.template-cpanel .cpanel-header .cpanel-header_user .header-user_button img {
+		width: 30px;
+		height: 30px;
+		font-size: var(--size-theme);
+	}
+
+	.template-cpanel .cpanel-header .card-header_language .header-language_btn > span {
+		display: none;
+	}
+
+	.template-cpanel .cpanel-header .card-header_language .header-language_btn .header-language_btn__item img {
+		margin: 0;
+	}
+
+	.template-cpanel .cpanel-header .cpanel-header_user {
+		margin-left: 10px;
+	}
 }
