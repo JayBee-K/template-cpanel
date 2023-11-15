@@ -1564,7 +1564,6 @@ label:not([class*=col-form]) {
 	background: #f4f4f4;
 }
 
-
 .template-cpanel .cpanel-header .cpanel-header_user {
 	position: relative;
 	margin-left: 20px;
@@ -3276,5 +3275,24 @@ label:not([class*=col-form]) {
 @media screen and (max-width: 767px) {
 	.modal-file .files-wrapper .files-item {
 		width: calc(100% / 2);
+	}
+
+	.template-cpanel .cpanel-header .cpanel-header_user .header-user_button span,
+	.template-cpanel .cpanel-header .cpanel-header_user .header-user_button img {
+		width: 30px;
+		height: 30px;
+		font-size: var(--size-theme);
+	}
+
+	.template-cpanel .cpanel-header .card-header_language .header-language_btn > span {
+		display: none;
+	}
+
+	.template-cpanel .cpanel-header .card-header_language .header-language_btn .header-language_btn__item img {
+		margin: 0;
+	}
+
+	.template-cpanel .cpanel-header .cpanel-header_user {
+		margin-left: 10px;
 	}
 }
